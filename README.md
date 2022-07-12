@@ -2,6 +2,9 @@
 Engine originally used on [Mind Games Mod](https://gamebanana.com/mods/301107), intended to be a fix for the vanilla version's many issues while keeping the casual play aspect of it. Also aiming to be an easier alternative to newbie coders.
 
 ## Installation:
+Create a folder named `example_mods` in the folder you put the source code in,
+i gitignored it becouse in my computer i have some mods that i play with while debugging stuff.
+
 You must have [the most up-to-date version of Haxe](https://haxe.org/download/), seriously, stop using 4.1.5, it misses some stuff.
 
 Follow a Friday Night Funkin' source code compilation tutorial, after this you will need to install LuaJIT.
