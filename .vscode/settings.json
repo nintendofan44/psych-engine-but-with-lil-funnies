@@ -1,0 +1,27 @@
+{
+    "Lua.diagnostics.globals": [
+        "onCreate",
+        "setTextString",
+        "getProperty",
+        "addLuaText",
+        "setTextAlignment",
+        "makeLuaText",
+        "getPropertyFromClass",
+        "floorDecimal",
+        "onUpdate",
+        "addLuaSprite",
+        "setObjectCamera",
+        "makeLuaSprite",
+        "scaleObject",
+        "Function_Continue",
+        "onCreatePost",
+        "onDestroy",
+        "onBeatHit",
+        "onStepHit",
+        "onUpdatePost",
+        "onStartCountdown",
+        "onCountdownTick",
+        "setProperty",
+        "screenCenter"
+    ]
+}
