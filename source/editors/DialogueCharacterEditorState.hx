@@ -83,14 +83,13 @@ class DialogueCharacterEditorState extends MusicBeatState
 		camOther.bgColor.alpha = 0;
 
 		FlxG.cameras.reset(camGame);
+		FlxG.cameras.setDefaultDrawTarget(camGame, true);
 		FlxG.cameras.add(camOther);
-		FlxCamera.defaultCameras = [camOther];
+		FlxG.cameras.setDefaultDrawTarget(camOther, false);
 		
 		mainGroup = new FlxSpriteGroup();
-		mainGroup.cameras = [camGame];
-		hudGroup = new FlxSpriteGroup();
-		hudGroup.cameras = [camGame];
 		add(mainGroup);
+		hudGroup = new FlxSpriteGroup();
 		add(hudGroup);
 
 		character = new DialogueCharacter();
@@ -102,7 +101,6 @@ class DialogueCharacterEditorState extends MusicBeatState
 		ghostLoop.color = FlxColor.RED;
 		ghostLoop.isGhost = true;
 		ghostLoop.jsonFile = character.jsonFile;
-		ghostLoop.cameras = [camGame];
 		add(ghostLoop);
 		
 		ghostIdle = new DialogueCharacter();
@@ -110,7 +108,6 @@ class DialogueCharacterEditorState extends MusicBeatState
 		ghostIdle.color = FlxColor.BLUE;
 		ghostIdle.isGhost = true;
 		ghostIdle.jsonFile = character.jsonFile;
-		ghostIdle.cameras = [camGame];
 		add(ghostIdle);
 
 		box = new FlxSprite(70, 370);
@@ -171,7 +168,6 @@ class DialogueCharacterEditorState extends MusicBeatState
 		UI_typebox.x = 900;
 		UI_typebox.y = FlxG.height - UI_typebox.height - 50;
 		UI_typebox.scrollFactor.set();
-		UI_typebox.camera = camGame;
 		addTypeUI();
 		add(UI_typebox);
 
@@ -184,7 +180,6 @@ class DialogueCharacterEditorState extends MusicBeatState
 		UI_mainbox.x = UI_typebox.x + UI_typebox.width;
 		UI_mainbox.y = FlxG.height - UI_mainbox.height - 50;
 		UI_mainbox.scrollFactor.set();
-		UI_mainbox.camera = camGame;
 		addAnimationsUI();
 		addCharacterUI();
 		add(UI_mainbox);
@@ -600,13 +595,13 @@ class DialogueCharacterEditorState extends MusicBeatState
 				}
 			}
 
-			if (FlxG.keys.pressed.Q && camGame.zoom > 0.1) {
-				camGame.zoom -= elapsed * camGame.zoom;
-				if(camGame.zoom < 0.1) camGame.zoom = 0.1;
+			if (FlxG.keys.pressed.Q && FlxG.camera.zoom > 0.1) {
+				FlxG.camera.zoom -= elapsed * FlxG.camera.zoom;
+				if(FlxG.camera.zoom < 0.1) FlxG.camera.zoom = 0.1;
 			}
-			if (FlxG.keys.pressed.E && camGame.zoom < 1) {
-				camGame.zoom += elapsed * camGame.zoom;
-				if(camGame.zoom > 1) camGame.zoom = 1;
+			if (FlxG.keys.pressed.E && FlxG.camera.zoom < 1) {
+				FlxG.camera.zoom += elapsed * FlxG.camera.zoom;
+				if(FlxG.camera.zoom > 1) FlxG.camera.zoom = 1;
 			}
 			if(FlxG.keys.justPressed.H) {
 				if(UI_mainbox.selected_tab_id == 'Animations') {
@@ -622,7 +617,7 @@ class DialogueCharacterEditorState extends MusicBeatState
 				}
 			}
 			if(FlxG.keys.justPressed.R) {
-				camGame.zoom = 1;
+				FlxG.camera.zoom = 1;
 				mainGroup.setPosition(0, 0);
 				hudGroup.visible = true;
 			}

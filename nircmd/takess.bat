@@ -1,0 +1,2 @@
+nircmd.exe savescreenshot screenhotfilename.png
+exit

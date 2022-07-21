@@ -1,5 +1,6 @@
 package;
 
+import sys.FileSystem;
 #if desktop
 import Discord.DiscordClient;
 #end
@@ -39,7 +40,8 @@ class MainMenuState extends MusicBeatState
 		#if ACHIEVEMENTS_ALLOWED 'awards', #end
 		'credits',
 		#if !switch 'donate', #end
-		'options'
+		'options',
+		'folders'
 	];
 
 	var magenta:FlxSprite;
@@ -62,8 +64,9 @@ class MainMenuState extends MusicBeatState
 		camAchievement.bgColor.alpha = 0;
 
 		FlxG.cameras.reset(camGame);
+		FlxG.cameras.setDefaultDrawTarget(camGame, true);
 		FlxG.cameras.add(camAchievement);
-		FlxCamera.defaultCameras = [camGame];
+		FlxG.cameras.setDefaultDrawTarget(camAchievement, false);
 
 		transIn = FlxTransitionableState.defaultTransIn;
 		transOut = FlxTransitionableState.defaultTransOut;
@@ -245,6 +248,8 @@ class MainMenuState extends MusicBeatState
 										MusicBeatState.switchState(new CreditsState());
 									case 'options':
 										LoadingState.loadAndSwitchState(new options.OptionsState());
+									case 'folders':
+										LoadingState.loadAndSwitchState(new Folders());
 								}
 							});
 						}

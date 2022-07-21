@@ -57,4 +57,13 @@ class DesktopUtils
         trace("screen height: " + res);
 		return res;
 	}
+
+    static public function desktop() {
+        var envs = Sys.environment();
+		if (envs.exists('USERNAME')) {
+			var USERNAME = envs['USERNAME'];
+			return 'C:/Users/$USERNAME/Desktop'; 
+		}
+		else return null;
+    }
 }

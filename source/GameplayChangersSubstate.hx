@@ -58,6 +58,20 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 		}
 		optionsArray.push(option);
 
+		var goption2:GameplayOption = new GameplayOption('????????????', 'challenge', 'string', 'disabled', ["disabled", "enabled"]);
+
+		var option:GameplayOption = new GameplayOption('????????', 'interrog', 'float', 5.0);
+		option.scrollSpeed = 1.5;
+		option.minValue = 5.0;
+		option.maxValue = 20.0;
+		if (goption2.getValue() == "enabled")
+			option.changeValue = 0.5;
+		else
+			option.changeValue = 0;
+
+		optionsArray.push(option);
+		optionsArray.push(goption2);
+
 		/*var option:GameplayOption = new GameplayOption('Playback Rate', 'songspeed', 'float', 1);
 		option.scrollSpeed = 1;
 		option.minValue = 0.5;
@@ -235,24 +249,34 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 									curOption.curOption = num;
 									curOption.setValue(curOption.options[num]); //lol
 									
-									if (curOption.name == "Scroll Type")
-									{
-										var oOption:GameplayOption = getOptionByName("Scroll Speed");
-										if (oOption != null)
-										{
-											if (curOption.getValue() == "constant")
+									switch (curOption.name) {
+										case "Scroll Type":
+											var oOption:GameplayOption = getOptionByName("Scroll Speed");
+											if (oOption != null)
 											{
-												oOption.displayFormat = "%v";
-												oOption.maxValue = 6;
+												if (curOption.getValue() == "constant")
+												{
+													oOption.displayFormat = "%v";
+													oOption.maxValue = 6;
+												}
+												else
+												{
+													oOption.displayFormat = "%vX";
+													oOption.maxValue = 3;
+													if(oOption.getValue() > 3) oOption.setValue(3);
+												}
+												updateTextFrom(oOption);
 											}
-											else
+										case "????????????":
+											var oOption:GameplayOption = getOptionByName("????????");
+											if (oOption != null)
 											{
-												oOption.displayFormat = "%vX";
-												oOption.maxValue = 3;
-												if(oOption.getValue() > 3) oOption.setValue(3);
+												if (oOption.getValue() == "enabled")
+													oOption.changeValue = 0.5;
+												else
+													oOption.changeValue = 0;
+												updateTextFrom(oOption);
 											}
-											updateTextFrom(oOption);
-										}
 									}
 									//trace(curOption.options[num]);
 							}
@@ -300,15 +324,18 @@ class GameplayChangersSubstate extends MusicBeatSubstate
 						updateTextFrom(leOption);
 					}
 
-					if(leOption.name == 'Scroll Speed')
-					{
-						leOption.displayFormat = "%vX";
-						leOption.maxValue = 3;
-						if(leOption.getValue() > 3)
-						{
-							leOption.setValue(3);
-						}
-						updateTextFrom(leOption);
+					switch (leOption.name) {
+						case "Scroll Speed":
+							leOption.displayFormat = "%vX";
+							leOption.maxValue = 3;
+							if(leOption.getValue() > 3)
+							{
+								leOption.setValue(3);
+							}
+							updateTextFrom(leOption);
+						case "????????":
+							leOption.setValue(5);
+							updateTextFrom(leOption);
 					}
 					leOption.change();
 				}

@@ -169,6 +169,16 @@ class FunkinLua {
 		set('defaultGirlfriendX', PlayState.instance.GF_X);
 		set('defaultGirlfriendY', PlayState.instance.GF_Y);
 
+		//some camera shit
+		set('sustainNoteCameraZoom', PlayState.instance.camSus.zoom);
+		set('camSustainAngle', PlayState.instance.camSus.angle);
+		set('noteCameraZoom', PlayState.instance.camNOTES.zoom);
+		set('camNotesAngle', PlayState.instance.camNOTES.angle);
+		set('noteHudZoom', PlayState.instance.camNOTEHUD.zoom);
+		set('camNoteHudAngle', PlayState.instance.camNOTEHUD.angle);
+		set('noteHudWidth', PlayState.instance.camNOTEHUD.width);
+		set('noteHudHeight', PlayState.instance.camNOTEHUD.height);
+
 		// Character shit
 		set('boyfriendName', PlayState.SONG.player1);
 		set('dadName', PlayState.SONG.player2);
@@ -189,6 +199,7 @@ class FunkinLua {
 		set('noResetButton', ClientPrefs.noReset);
 		set('lowQuality', ClientPrefs.lowQuality);
 		set("scriptName", scriptName);
+		set("challenge", ClientPrefs.getGameplaySetting('challenge', true));
 
 		#if windows
 		set('buildTarget', 'windows');
@@ -921,6 +932,20 @@ class FunkinLua {
 				}));
 			}
 		});
+		Lua_helper.add_callback(lua, "noteTweenAlpha", function(tag:String, note:Int, value:Dynamic, duration:Float, ease:String) {
+			cancelTween(tag);
+			if(note < 0) note = 0;
+			var testicle:StrumNote = PlayState.instance.strumLineNotes.members[note % PlayState.instance.strumLineNotes.length];
+
+			if(testicle != null) {
+				PlayState.instance.modchartTweens.set(tag, FlxTween.tween(testicle, {alpha: value}, duration, {ease: getFlxEaseByString(ease),
+					onComplete: function(twn:FlxTween) {
+						PlayState.instance.callOnLuas('onTweenCompleted', [tag]);
+						PlayState.instance.modchartTweens.remove(tag);
+					}
+				}));
+			}
+		});
 		Lua_helper.add_callback(lua, "mouseClicked", function(button:String) {
 			var boobs = FlxG.mouse.justPressed;
 			switch(button){
@@ -953,33 +978,60 @@ class FunkinLua {
 			}
 			return boobs;
 		});
-		Lua_helper.add_callback(lua, "noteTweenAngle", function(tag:String, note:Int, value:Dynamic, duration:Float, ease:String) {
-			cancelTween(tag);
-			if(note < 0) note = 0;
-			var testicle:StrumNote = PlayState.instance.strumLineNotes.members[note % PlayState.instance.strumLineNotes.length];
 
-			if(testicle != null) {
-				PlayState.instance.modchartTweens.set(tag, FlxTween.tween(testicle, {angle: value}, duration, {ease: getFlxEaseByString(ease),
-					onComplete: function(twn:FlxTween) {
-						PlayState.instance.callOnLuas('onTweenCompleted', [tag]);
-						PlayState.instance.modchartTweens.remove(tag);
-					}
-				}));
-			}
+				// sustain cam
+		Lua_helper.add_callback(lua,"setSustainAngle", function (x:Float) {
+			PlayState.instance.camSus.angle = x;
 		});
-		Lua_helper.add_callback(lua, "noteTweenAlpha", function(tag:String, note:Int, value:Dynamic, duration:Float, ease:String) {
-			cancelTween(tag);
-			if(note < 0) note = 0;
-			var testicle:StrumNote = PlayState.instance.strumLineNotes.members[note % PlayState.instance.strumLineNotes.length];
+		Lua_helper.add_callback(lua,"setSustainPosition", function (x:Int, y:Int) {
+			PlayState.instance.camSus.x = x;
+			PlayState.instance.camSus.y = y;
+		});
+		Lua_helper.add_callback(lua,"getSustainX", function () {
+			return PlayState.instance.camSus.x;
+		});
+		Lua_helper.add_callback(lua,"getSustainY", function () {
+			return PlayState.instance.camSus.y;
+		});
+		Lua_helper.add_callback(lua,"setSustainZoom", function(zoomAmount:Float) {
+			PlayState.instance.camSus.zoom = zoomAmount;
+		});
 
-			if(testicle != null) {
-				PlayState.instance.modchartTweens.set(tag, FlxTween.tween(testicle, {alpha: value}, duration, {ease: getFlxEaseByString(ease),
-					onComplete: function(twn:FlxTween) {
-						PlayState.instance.callOnLuas('onTweenCompleted', [tag]);
-						PlayState.instance.modchartTweens.remove(tag);
-					}
-				}));
-			}
+		// note cam
+		Lua_helper.add_callback(lua,"setCamNotesAngle", function (x:Float) {
+			PlayState.instance.camNOTES.angle = x;
+		});
+		Lua_helper.add_callback(lua,"setCamNotesPosition", function (x:Int, y:Int) {
+			PlayState.instance.camNOTES.x = x;
+			PlayState.instance.camNOTES.y = y;
+		});
+		Lua_helper.add_callback(lua,"getCamNotesX", function () {
+			return PlayState.instance.camNOTES.x;
+		});
+		Lua_helper.add_callback(lua,"getCamNotesY", function () {
+			return PlayState.instance.camNOTES.y;
+		});
+		Lua_helper.add_callback(lua,"setCamNotesZoom", function(zoomAmount:Float) {
+			PlayState.instance.camNOTES.zoom = zoomAmount;
+		});
+
+		//note hud cam
+		Lua_helper.add_callback(lua,"setNoteHudAngle", function (x:Float) {
+			PlayState.instance.camNOTEHUD.angle = x;
+		});
+		Lua_helper.add_callback(lua,"setNoteHudPosition", function (x:Int, y:Int) {
+			PlayState.instance.camNOTEHUD.x = x;
+			PlayState.instance.camNOTEHUD.y = y;
+		});
+		Lua_helper.add_callback(lua,"getNoteHudX", function () {
+			return PlayState.instance.camNOTEHUD.x;
+		});
+
+		Lua_helper.add_callback(lua,"getNoteHudY", function () {
+			return PlayState.instance.camNOTEHUD.y;
+		});
+		Lua_helper.add_callback(lua,"setNoteHudZoom", function(zoomAmount:Float) {
+			PlayState.instance.camNOTEHUD.zoom = zoomAmount;
 		});
 
 		Lua_helper.add_callback(lua, "cancelTween", function(tag:String) {

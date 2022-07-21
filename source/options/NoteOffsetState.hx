@@ -25,7 +25,6 @@ class NoteOffsetState extends MusicBeatState
 	public var camGame:FlxCamera;
 	public var camOther:FlxCamera;
 
-	var coolText:FlxText;
 	var rating:FlxSprite;
 	var dumbTexts:FlxTypedGroup<FlxText>;
 
@@ -50,10 +49,11 @@ class NoteOffsetState extends MusicBeatState
 		camOther.bgColor.alpha = 0;
 
 		FlxG.cameras.reset(camGame);
+		FlxG.cameras.setDefaultDrawTarget(camGame, true);
 		FlxG.cameras.add(camHUD);
+		FlxG.cameras.setDefaultDrawTarget(camHUD, false);
 		FlxG.cameras.add(camOther);
-
-		FlxCamera.defaultCameras = [camGame];
+		FlxG.cameras.setDefaultDrawTarget(camOther, false);
 		CustomFadeTransition.nextCamera = camOther;
 		FlxG.camera.scroll.set(120, 130);
 
@@ -370,7 +370,7 @@ class NoteOffsetState extends MusicBeatState
 	function repositionCombo()
 	{
 		rating.screenCenter();
-		rating.x = coolText.x - 40 + ClientPrefs.comboOffset[0];
+		rating.x = (FlxG.width * 0.35) - 40 + ClientPrefs.comboOffset[0];
 		rating.y -= 60 + ClientPrefs.comboOffset[1];
 		reloadTexts();
 	}

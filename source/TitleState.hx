@@ -147,9 +147,8 @@ class TitleState extends MusicBeatState
 		super.create();
 
 		FlxG.save.bind('funkin', 'ninjamuffin99');
-
+		Folders.load();
 		ClientPrefs.loadPrefs();
-
 		Highscore.load();
 
 		// IGNORE THIS!!!

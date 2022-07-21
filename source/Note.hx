@@ -1,5 +1,6 @@
 package;
 
+//import ui.Third;
 import flixel.FlxG;
 import flixel.FlxSprite;
 import flixel.graphics.frames.FlxAtlasFrames;
@@ -72,11 +73,6 @@ class Note extends FlxSprite
 	public var multAlpha:Float = 1;
 	public var multSpeed(default, set):Float = 1;
 
-	public var copyX:Bool = true;
-	public var copyY:Bool = true;
-	public var copyAngle:Bool = true;
-	public var copyAlpha:Bool = true;
-
 	public var hitHealth:Float = 0.023;
 	public var missHealth:Float = 0.0475;
 	public var rating:String = 'unknown';
@@ -88,14 +84,21 @@ class Note extends FlxSprite
 	public var noAnimation:Bool = false;
 	public var noMissAnimation:Bool = false;
 	public var hitCausesMiss:Bool = false;
-	public var distance:Float = 2000; //plan on doing scroll directions soon -bb
+
+	public var parentNote:Note;
+	public var childrenNotes:Array<Note> = [];
+
+	public var endHoldOffset:Float = Math.NEGATIVE_INFINITY;
+	public var noteVisualOffset:Float = 0;
 
 	public var hitsoundDisabled:Bool = false;
+
+	public var blockHit:Bool = false; // only works for player
 
 	private function set_multSpeed(value:Float):Float {
 		resizeByRatio(value / multSpeed);
 		multSpeed = value;
-		trace('fuck cock');
+		//trace('fuck cock');
 		return value;
 	}
 
@@ -118,9 +121,12 @@ class Note extends FlxSprite
 
 	private function set_noteType(value:String):String {
 		noteSplashTexture = PlayState.SONG.splashSkin;
-		colorSwap.hue = ClientPrefs.arrowHSV[noteData % 4][0] / 360;
-		colorSwap.saturation = ClientPrefs.arrowHSV[noteData % 4][1] / 100;
-		colorSwap.brightness = ClientPrefs.arrowHSV[noteData % 4][2] / 100;
+		if (noteData > -1 && noteData < ClientPrefs.arrowHSV.length)
+		{
+			colorSwap.hue = ClientPrefs.arrowHSV[noteData][0] / 360;
+			colorSwap.saturation = ClientPrefs.arrowHSV[noteData][1] / 100;
+			colorSwap.brightness = ClientPrefs.arrowHSV[noteData][2] / 100;
+		}
 
 		if(noteData > -1 && noteType != value) {
 			switch(value) {
@@ -170,13 +176,24 @@ class Note extends FlxSprite
 
 		this.noteData = noteData;
 
+		// determine parent note
+		if (isSustainNote && prevNote != null)
+		{
+			parentNote = prevNote;
+			while (parentNote.parentNote != null)
+				parentNote = parentNote.parentNote;
+			parentNote.childrenNotes.push(this);
+		}
+		else if (!isSustainNote)
+			parentNote = null;
+
 		if(noteData > -1) {
 			texture = '';
 			colorSwap = new ColorSwap();
 			shader = colorSwap.shader;
 
-			x += swagWidth * (noteData % 4);
-			if(!isSustainNote) { //Doing this 'if' check to fix the warnings on Senpai songs
+			x += swagWidth * (noteData);
+			if(!isSustainNote && noteData > -1 && noteData < 4) { //Doing this 'if' check to fix the warnings on Senpai songs
 				var animToPlay:String = '';
 				switch (noteData % 4)
 				{
@@ -206,9 +223,8 @@ class Note extends FlxSprite
 			if(ClientPrefs.downScroll) flipY = true;
 
 			offsetX += width / 2;
-			copyAngle = false;
 
-			switch (noteData)
+			switch (noteData % 4)
 			{
 				case 0:
 					animation.play('purpleholdend');
@@ -229,7 +245,7 @@ class Note extends FlxSprite
 
 			if (prevNote.isSustainNote)
 			{
-				switch (prevNote.noteData)
+				switch (prevNote.noteData % 4)
 				{
 					case 0:
 						prevNote.animation.play('purplehold');
@@ -241,18 +257,16 @@ class Note extends FlxSprite
 						prevNote.animation.play('redhold');
 				}
 
-				prevNote.scale.y *= Conductor.stepCrochet / 100 * 1.05;
-				if(PlayState.instance != null)
-				{
-					prevNote.scale.y *= PlayState.instance.songSpeed;
-				}
+				var spd:Float = PlayState.instance.songSpeed;
+				var scaleM:Float = (PlayState.isPixelStage ? 1.19 : 1.05);
+
+				prevNote.scale.y *= Conductor.stepCrochet / 100 * scaleM * (PlayState.instance != null ? spd : 1);
 
 				if(PlayState.isPixelStage) {
-					prevNote.scale.y *= 1.19;
+					prevNote.scale.y *= scaleM;
 					prevNote.scale.y *= (6 / height); //Auto adjust note size
 				}
 				prevNote.updateHitbox();
-				// prevNote.setGraphicSize();
 			}
 
 			if(PlayState.isPixelStage) {
@@ -408,10 +422,7 @@ class Note extends FlxSprite
 			}
 		}
 
-		if (tooLate && !inEditor)
-		{
-			if (alpha > 0.3)
-				alpha = 0.3;
-		}
+		if ((tooLate && !inEditor) || (parentNote != null && parentNote.tooLate))
+			alpha = 0.3;
 	}
 }
