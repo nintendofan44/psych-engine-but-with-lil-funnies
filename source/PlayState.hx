@@ -3098,11 +3098,11 @@ class PlayState extends MusicBeatState
 
 				//daNote.z = 0;
 
-				if (daNote.isSustainNote) {
-					daNote.angle = strumDirection;
-				} else {
+				// best idea evr
+				if (daNote.isSustainNote)
+					daNote.angle = -strumDirection;
+				else
 					daNote.angle = strumAngle;
-				}
 
 				daNote.alpha = strumAlpha;
 
