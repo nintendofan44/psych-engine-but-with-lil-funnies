@@ -1,5 +1,8 @@
 package;
 
+import shaders.PegasusGalaxy;
+import shaders.PegasusGalaxy.PegasusGalaxyShader;
+import shaders.Ocean;
 import openfl.filters.ShaderFilter;
 import flixel.math.FlxAngle;
 import flixel.graphics.FlxGraphic;
@@ -234,6 +237,8 @@ class PlayState extends MusicBeatState
 	var wiggleShit:WiggleEffect = new WiggleEffect();
 	var bgGhouls:BGSprite;
 
+	var susGalaxy:PegasusGalaxy = new PegasusGalaxy();
+
 	var tankWatchtower:BGSprite;
 	var tankGround:BGSprite;
 	var tankmanRun:FlxTypedGroup<TankmenBG>;
@@ -359,9 +364,26 @@ class PlayState extends MusicBeatState
 	public var camNOTES:FlxCamera;
 	public var camNOTEHUD:FlxCamera;
 
+	var gameWidth:Int = 1280;
+	var gameHeight:Int = 720;
+	var zoom:Float = -1;
+	var windowWidth:Float = Lib.application.window.width;
+	var windowHeight:Float = Lib.application.window.height;
+
+	// nada
+	public var curbg:FlxSprite;
+
 	override public function create()
 	{
 		Paths.clearStoredMemory();
+
+		if (zoom == -1) {
+			var ratioX:Float = windowWidth / gameWidth;
+			var ratioY:Float = windowHeight / gameHeight;
+			zoom = Math.min(ratioX, ratioY);
+			gameWidth = Math.ceil(windowWidth / zoom);
+			gameHeight = Math.ceil(windowHeight / zoom);
+		}
 
 		// for lua
 		instance = this;
@@ -571,6 +593,44 @@ class PlayState extends MusicBeatState
 				WindowUtils.setWindowResizable(_window, false);
 				transparent_bg = true;
 				immovableWindow = transparent_bg;
+
+			case 'ocean': // Ocean.
+				var ocean:FlxSprite = new FlxSprite(0, 0).makeGraphic(gameWidth, gameHeight, 0xffffffff);
+
+				ocean.active = (ClientPrefs.lowQuality ? false : true);
+
+				ocean.setGraphicSize(Std.int(ocean.width * 1.2), Std.int(ocean.height * 1.2));
+				ocean.updateHitbox();
+				ocean.scrollFactor.set();
+				ocean.screenCenter();
+				add(ocean);
+
+				if (ClientPrefs.shaders) {
+					#if windows
+					var ocean_moment:Ocean = new Ocean();
+					ocean.shader = ocean_moment.shader;
+					curbg = ocean;
+					#end
+				}
+
+			case 'galaxy': // Galaxy.
+				var galaxy:FlxSprite = new FlxSprite(0, 0).makeGraphic(gameWidth, gameHeight, 0xffffffff);
+
+				galaxy.active = (ClientPrefs.lowQuality ? false : true);
+
+				galaxy.setGraphicSize(Std.int(galaxy.width * 1.2), Std.int(galaxy.height * 1.2));
+				galaxy.updateHitbox();
+				galaxy.scrollFactor.set();
+				galaxy.screenCenter();
+				add(galaxy);
+
+				if (ClientPrefs.shaders) {
+					#if windows
+					var galaxy_moment:PegasusGalaxy = new PegasusGalaxy();
+					galaxy.shader = galaxy_moment.shader;
+					curbg = galaxy;
+					#end
+				}
 
 			case 'spooky': //Week 2
 				if(!ClientPrefs.lowQuality) {
@@ -1066,13 +1126,19 @@ class PlayState extends MusicBeatState
 		//add(strumLine);
 
 		// le wiggle
-		wiggleShit.waveAmplitude = 0.07;
-		wiggleShit.effectType = WiggleEffect.WiggleEffectType.DREAMY;
-		wiggleShit.waveFrequency = 0;
-		wiggleShit.waveSpeed = 1.8; // fasto
-		wiggleShit.shader.uTime.value = [(strumLine.y - Note.swagWidth * 4) / FlxG.height]; // from 4mbr0s3 2
-		susWiggle = new ShaderFilter(wiggleShit.shader);
-		camSus.setFilters([susWiggle]); // only enable it for snake notes
+		if (ClientPrefs.galaxySustain) {
+			susGalaxy.shader.iTime.value = [(strumLine.y - Note.swagWidth * 4) / FlxG.height]; // from 4mbr0s3 2
+			susWiggle = new ShaderFilter(susGalaxy.shader);
+			camSus.setFilters([susWiggle]); // only enable it for snake notes
+		} else {
+			wiggleShit.waveAmplitude = 0.07;
+			wiggleShit.effectType = WiggleEffect.WiggleEffectType.DREAMY;
+			wiggleShit.waveFrequency = 0;
+			wiggleShit.waveSpeed = 1.8; // fasto
+			wiggleShit.shader.uTime.value = [(strumLine.y - Note.swagWidth * 4) / FlxG.height]; // from 4mbr0s3 2
+			susWiggle = new ShaderFilter(wiggleShit.shader);
+			camSus.setFilters([susWiggle]); // only enable it for snake notes
+		}
 
 		var the_y = 19 + (32 / 4);
 		if (ClientPrefs.downScroll)
@@ -2873,8 +2939,13 @@ class PlayState extends MusicBeatState
 
 		super.update(elapsed);
 
-		wiggleShit.waveAmplitude = FlxMath.lerp(wiggleShit.waveAmplitude, 0, 0.010 / (openfl.Lib.current.stage.frameRate / 60));
-		wiggleShit.waveFrequency = FlxMath.lerp(wiggleShit.waveFrequency, 0, 0.010 / (openfl.Lib.current.stage.frameRate / 60));
+		if (ClientPrefs.galaxySustain) {
+			susGalaxy.update(elapsed);
+		} else {
+			wiggleShit.waveAmplitude = FlxMath.lerp(wiggleShit.waveAmplitude, 0, 0.010 / (openfl.Lib.current.stage.frameRate / 60));
+			wiggleShit.waveFrequency = FlxMath.lerp(wiggleShit.waveFrequency, 0, 0.010 / (openfl.Lib.current.stage.frameRate / 60));
+			wiggleShit.update(elapsed);
+		}
 
 		wiggleShit.update(elapsed);
 
@@ -4794,8 +4865,10 @@ class PlayState extends MusicBeatState
 				// do nada
 		}
 
-		wiggleShit.waveAmplitude = 0.010;
-		wiggleShit.waveFrequency = 10;
+		if (!ClientPrefs.galaxySustain) {
+			wiggleShit.waveAmplitude = 0.010;
+			wiggleShit.waveFrequency = 10;
+		}
 
 		var val:Float = 1.2;
 		iconP1.scale.set(val, val);
@@ -5362,5 +5435,38 @@ class PlayState extends MusicBeatState
 		if (strum == null)
 			strum = PlayState.instance.strumLineNotes.members[data % PlayState.instance.strumLineNotes.length];
 		return strum;
+	}
+
+	// i figured this out
+	// this is for rounding a number
+	// 2 in 2
+	// like an sd card or a flash drive
+	// example: if a number is 125 it will stay on 125 or go to 128 or to 64?????
+	inline function nextPower(k:Int) {
+		var n = 1;
+		while (n < k)
+			n *= 2;
+		return Std.int(n);
+	}
+
+	function shaderUpdate(elapsed:Float) {
+		if (ClientPrefs.shaders && curbg != null) {
+			if (curbg.active) {
+				switch (curStage) {
+					case 'ocean':
+						var gigachad = cast(curbg.shader, OceanShader);
+						gigachad.iTime.value[0] += elapsed;
+						gigachad.iResolution.value = [gameWidth, gameHeight];
+						gigachad.iMouse.value = [0, 0, FlxG.mouse.pressed ? 1 : 0, FlxG.mouse.pressedRight ? 1 : 0];
+					case 'galaxy':
+						var gigachad = cast(curbg.shader, PegasusGalaxyShader);
+						gigachad.iTime.value[0] += elapsed;
+						gigachad.iResolution.value = [gameWidth, gameHeight];
+						gigachad.iMouse.value = [0, 0, FlxG.mouse.pressed ? 1 : 0, FlxG.mouse.pressedRight ? 1 : 0];
+					default:
+						// nada
+				}
+			}
+		}
 	}
 }
