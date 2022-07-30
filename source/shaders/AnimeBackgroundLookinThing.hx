@@ -3,9 +3,9 @@ package shaders;
 import openfl.Lib;
 import flixel.system.FlxAssets.FlxShader;
 
-class PegasusGalaxy
+class AnimeBackgroundLookinThing
 {
-	public var shader(default, null):PegasusGalaxyShader = new PegasusGalaxyShader();
+	public var shader(default, null):AnimeBackgroundLookinThingShader = new AnimeBackgroundLookinThingShader();
 
 	public function new()
 	{
@@ -25,7 +25,7 @@ class PegasusGalaxy
  * 
  * Released at: nordlicht/bremen 2015
  */
-class PegasusGalaxyShader extends FlxShader
+class AnimeBackgroundLookinThingShader extends FlxShader
 {
 	@:glFragmentSource('
         #pragma header
@@ -93,11 +93,11 @@ class PegasusGalaxyShader extends FlxShader
         
         void main()
         {
-            vec2 texcoord = openfl_TextureCoordv;
+            vec4 texcoord = gl_FragCoord;
 
             float time = iTime * 0.1;
         
-            vec2 xy = -1.0 + 2.0*texcoord.xy / iResolution.xy;
+            vec2 xy = -1.0 + 2.0*texcoord.xy;
         
             // fade in (1=10sec), out after 8=80sec;
             float fade = min(1., time*1.)*min(1.,max(0., 15.-time));
@@ -247,7 +247,7 @@ class PegasusGalaxyShader extends FlxShader
         #endif
             
             // Vignetting
-            vec2 xy2 = texcoord.xy / iResolution.xy;
+            vec2 xy2 = texcoord.xy;
             col *= vec3(.5, .5, .5) + 0.25*pow(100.0*xy2.x*xy2.y*(1.0-xy2.x)*(1.0-xy2.y), .5 );	
         
             gl_FragColor = vec4(col,1.0);

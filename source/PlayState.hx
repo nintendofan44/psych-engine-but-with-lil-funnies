@@ -1,7 +1,7 @@
 package;
 
-import shaders.PegasusGalaxy;
-import shaders.PegasusGalaxy.PegasusGalaxyShader;
+import shaders.BH.BHShader;
+import shaders.BH;
 import shaders.Ocean;
 import openfl.filters.ShaderFilter;
 import flixel.math.FlxAngle;
@@ -237,8 +237,6 @@ class PlayState extends MusicBeatState
 	var wiggleShit:WiggleEffect = new WiggleEffect();
 	var bgGhouls:BGSprite;
 
-	var susGalaxy:PegasusGalaxy = new PegasusGalaxy();
-
 	var tankWatchtower:BGSprite;
 	var tankGround:BGSprite;
 	var tankmanRun:FlxTypedGroup<TankmenBG>;
@@ -372,6 +370,11 @@ class PlayState extends MusicBeatState
 
 	// nada
 	public var curbg:FlxSprite;
+
+	var defaultX1 = 0.0;
+	var defaultY1 = 0.0;
+	var defaultX2 = 0.0;
+	var defaultY2 = 0.0;
 
 	override public function create()
 	{
@@ -596,9 +599,7 @@ class PlayState extends MusicBeatState
 
 			case 'ocean': // Ocean.
 				var ocean:FlxSprite = new FlxSprite(0, 0).makeGraphic(gameWidth, gameHeight, 0xffffffff);
-
-				ocean.active = (ClientPrefs.lowQuality ? false : true);
-
+				ocean.active = true;
 				ocean.setGraphicSize(Std.int(ocean.width * 1.2), Std.int(ocean.height * 1.2));
 				ocean.updateHitbox();
 				ocean.scrollFactor.set();
@@ -615,9 +616,7 @@ class PlayState extends MusicBeatState
 
 			case 'galaxy': // Galaxy.
 				var galaxy:FlxSprite = new FlxSprite(0, 0).makeGraphic(gameWidth, gameHeight, 0xffffffff);
-
-				galaxy.active = (ClientPrefs.lowQuality ? false : true);
-
+				galaxy.active = true;
 				galaxy.setGraphicSize(Std.int(galaxy.width * 1.2), Std.int(galaxy.height * 1.2));
 				galaxy.updateHitbox();
 				galaxy.scrollFactor.set();
@@ -626,7 +625,7 @@ class PlayState extends MusicBeatState
 
 				if (ClientPrefs.shaders) {
 					#if windows
-					var galaxy_moment:PegasusGalaxy = new PegasusGalaxy();
+					var galaxy_moment:BH = new BH();
 					galaxy.shader = galaxy_moment.shader;
 					curbg = galaxy;
 					#end
@@ -1127,10 +1126,6 @@ class PlayState extends MusicBeatState
 
 		// le wiggle
 		if (ClientPrefs.galaxySustain) {
-			susGalaxy.shader.iTime.value = [(strumLine.y - Note.swagWidth * 4) / FlxG.height]; // from 4mbr0s3 2
-			susWiggle = new ShaderFilter(susGalaxy.shader);
-			camSus.setFilters([susWiggle]); // only enable it for snake notes
-		} else {
 			wiggleShit.waveAmplitude = 0.07;
 			wiggleShit.effectType = WiggleEffect.WiggleEffectType.DREAMY;
 			wiggleShit.waveFrequency = 0;
@@ -1288,18 +1283,30 @@ class PlayState extends MusicBeatState
 
 		iconP1 = new HealthIcon(boyfriend.healthIcon, true);
 		if (ClientPrefs.middleScroll)
+		{
 			iconP1.x = healthBar.x - 75;
+			defaultX1 = iconP1.x;
+		}
 		else
+		{
 			iconP1.y = healthBar.y - 75;
+			defaultY1 = iconP1.y;
+		}
 		iconP1.visible = !ClientPrefs.hideHud;
 		iconP1.alpha = ClientPrefs.healthBarAlpha;
 		add(iconP1);
 
 		iconP2 = new HealthIcon(dad.healthIcon, false);
 		if (ClientPrefs.middleScroll)
+		{
 			iconP2.x = healthBar.x - 75;
+			defaultX2 = iconP2.x;
+		}
 		else
+		{
 			iconP2.y = healthBar.y - 75;
+			defaultY2 = iconP2.y;
+		}
 		iconP2.visible = !ClientPrefs.hideHud;
 		iconP2.alpha = ClientPrefs.healthBarAlpha;
 		add(iconP2);
@@ -2788,6 +2795,7 @@ class PlayState extends MusicBeatState
 
 	override public function update(elapsed:Float)
 	{
+		shaderUpdate(elapsed);
 		/*if (FlxG.keys.justPressed.NINE)
 		{
 			iconP1.swapOldIcon();
@@ -2940,14 +2948,10 @@ class PlayState extends MusicBeatState
 		super.update(elapsed);
 
 		if (ClientPrefs.galaxySustain) {
-			susGalaxy.update(elapsed);
-		} else {
 			wiggleShit.waveAmplitude = FlxMath.lerp(wiggleShit.waveAmplitude, 0, 0.010 / (openfl.Lib.current.stage.frameRate / 60));
 			wiggleShit.waveFrequency = FlxMath.lerp(wiggleShit.waveFrequency, 0, 0.010 / (openfl.Lib.current.stage.frameRate / 60));
 			wiggleShit.update(elapsed);
 		}
-
-		wiggleShit.update(elapsed);
 
 		if (immovableWindow)
 			if (_window != null) WindowUtils.setWindowCoords(_window, windowCoords[0], windowCoords[1]);
@@ -3023,15 +3027,35 @@ class PlayState extends MusicBeatState
 		if (health > 2)
 			health = 2;
 
-		if (healthBar.percent < 20)
+		if (healthBar.percent < 20) {
+			if (iconP1.getCharacter() == 'lilguy') {
+				var angleOfs = FlxG.random.float(-2, 2);
+				var posXOfs = FlxG.random.float(-5, 5);
+				var posYOfs = FlxG.random.float(-1, 1);
+				iconP1.angle = angleOfs;
+				iconP1.x = (ClientPrefs.middleScroll ? defaultX1 : iconP1.x) + posXOfs;
+				iconP1.y = (ClientPrefs.middleScroll ? iconP1.y : defaultY1) + posYOfs;
+			}
 			iconP1.animation.curAnim.curFrame = 1;
-		else
+		} else {
+			if (iconP1.getCharacter() == 'lilguy') iconP1.angle = 0;
 			iconP1.animation.curAnim.curFrame = 0;
+		}
 
-		if (healthBar.percent > 80)
+		if (healthBar.percent > 80) {
+			if (iconP2.getCharacter() == 'lilguy') {
+				var angleOfs = FlxG.random.float(-5, 5);
+				var posXOfs = FlxG.random.float(-8, 8);
+				var posYOfs = FlxG.random.float(-4, 4);
+				iconP2.angle = angleOfs;
+				iconP2.x = (ClientPrefs.middleScroll ? defaultX2 : iconP2.x) + posXOfs;
+				iconP2.y = (ClientPrefs.middleScroll ? iconP2.y : defaultY2) + posYOfs;
+			}
 			iconP2.animation.curAnim.curFrame = 1;
-		else
+		} else {
+			if (iconP2.getCharacter() == 'lilguy') iconP2.angle = 0;
 			iconP2.animation.curAnim.curFrame = 0;
+		}
 
 		if (FlxG.keys.anyJustPressed(debugKeysCharacter) && !endingSong && !inCutscene) {
 			persistentUpdate = false;
@@ -5459,9 +5483,9 @@ class PlayState extends MusicBeatState
 						gigachad.iResolution.value = [gameWidth, gameHeight];
 						gigachad.iMouse.value = [0, 0, FlxG.mouse.pressed ? 1 : 0, FlxG.mouse.pressedRight ? 1 : 0];
 					case 'galaxy':
-						var gigachad = cast(curbg.shader, PegasusGalaxyShader);
+						var gigachad = cast(curbg.shader, BHShader);
 						gigachad.iTime.value[0] += elapsed;
-						gigachad.iResolution.value = [gameWidth, gameHeight];
+						gigachad.iResolution.value = [curbg.width, curbg.height];
 						gigachad.iMouse.value = [0, 0, FlxG.mouse.pressed ? 1 : 0, FlxG.mouse.pressedRight ? 1 : 0];
 					default:
 						// nada

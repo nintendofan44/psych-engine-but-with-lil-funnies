@@ -60,12 +60,12 @@ class GraphicsSettingsSubState extends BaseOptionsMenu
 			true); //Default value
 		addOption(option);
 
-		var option:Option = new Option('Galaxy Sustain', //Name
-			'If shaders are disabled, this has no effect when enabled', //Description
-			'galaxySustain', //Save data variable name
-			'bool', //Variable type
-			false); //Default value
-		addOption(option);
+		//var option:Option = new Option('Galaxy Sustain', //Name
+		//	'If shaders are disabled, this has no effect when enabled', //Description
+		//	'galaxySustain', //Save data variable name
+		//	'bool', //Variable type
+		//	false); //Default value
+		//addOption(option);
 
 		#if !html5 //Apparently other framerates isn't correctly supported on Browser? Probably it has some V-Sync shit enabled by default, idk
 		var option:Option = new Option('Framerate',
