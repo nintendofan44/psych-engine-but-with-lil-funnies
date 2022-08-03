@@ -1,0 +1,100 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				69,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "SansboneIdle instance "
+		},
+		{
+			"offsets": [
+				79,
+				95
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Right instance "
+		},
+		{
+			"offsets": [
+				79,
+				95
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Right instance "
+		},
+		{
+			"offsets": [
+				160,
+				53
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Left instance "
+		},
+		{
+			"offsets": [
+				160,
+				53
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Left instance "
+		},
+		{
+			"offsets": [
+				40,
+				89
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "no bone",
+			"indices": [],
+			"name": "Sans puts back his shit "
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-15,
+				33
+			],
+			"anim": "look up",
+			"fps": 24,
+			"name": "1:22 instance ",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Sans",
+	"position": [
+		-50,
+		220
+	],
+	"healthicon": "sans-and-papyrus",
+	"flip_x": false,
+	"healthbar_colors": [
+		171,
+		22,
+		74
+	],
+	"camera_position": [
+		10,
+		-70
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

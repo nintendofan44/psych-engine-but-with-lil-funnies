@@ -1,0 +1,11 @@
+{
+	"name": "Bonedoggle Psych engine port",
+	"description": "Bonedoggle Psych engine port",
+	"restart": true,
+	"runGlobally": false,
+	"color": [
+		0,
+		0,
+		255
+	]
+}

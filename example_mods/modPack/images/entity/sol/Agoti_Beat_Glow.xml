@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Agoti_Beat_Glow.png">
+	<!-- Created with Adobe Animate version 22.0.0.93 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Agoti beat0000" x="5" y="5" width="578" height="648" pivotX="280.9" pivotY="311.9" frameX="0" frameY="-11" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0001" x="5" y="5" width="578" height="648" frameX="0" frameY="-11" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0002" x="588" y="5" width="579" height="655" frameX="0" frameY="-4" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0003" x="588" y="5" width="579" height="655" frameX="0" frameY="-4" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0004" x="1172" y="5" width="578" height="657" frameX="-1" frameY="-2" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0005" x="1172" y="5" width="578" height="657" frameX="-1" frameY="-2" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0006" x="1755" y="5" width="579" height="657" frameX="-1" frameY="-2" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0007" x="2339" y="5" width="579" height="658" frameX="-1" frameY="-1" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0008" x="2923" y="5" width="579" height="658" frameX="-1" frameY="-1" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0009" x="3507" y="5" width="579" height="659" frameX="-1" frameY="0" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0010" x="5" y="669" width="579" height="659" frameX="-2" frameY="0" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0011" x="5" y="669" width="579" height="659" frameX="-2" frameY="0" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0012" x="589" y="669" width="579" height="659" frameX="-2" frameY="0" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0013" x="589" y="669" width="579" height="659" frameX="-2" frameY="0" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0014" x="589" y="669" width="579" height="659" frameX="-2" frameY="0" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0015" x="1173" y="669" width="580" height="654" frameX="-5" frameY="-5" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0016" x="1173" y="669" width="580" height="654" frameX="-5" frameY="-5" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0017" x="1758" y="669" width="580" height="657" frameX="-4" frameY="-2" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0018" x="1758" y="669" width="580" height="657" frameX="-4" frameY="-2" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0019" x="2343" y="669" width="580" height="658" frameX="-3" frameY="-1" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0020" x="2343" y="669" width="580" height="658" frameX="-3" frameY="-1" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0021" x="2928" y="669" width="579" height="659" frameX="-3" frameY="0" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0022" x="2928" y="669" width="579" height="659" frameX="-3" frameY="0" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0023" x="3512" y="669" width="579" height="659" frameX="-2" frameY="0" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0024" x="3512" y="669" width="579" height="659" frameX="-2" frameY="0" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0025" x="5" y="1333" width="579" height="659" frameX="-2" frameY="0" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0026" x="5" y="1333" width="579" height="659" frameX="-2" frameY="0" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0027" x="5" y="1333" width="579" height="659" frameX="-2" frameY="0" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0028" x="589" y="669" width="579" height="659" frameX="-2" frameY="0" frameWidth="585" frameHeight="659"/>
+	<SubTexture name="Agoti beat0029" x="589" y="669" width="579" height="659" frameX="-2" frameY="0" frameWidth="585" frameHeight="659"/>
+</TextureAtlas>

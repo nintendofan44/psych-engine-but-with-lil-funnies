@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-83,
+				195
+			],
+			"loop": false,
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Sol_Left",
+			"indices": []
+		},
+		{
+			"offsets": [
+				31,
+				226
+			],
+			"loop": false,
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Sol_Down",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-213,
+				280
+			],
+			"loop": false,
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Sol_Up",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-243,
+				180
+			],
+			"loop": false,
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Sol_Right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-235,
+				201
+			],
+			"loop": false,
+			"anim": "idle",
+			"fps": 24,
+			"name": "Sol_Idle_2",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Solazar_Sprites",
+	"position": [
+		-300,
+		-100
+	],
+	"healthicon": "sol",
+	"flip_x": false,
+	"healthbar_colors": [
+		76,
+		209,
+		226
+	],
+	"camera_position": [
+		200,
+		-220
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

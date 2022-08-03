@@ -1,0 +1,2 @@
+Value1: The camera Zoom Value.
+Value2: The camera Speed Value.

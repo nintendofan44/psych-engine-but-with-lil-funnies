@@ -1,0 +1,14 @@
+scared -5 -1
+deathLoop 37 5
+singRIGHTmiss -50 21
+singDOWN -24 -54
+singLEFTmiss 12 20
+singUP -40 30
+deathConfirm 37 69
+firstDeath 37 11
+hey -3 4
+idle -5 0
+singDOWNmiss -23 -19
+singRIGHT -46 -7
+singLEFT 4 -11
+singUPmiss -50 22

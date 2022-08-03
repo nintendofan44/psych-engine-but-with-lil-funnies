@@ -1,0 +1,199 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				29,
+				2
+			],
+			"anim": "sleep",
+			"fps": 24,
+			"name": "01 instance ",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-14,
+				-125
+			],
+			"anim": "sleep-loop",
+			"fps": 24,
+			"name": "02 instance ",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				25,
+				8
+			],
+			"anim": "wake up",
+			"fps": 24,
+			"name": "03 instance ",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				32,
+				88
+			],
+			"anim": "no bone",
+			"fps": 24,
+			"name": "Sans puts back his shit ",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				62,
+				-2
+			],
+			"anim": "idle-alt",
+			"fps": 24,
+			"name": "SansboneIdle instance ",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-1,
+				-2
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Donw instance ",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				40,
+				-4
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Lefft instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-14,
+				28
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Upo instance 2",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-26,
+				6
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "S-Right instance ",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				73,
+				94
+			],
+			"anim": "singLEFT-alt",
+			"fps": 24,
+			"name": "Right instance ",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				73,
+				94
+			],
+			"anim": "singDOWN-alt",
+			"fps": 24,
+			"name": "Right instance ",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				154,
+				52
+			],
+			"anim": "singRIGHT-alt",
+			"fps": 24,
+			"name": "Left instance ",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				154,
+				52
+			],
+			"anim": "singUP-alt",
+			"fps": 24,
+			"name": "Left instance ",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				35,
+				87
+			],
+			"anim": "idle-alt start",
+			"fps": 24,
+			"name": "Taste my Lightsaber instance ",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-18,
+				32
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "look up",
+			"indices": [],
+			"name": "1:22 instance "
+		},
+		{
+			"offsets": [
+				-4,
+				-1
+			],
+			"indices": [],
+			"fps": 22,
+			"anim": "idle",
+			"loop": true,
+			"name": "Sans FNF instance 1"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Sans",
+	"position": [
+		-50,
+		220
+	],
+	"healthicon": "sans-and-papyrus",
+	"flip_x": false,
+	"healthbar_colors": [
+		171,
+		22,
+		74
+	],
+	"camera_position": [
+		10,
+		-70
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

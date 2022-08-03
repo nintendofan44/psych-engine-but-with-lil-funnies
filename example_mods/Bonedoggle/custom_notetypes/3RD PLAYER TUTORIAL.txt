@@ -1,0 +1,2 @@
+p2o - A notetype that converts from Player 2(to) Opponent on Creation
+plr3 - A PLayeR 3 note that should be placed in opponent's strumline (so it could be placed into the player 3 strumline)

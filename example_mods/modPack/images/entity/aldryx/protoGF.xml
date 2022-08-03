@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="protoGF.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="GF_Idle0000" x="1298" y="10" width="536" height="678" frameX="0" frameY="-28" frameWidth="536" frameHeight="706"/>
+	<SubTexture name="GF_Idle0001" x="1298" y="10" width="536" height="678" frameX="0" frameY="-28" frameWidth="536" frameHeight="706"/>
+	<SubTexture name="GF_Idle0002" x="746" y="10" width="532" height="684" frameX="-2" frameY="-21" frameWidth="536" frameHeight="706"/>
+	<SubTexture name="GF_Idle0003" x="746" y="10" width="532" height="684" frameX="-2" frameY="-21" frameWidth="536" frameHeight="706"/>
+	<SubTexture name="GF_Idle0004" x="698" y="714" width="515" height="691" frameX="-9" frameY="-5" frameWidth="536" frameHeight="706"/>
+	<SubTexture name="GF_Idle0005" x="698" y="714" width="515" height="691" frameX="-9" frameY="-5" frameWidth="536" frameHeight="706"/>
+	<SubTexture name="GF_Idle0006" x="1233" y="714" width="512" height="695" frameX="-10" frameY="0" frameWidth="536" frameHeight="706"/>
+	<SubTexture name="GF_Idle0007" x="1233" y="714" width="512" height="695" frameX="-10" frameY="0" frameWidth="536" frameHeight="706"/>
+	<SubTexture name="GF_Miss0000" x="10" y="10" width="716" height="592" frameX="0" frameY="-14" frameWidth="716" frameHeight="606"/>
+	<SubTexture name="GF_Miss0001" x="10" y="10" width="716" height="592" frameX="0" frameY="-14" frameWidth="716" frameHeight="606"/>
+	<SubTexture name="GF_Miss0002" x="10" y="622" width="668" height="595" frameX="-27" frameY="-3" frameWidth="716" frameHeight="606"/>
+	<SubTexture name="GF_Miss0003" x="10" y="622" width="668" height="595" frameX="-27" frameY="-3" frameWidth="716" frameHeight="606"/>
+	<SubTexture name="GF_Miss0004" x="10" y="1237" width="662" height="597" frameX="-31" frameY="0" frameWidth="716" frameHeight="606"/>
+	<SubTexture name="GF_Miss0005" x="10" y="1237" width="662" height="597" frameX="-31" frameY="0" frameWidth="716" frameHeight="606"/>
+</TextureAtlas>

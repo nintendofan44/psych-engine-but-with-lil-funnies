@@ -1,0 +1,11 @@
+{
+	"name": "Mod Pack",
+	"description": "Lil' mod pack",
+	"restart": true,
+	"runGlobally": false,
+	"color": [
+		170,
+		0,
+		255
+	]
+}

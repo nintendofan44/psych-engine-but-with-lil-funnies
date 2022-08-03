@@ -1,0 +1,7 @@
+bgLimo X: -593 Y: 52 Rotation: 0
+agotiBop X: 599.5 Y: 43 Rotation: 0
+fg X: -1230 Y: -620 Rotation: 0
+bg X: -1280 Y: -720 Rotation: 0
+gfOnCar X: -721 Y: 222 Rotation: 0
+bf-glow X: 700 Y: 740 Rotation: 0
+sol X: 153 Y: 408 Rotation: 0

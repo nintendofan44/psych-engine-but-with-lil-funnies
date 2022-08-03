@@ -1,0 +1,11 @@
+{
+	"name": "Chaotic Endless Endeavors",
+	"description": "Remix by ReveDoodlez",
+	"restart": true,
+	"runGlobally": false,
+	"color": [
+		0,
+		0,
+		255
+	]
+}

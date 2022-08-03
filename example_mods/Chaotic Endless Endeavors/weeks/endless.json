@@ -1,0 +1,32 @@
+{
+	"storyName": "FUN is infinite with sega enterprises!",
+	"difficulties": "Hard,Hell",
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"Chaotic Endless Endeavors",
+			"majin",
+			[
+				0,
+				0,
+				255
+			]
+		]
+	],
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "cee"
+}

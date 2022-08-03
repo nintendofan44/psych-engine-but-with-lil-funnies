@@ -1,0 +1,22 @@
+{
+	"songs": [
+		["Blubber", "agoti", [255, 255, 255]],
+		["Midnight", "agoti", [144, 96, 0]]
+	],
+
+	"weekCharacters": [
+		"",
+		"bf",
+		"gf"
+	],
+	"weekBackground": "stage",
+
+	"storyName": "",
+	"weekBefore": "sol",
+	"weekName": "ourple",
+	"startUnlocked": true,
+
+	"hideStoryMode": false,
+	"hideFreeplay": false,
+	"difficulties": "Hard"
+}

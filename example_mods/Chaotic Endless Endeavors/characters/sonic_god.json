@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-25,
+				120
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "EXE_assets idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-21,
+				134
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "EXE_assets down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-25,
+				135
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "EXE_assets left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				138
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "EXE_assets up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				55,
+				133
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "EXE_assets right",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/EncoreEXE_assets",
+	"position": [
+		-120,
+		240
+	],
+	"healthicon": "EncoreExe",
+	"flip_x": false,
+	"healthbar_colors": [
+		1,
+		88,
+		185
+	],
+	"camera_position": [
+		70,
+		-40
+	],
+	"sing_duration": 4,
+	"scale": 1
+}
