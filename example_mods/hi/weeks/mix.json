@@ -1,0 +1,74 @@
+{
+	"songs": [
+		[
+			"OG",
+			"magbi",
+			[
+				161,
+				161,
+				161
+			]
+		],
+		[
+			"Opposition",
+			"magbi",
+			[
+				161,
+				161,
+				161
+			]
+		],
+		[
+			"Delirium",
+			"magbi",
+			[
+				161,
+				161,
+				161
+			]
+		],
+		[
+			"Thearchy",
+			"magbi",
+			[
+				161,
+				161,
+				161
+			]
+		],
+		[
+			"Tsukareta",
+			"magbi",
+			[
+				161,
+				161,
+				161
+			]
+		],
+		[
+			"Phonophobia",
+			"magbi",
+			[
+				161,
+				161,
+				161
+			]
+		]
+	],
+
+	"weekCharacters": [
+		"",
+		"bf",
+		""
+	],
+	"weekBackground": "stage",
+
+	"storyName": "Magbi",
+	"weekBefore": "solazar",
+	"weekName": "Mix",
+	"startUnlocked": true,
+
+	"hideStoryMode": true,
+	"hideFreeplay": false,
+	"difficulties": "normal"
+}

@@ -1,0 +1,59 @@
+{
+	"song": {
+		"speed": 3.8,
+		"stage": "cone",
+		"player1": "bf",
+		"player2": "magbi",
+		"player3": null,
+		"events": [
+			[
+				57600,
+				[
+					[
+						"Change Character",
+						"dad",
+						"origin"
+					]
+				]
+			],
+			[
+				57637.5,
+				[
+					[
+						"Change Character",
+						"bf",
+						"bf-tsu"
+					]
+				]
+			],
+			[
+				96000,
+				[
+					[
+						"Change Character",
+						"bf",
+						"bf"
+					]
+				]
+			],
+			[
+				96037.5,
+				[
+					[
+						"Change Character",
+						"dad",
+						"magbi"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 400,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "Thearchy"
+	}
+}

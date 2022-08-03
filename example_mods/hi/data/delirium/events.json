@@ -1,0 +1,79 @@
+{
+	"song": {
+		"speed": 3.60000000000002,
+		"stage": "cone",
+		"player1": "bf",
+		"player2": "magbi",
+		"player3": null,
+		"events": [
+			[
+				73375.7961783441,
+				[
+					[
+						"Change Character",
+						"dad",
+						"origin"
+					]
+				]
+			],
+			[
+				73423.566878981,
+				[
+					[
+						"Change Character",
+						"bf",
+						"bf-tsu"
+					]
+				]
+			],
+			[
+				97834.3949044588,
+				[
+					[
+						"Change Character",
+						"dad",
+						"magbi"
+					]
+				]
+			],
+			[
+				97882.1656050957,
+				[
+					[
+						"Change Character",
+						"bf",
+						"bf"
+					]
+				]
+			],
+			[
+				122292.993630574,
+				[
+					[
+						"Change Character",
+						"dad",
+						"origin"
+					]
+				]
+			],
+			[
+				122340.76433121,
+				[
+					[
+						"Change Character",
+						"bf",
+						"bf-tsu"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 314,
+		"arrowSkin": null,
+		"needsVoices": true,
+		"song": "Delirium"
+	}
+}

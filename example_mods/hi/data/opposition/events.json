@@ -1,0 +1,59 @@
+{
+	"song": {
+		"speed": 3.2,
+		"stage": "cone",
+		"player1": "bf",
+		"player2": "magbi",
+		"player3": null,
+		"events": [
+			[
+				48000,
+				[
+					[
+						"Change Character",
+						"dad",
+						"origin"
+					]
+				]
+			],
+			[
+				48125,
+				[
+					[
+						"Change Character",
+						"bf",
+						"bf-tsu"
+					]
+				]
+			],
+			[
+				80125,
+				[
+					[
+						"Change Character",
+						"dad",
+						"magbi"
+					]
+				]
+			],
+			[
+				80250,
+				[
+					[
+						"Change Character",
+						"bf",
+						"bf"
+					]
+				]
+			]
+		],
+		"notes": [],
+		"splashSkin": null,
+		"validScore": false,
+		"gfVersion": "gf",
+		"bpm": 120,
+		"arrowSkin": null,
+		"needsVoices": false,
+		"song": "Opposition"
+	}
+}

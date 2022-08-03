@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				370,
+				30
+			],
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Obama Left"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-30,
+				-280
+			],
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Obama Down"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-190,
+				420
+			],
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Obama Up"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-440,
+				0
+			],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Obama Right"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Obama Idle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Obama_Boss",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "obama",
+	"flip_x": false,
+	"healthbar_colors": [
+		149,
+		108,
+		78
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 5.8
+}

@@ -28,6 +28,7 @@ class Main extends Sprite
 	var skipSplash:Bool = true; // Whether to skip the flixel splash screen that appears in release mode.
 	var startFullscreen:Bool = false; // Whether to start the game in fullscreen on desktop targets
 	public static var fpsVar:FPS;
+	public static var instance:Main;
 
 	// You can pretty much ignore everything from here on - your code should go in your states.
 
@@ -38,6 +39,8 @@ class Main extends Sprite
 
 	public function new()
 	{
+		instance = this;
+
 		super();
 
 		Lib.current.loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, onCrash);
@@ -62,6 +65,7 @@ class Main extends Sprite
 		setupGame();
 	}
 
+	public var testWindow:FlxWindow;
 	private function setupGame():Void
 	{
 		//gameWidth = DesktopUtils.getDesktopWidth();
@@ -86,6 +90,8 @@ class Main extends Sprite
 		ClientPrefs.loadDefaultKeys();
 		addChild(new FlxGame(gameWidth, gameHeight, initialState, zoom, framerate, framerate, skipSplash, startFullscreen));
 
+		//makeWindow();
+
 		#if !mobile
 		fpsVar = new FPS(10, 3, 0xFFFFFF);
 		addChild(fpsVar);
@@ -96,10 +102,53 @@ class Main extends Sprite
 		}
 		#end
 
-		#if html5
 		FlxG.autoPause = false;
+
+		/*testWindow = new FlxWindow(50, 50, 800, 800, "Test", ClientPrefs.framerate, true, false);
+		testWindow.window.stage.addChild(testWindow);*/
+
+		#if html5
 		FlxG.mouse.visible = false;
 		#end
+	}
+
+	public static function makeWindow() { // testing
+		var windowAttribs:lime.ui.WindowAttributes = {
+			allowHighDPI: false,
+			alwaysOnTop: false,
+			borderless: false,
+			// display: 0,
+			element: null,
+			frameRate: ClientPrefs.framerate,
+			#if !web fullscreen: false, #end
+			height: 500,
+			hidden: #if munit true #else false #end,
+			maximized: false,
+			minimized: false,
+			parameters: {},
+			resizable: true,
+			title: "Window 2",
+			width: 600,
+			x: 50,
+			y: 50
+		};
+
+		windowAttribs.context = {
+			antialiasing: 0,
+			background: 0,
+			colorDepth: 32,
+			depth: true,
+			hardware: true,
+			stencil: true,
+			type: null,
+			vsync: false
+		};
+
+		Lib.application.createWindow(windowAttribs);
+		/*for (_window in Lib.application.windows) {
+			if (_window.title != "Friday Night Funkin': Psych Engine")
+				start.bind((cast _window:openfl.display.Window).stage);
+		}*/
 	}
 
 	function onCrash(e:UncaughtErrorEvent):Void {

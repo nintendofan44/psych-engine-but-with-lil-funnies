@@ -1,0 +1,11 @@
+{
+	"name": "hi",
+	"description": "hi",
+	"restart": true,
+	"runGlobally": false,
+	"color": [
+		170,
+		0,
+		255
+	]
+}

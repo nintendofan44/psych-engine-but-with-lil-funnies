@@ -1522,6 +1522,10 @@ class PlayState extends MusicBeatState
 				finished_scale = true;
 			}
 		});
+
+		/*var sprite:FlxSprite = new FlxSprite(100, 100).makeGraphic(100, 100, FlxColor.GREEN);
+		add(sprite);
+        sprite.cameras = [Main.instance.testWindow.camera];*/
 	}
 
 	function set_songSpeed(value:Float):Float
