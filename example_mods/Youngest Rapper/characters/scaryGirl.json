@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-10,
+				30
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "girl down"
+		},
+		{
+			"offsets": [
+				6,
+				-1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "girl right"
+		},
+		{
+			"offsets": [
+				-5,
+				94
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "girl up"
+		},
+		{
+			"offsets": [
+				80,
+				-10
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "girl left"
+		},
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "girl idle",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/scaryGirl",
+	"position": [
+		-70,
+		-10
+	],
+	"healthicon": "scaryGirl",
+	"flip_x": false,
+	"healthbar_colors": [
+		233,
+		238,
+		255
+	],
+	"camera_position": [
+		-90,
+		150
+	],
+	"sing_duration": 4,
+	"scale": 0.7
+}

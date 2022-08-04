@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 12,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-31,
+				-171
+			],
+			"anim": "singDOWN",
+			"fps": 12,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-20,
+				190
+			],
+			"anim": "singUP",
+			"fps": 12,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-10,
+				-10
+			],
+			"anim": "singRIGHT",
+			"fps": 12,
+			"name": "right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				220,
+				-10
+			],
+			"anim": "singLEFT",
+			"fps": 12,
+			"name": "left",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/nightmare",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "nighty",
+	"flip_x": false,
+	"healthbar_colors": [
+		32,
+		32,
+		34
+	],
+	"camera_position": [
+		-30,
+		30
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

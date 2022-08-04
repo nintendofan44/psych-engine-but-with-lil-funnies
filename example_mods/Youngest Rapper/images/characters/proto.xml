@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="proto.png"><SubTexture name="proto down0000" x="0" y="0" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="proto down0001" x="1920" y="0" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="proto idle0000" x="0" y="1080" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="proto idle0001" x="1920" y="1080" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="proto idle0002" x="0" y="2160" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="proto idle0003" x="1920" y="2160" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="proto idle0004" x="3840" y="0" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="proto left0000" x="3840" y="1080" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="proto left0001" x="3840" y="2160" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="proto right0000" x="0" y="3240" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="proto right0001" x="1920" y="3240" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="proto up0000" x="3840" y="3240" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+<SubTexture name="proto up0001" x="0" y="4320" width="1920" height="1080" frameX="0" frameY="0" frameWidth="1920" frameHeight="1080" />
+</TextureAtlas>

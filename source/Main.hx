@@ -104,7 +104,7 @@ class Main extends Sprite
 
 		FlxG.autoPause = false;
 
-		/*testWindow = new FlxWindow(50, 50, 800, 800, "Test", ClientPrefs.framerate, true, false);
+		/*testWindow = new FlxWindow(50, 50, 800, 800, "Test", ClientPrefs.framerate, true, false, true);
 		testWindow.window.stage.addChild(testWindow);*/
 
 		#if html5

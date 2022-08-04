@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="scamBop.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="scamBop0000" x="5" y="5" width="1132" height="404"/>
+	<SubTexture name="scamBop0001" x="1142" y="5" width="1106" height="377" frameX="-12" frameY="-13" frameWidth="1132" frameHeight="404"/>
+	<SubTexture name="scamBop0002" x="2253" y="5" width="1083" height="356" frameX="-23" frameY="-23" frameWidth="1132" frameHeight="404"/>
+	<SubTexture name="scamBop0003" x="5" y="414" width="1064" height="340" frameX="-32" frameY="-31" frameWidth="1132" frameHeight="404"/>
+	<SubTexture name="scamBop0004" x="1074" y="414" width="1048" height="327" frameX="-39" frameY="-37" frameWidth="1132" frameHeight="404"/>
+	<SubTexture name="scamBop0005" x="2127" y="414" width="1037" height="318" frameX="-44" frameY="-41" frameWidth="1132" frameHeight="404"/>
+	<SubTexture name="scamBop0006" x="5" y="759" width="1030" height="311" frameX="-48" frameY="-45" frameWidth="1132" frameHeight="404"/>
+	<SubTexture name="scamBop0007" x="1040" y="759" width="1025" height="307" frameX="-50" frameY="-46" frameWidth="1132" frameHeight="404"/>
+	<SubTexture name="scamBop0008" x="2070" y="759" width="1024" height="306" frameX="-51" frameY="-47" frameWidth="1132" frameHeight="404"/>
+	<SubTexture name="scamBop0009" x="5" y="1075" width="1026" height="305" frameX="-50" frameY="-47" frameWidth="1132" frameHeight="404"/>
+</TextureAtlas>

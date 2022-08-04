@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				30,
+				50
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				60,
+				-151
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-107,
+				-230
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-133,
+				65
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-167,
+				-195
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "right",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/grug",
+	"position": [
+		-80,
+		210
+	],
+	"healthicon": "gurgg",
+	"flip_x": true,
+	"healthbar_colors": [
+		255,
+		97,
+		0
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

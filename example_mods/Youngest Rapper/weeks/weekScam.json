@@ -1,0 +1,111 @@
+{
+	"storyName": "youngest scammer!!",
+	"difficulties": "Normal",
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"weekBefore": "tutorial",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"startUnlocked": true,
+	"hideStoryMode": true,
+	"songs": [
+		[
+			"Cuss Word",
+			"fuck",
+			[
+				146,
+				173,
+				253
+			]
+		],
+		[
+			"Encryption",
+			"proto",
+			[
+				186,
+				215,
+				95
+			]
+		],
+		[
+			"Zamn",
+			"zamnDuo",
+			[
+				106,
+				60,
+				73
+			]
+		],
+		[
+			"Stolen",
+			"stolen",
+			[
+				106,
+				113,
+				253
+			]
+		],
+		[
+			"Death Battle",
+			"manny",
+			[
+				166,
+				120,
+				75
+			]
+		],
+		[
+			"Ginga",
+			"gunga",
+			[
+				146,
+				133,
+				93
+			]
+		],
+		[
+			"Gulp",
+			"gulp",
+			[
+				237, 233, 183
+			]
+		],
+		[
+			"Scary Maze",
+			"scaryGirl",
+			[
+				146,
+				146,
+				146
+			]
+		],
+		[
+			"Ambiguity",
+			"nighty",
+			[
+				40,
+				40,
+				40
+			]
+		],
+		[
+			"666",
+			"666",
+			[
+				0,
+				0,
+				0
+			]
+		]
+	],
+	"weekCharacters": [
+		"",
+		"bf",
+		""
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "Week youngest scammer"
+}

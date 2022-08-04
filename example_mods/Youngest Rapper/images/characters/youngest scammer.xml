@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="youngest scammer.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="scam down0000" x="5" y="5" width="635" height="1058" frameX="0" frameY="-8" frameWidth="635" frameHeight="1066"/>
+	<SubTexture name="scam down0001" x="645" y="5" width="622" height="1065" frameX="-6" frameY="0" frameWidth="635" frameHeight="1066"/>
+	<SubTexture name="scam left0000" x="1272" y="5" width="573" height="1086" frameX="0" frameY="0" frameWidth="582" frameHeight="1086"/>
+	<SubTexture name="scam left0001" x="1850" y="5" width="574" height="1086" frameX="-8" frameY="0" frameWidth="582" frameHeight="1086"/>
+	<SubTexture name="scam right0000" x="2429" y="5" width="999" height="767" frameX="0" frameY="-1" frameWidth="999" frameHeight="768"/>
+	<SubTexture name="scam right0001" x="5" y="1096" width="997" height="767" frameX="-1" frameY="0" frameWidth="999" frameHeight="768"/>
+	<SubTexture name="scam up0000" x="1007" y="1096" width="549" height="1079" frameX="-1" frameY="0" frameWidth="550" frameHeight="1082"/>
+	<SubTexture name="scam up0001" x="1561" y="1096" width="548" height="1080" frameX="0" frameY="-2" frameWidth="550" frameHeight="1082"/>
+	<SubTexture name="scamidle0000" x="2114" y="1096" width="628" height="1038" frameX="0" frameY="-34" frameWidth="633" frameHeight="1087"/>
+	<SubTexture name="scamidle0001" x="2747" y="1096" width="631" height="1041" frameX="-2" frameY="-30" frameWidth="633" frameHeight="1087"/>
+	<SubTexture name="scamidle0002" x="3383" y="1096" width="616" height="1054" frameX="-12" frameY="-18" frameWidth="633" frameHeight="1087"/>
+	<SubTexture name="scamidle0003" x="5" y="2181" width="566" height="1074" frameX="-37" frameY="-4" frameWidth="633" frameHeight="1087"/>
+	<SubTexture name="scamidle0004" x="576" y="2181" width="556" height="1087" frameX="-39" frameY="0" frameWidth="633" frameHeight="1087"/>
+	<SubTexture name="scamidle0005" x="1137" y="2181" width="553" height="1086" frameX="-41" frameY="0" frameWidth="633" frameHeight="1087"/>
+</TextureAtlas>

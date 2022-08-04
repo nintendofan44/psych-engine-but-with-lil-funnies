@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				80,
+				-80
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				160,
+				-20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "downFixed"
+		},
+		{
+			"offsets": [
+				190,
+				-20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "rightFix"
+		},
+		{
+			"offsets": [
+				210,
+				-20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "upFix"
+		},
+		{
+			"offsets": [
+				200,
+				-63
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "leftFix"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/cussKid",
+	"position": [
+		-70,
+		-10
+	],
+	"healthicon": "fuck",
+	"flip_x": false,
+	"healthbar_colors": [
+		0,
+		233,
+		233
+	],
+	"camera_position": [
+		-90,
+		150
+	],
+	"sing_duration": 4,
+	"scale": 0.8
+}

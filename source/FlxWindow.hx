@@ -1,5 +1,6 @@
 package;
 
+import cpp.abi.Abi;
 import flixel.FlxCamera;
 import flixel.FlxG;
 import flixel.graphics.tile.FlxDrawBaseItem;
@@ -18,14 +19,14 @@ class FlxWindow extends Sprite
 	var inputContainer:Sprite;
 	public static var cameras(default, null):CameraFrontEnd;
 	public var camera:FlxCamera;
-	public function new(x:Int, y:Int, width:Int, height:Int, title:String, frameRate:Int, resizable:Bool, fullscreen:Bool)
+	public function new(x:Int, y:Int, width:Int, height:Int, title:String, frameRate:Int, resizable:Bool, fullscreen:Bool, borderless:Bool)
 	{
 		super();
 		inputContainer = new Sprite();
 		var attributes:WindowAttributes = {
 			allowHighDPI: false,
 			alwaysOnTop: false,
-			borderless: false,
+			borderless: borderless,
 			// display: 0,
 			element: null,
 			frameRate: frameRate,
@@ -35,7 +36,7 @@ class FlxWindow extends Sprite
 			maximized: false,
 			minimized: false,
 			parameters: {},
-			resizable: true,
+			resizable: !borderless,
 			title: title,
 			width: width,
 			x: x,
@@ -66,8 +67,8 @@ class FlxWindow extends Sprite
 			trace('stage is null');
 			return;
 		}
+		stage.align = "tl";
 		stage.scaleMode = StageScaleMode.NO_SCALE;
-		stage.align = StageAlign.TOP_LEFT;
 		stage.frameRate = FlxG.drawFramerate;
 		addChild(inputContainer);
 		addChildAt(camera.flashSprite, getChildIndex(inputContainer));
@@ -89,5 +90,15 @@ class FlxWindow extends Sprite
 		camera.flashSprite.graphics.clear();
 		camera.fill(camera.bgColor.to24Bit(), camera.useBgAlphaBlending, camera.bgColor.alphaFloat);
 		camera.render();
+	}
+
+	public function clear() {
+		FlxDrawBaseItem.drawCalls = 0;
+		if (camera.canvas != null)
+			if (camera.canvas.graphics != null)
+        		camera.canvas.graphics.clear();
+		if (camera.flashSprite != null)
+			if (camera.flashSprite.graphics != null)
+				camera.flashSprite.graphics.clear();
 	}
 }

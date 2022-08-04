@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				30,
+				50
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				300,
+				69
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"offsets": [
+				283,
+				-70
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				77,
+				255
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				53,
+				65
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/manny",
+	"position": [
+		10,
+		220
+	],
+	"healthicon": "manny",
+	"flip_x": false,
+	"healthbar_colors": [
+		211,
+		139,
+		77
+	],
+	"camera_position": [
+		-250,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

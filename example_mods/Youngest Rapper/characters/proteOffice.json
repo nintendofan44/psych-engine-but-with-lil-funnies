@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "officeProte idle"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "officeProte left"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "officeProte down"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "officeProte up"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "officeProte right"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/officeProte",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "protoOffice",
+	"flip_x": true,
+	"healthbar_colors": [
+		255,
+		106,
+		0
+	],
+	"camera_position": [
+		230,
+		-40
+	],
+	"sing_duration": 6.1,
+	"scale": 1.6
+}

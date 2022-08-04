@@ -376,6 +376,9 @@ class PlayState extends MusicBeatState
 	var defaultX2 = 0.0;
 	var defaultY2 = 0.0;
 
+	/*var camWin:FlxCamera = null;
+	var spriteasdasdas:FlxSprite;*/
+
 	override public function create()
 	{
 		Paths.clearStoredMemory();
@@ -475,6 +478,11 @@ class PlayState extends MusicBeatState
 
 		persistentUpdate = true;
 		persistentDraw = true;
+
+		/*if (Main.instance.testWindow.camera != null)
+			camWin = Main.instance.testWindow.camera;
+		else
+			camWin = camHUD;*/
 
 		if (SONG == null)
 			SONG = Song.loadFromJson('tutorial');
@@ -1068,6 +1076,7 @@ class PlayState extends MusicBeatState
 		dad = new Character(0, 0, SONG.player2);
 		startCharacterPos(dad, true);
 		dadGroup.add(dad);
+		//dadGroup.cameras = [camWin];
 		startCharacterLua(dad.curCharacter);
 
 		boyfriend = new Boyfriend(0, 0, SONG.player1);
@@ -1523,9 +1532,9 @@ class PlayState extends MusicBeatState
 			}
 		});
 
-		/*var sprite:FlxSprite = new FlxSprite(100, 100).makeGraphic(100, 100, FlxColor.GREEN);
-		add(sprite);
-        sprite.cameras = [Main.instance.testWindow.camera];*/
+		/*spriteasdasdas = new FlxSprite(100, 100).makeGraphic(100, 100, FlxColor.GREEN);
+		add(spriteasdasdas);
+        spriteasdasdas.cameras = [camWin];*/
 	}
 
 	function set_songSpeed(value:Float):Float
@@ -3164,9 +3173,7 @@ class PlayState extends MusicBeatState
 			notes.forEachAlive(function(daNote:Note)
 			{
 				daNote.scrollFactor.set();
-				daNote.cameras = [camNOTES];
-				if (daNote.isSustainNote)
-					daNote.cameras = [camSus];
+				daNote.cameras = (daNote.isSustainNote ? [camSus] : [camNOTES]);
 
 				var roundedSpeed = FlxMath.roundDecimal(songSpeed, 2);
 				var psuedoY:Float = (downscrollMultiplier * -((Conductor.songPosition - daNote.strumTime) * (0.45 * roundedSpeed * daNote.multSpeed)));
@@ -3845,6 +3852,8 @@ class PlayState extends MusicBeatState
 				return;
 			}
 		}
+
+		//resetcamwin();
 
 		canPause = false;
 		endingSong = true;
@@ -5497,4 +5506,11 @@ class PlayState extends MusicBeatState
 			}
 		}
 	}
+
+	/*function resetcamwin() {
+		Main.instance.testWindow.clear();
+		remove(spriteasdasdas);
+		camWin = camHUD;
+		dadGroup.cameras = [camGame];
+	}*/
 }

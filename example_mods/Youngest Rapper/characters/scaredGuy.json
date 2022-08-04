@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "guy idle"
+		},
+		{
+			"offsets": [
+				-239,
+				-19
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "guy down"
+		},
+		{
+			"offsets": [
+				360,
+				20
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "guy right"
+		},
+		{
+			"offsets": [
+				-250,
+				90
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "guy up"
+		},
+		{
+			"offsets": [
+				100,
+				27
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "guy left"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/scaredGuy",
+	"position": [
+		-70,
+		-10
+	],
+	"healthicon": "scaredGuy",
+	"flip_x": true,
+	"healthbar_colors": [
+		82,
+		32,
+		26
+	],
+	"camera_position": [
+		-60,
+		150
+	],
+	"sing_duration": 4,
+	"scale": 0.7
+}

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="jimmy.png"><SubTexture name="jimmy idle0000" x="0" y="0" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy idle0001" x="1924" y="0" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy idle0002" x="3848" y="0" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy idle0003" x="5772" y="0" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy idle0004" x="7696" y="0" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy idle0005" x="0" y="1084" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy idle0006" x="1924" y="1084" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy left0000" x="3848" y="1084" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy left0001" x="5772" y="1084" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy left0002" x="7696" y="1084" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy left0003" x="0" y="2168" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy left0004" x="1924" y="2168" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy down0000" x="3848" y="2168" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy down0001" x="5772" y="2168" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy down0002" x="7696" y="2168" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy down0003" x="0" y="3252" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy down0004" x="1924" y="3252" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy down0005" x="3848" y="3252" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy down0006" x="5772" y="3252" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy up0000" x="7696" y="3252" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy up0001" x="0" y="4336" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy up0002" x="1924" y="4336" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy up0003" x="3848" y="4336" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy up0004" x="5772" y="4336" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy right0000" x="7696" y="4336" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy right0001" x="0" y="5420" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy right0002" x="1924" y="5420" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy right0003" x="3848" y="5420" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy right0004" x="5772" y="5420" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+<SubTexture name="jimmy right0005" x="7696" y="5420" width="1924" height="1084" frameX="0" frameY="0" frameWidth="1924" frameHeight="1084" />
+</TextureAtlas>

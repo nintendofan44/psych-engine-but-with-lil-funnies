@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-25,
+				-15
+			],
+			"anim": "singLEFT",
+			"fps": 12,
+			"name": "lefp",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-8,
+				0
+			],
+			"anim": "idle",
+			"fps": 12,
+			"name": "idp",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-91,
+				-165
+			],
+			"anim": "singDOWN",
+			"fps": 12,
+			"name": "downp",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-202,
+				-12
+			],
+			"anim": "singRIGHT",
+			"fps": 12,
+			"name": "righp",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				97,
+				33
+			],
+			"anim": "singUP",
+			"fps": 12,
+			"name": "upp",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/zamnGuy",
+	"position": [
+		10,
+		300
+	],
+	"healthicon": "zamnDuo",
+	"flip_x": false,
+	"healthbar_colors": [
+		109,
+		49,
+		27
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 20,
+	"scale": 3
+}

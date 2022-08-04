@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="STOLEN.png"><SubTexture name="STOLEN Idle0000" x="0" y="0" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Idle0001" x="784" y="0" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Idle0002" x="1568" y="0" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Idle0003" x="2352" y="0" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Idle0004" x="3136" y="0" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Idle0005" x="0" y="784" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Idle0006" x="784" y="784" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Idle0007" x="1568" y="784" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Idle0008" x="2352" y="784" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Idle0009" x="3136" y="784" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Idle0010" x="0" y="1568" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Idle0011" x="784" y="1568" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Down0000" x="1568" y="1568" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Down0001" x="2352" y="1568" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Down0002" x="3136" y="1568" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Down0003" x="0" y="2352" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Left0000" x="784" y="2352" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Left0001" x="1568" y="2352" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Left0002" x="2352" y="2352" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Left0003" x="3136" y="2352" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Right0000" x="0" y="3136" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Right0001" x="784" y="3136" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Right0002" x="1568" y="3136" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Right0003" x="2352" y="3136" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Up0000" x="3136" y="3136" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Up0001" x="0" y="3920" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Up0002" x="784" y="3920" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+<SubTexture name="STOLEN Up0003" x="1568" y="3920" width="784" height="784" frameX="0" frameY="0" frameWidth="784" frameHeight="784" />
+</TextureAtlas>

@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				190,
+				-90
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"offsets": [
+				100,
+				-80
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				-56,
+				34
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		},
+		{
+			"offsets": [
+				-70,
+				-80
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/guymad",
+	"position": [
+		-650,
+		10
+	],
+	"healthicon": "gulp",
+	"flip_x": true,
+	"healthbar_colors": [
+		36,
+		22,
+		26
+	],
+	"camera_position": [
+		40,
+		50
+	],
+	"sing_duration": 4.00000000000001,
+	"scale": 0.8
+}

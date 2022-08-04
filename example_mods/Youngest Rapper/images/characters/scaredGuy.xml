@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="scaredGuy.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="guy down0000" x="5" y="5" width="767" height="653" frameX="0" frameY="-157" frameWidth="767" frameHeight="848"/>
+	<SubTexture name="guy down0001" x="777" y="5" width="737" height="677" frameX="-15" frameY="-138" frameWidth="767" frameHeight="848"/>
+	<SubTexture name="guy down0002" x="1519" y="5" width="683" height="747" frameX="-42" frameY="-81" frameWidth="767" frameHeight="848"/>
+	<SubTexture name="guy down0003" x="2207" y="5" width="599" height="832" frameX="-84" frameY="-14" frameWidth="767" frameHeight="848"/>
+	<SubTexture name="guy down0004" x="2811" y="5" width="572" height="848" frameX="-97" frameY="0" frameWidth="767" frameHeight="848"/>
+	<SubTexture name="guy idle0000" x="3388" y="5" width="1159" height="667" frameX="-31" frameY="-116" frameWidth="1202" frameHeight="796"/>
+	<SubTexture name="guy idle0001" x="4552" y="5" width="1202" height="656" frameX="0" frameY="-126" frameWidth="1202" frameHeight="796"/>
+	<SubTexture name="guy idle0002" x="5759" y="5" width="1180" height="672" frameX="-16" frameY="-112" frameWidth="1202" frameHeight="796"/>
+	<SubTexture name="guy idle0003" x="6944" y="5" width="1120" height="725" frameX="-59" frameY="-64" frameWidth="1202" frameHeight="796"/>
+	<SubTexture name="guy idle0004" x="5" y="858" width="974" height="779" frameX="-165" frameY="-15" frameWidth="1202" frameHeight="796"/>
+	<SubTexture name="guy idle0005" x="984" y="858" width="942" height="796" frameX="-189" frameY="0" frameWidth="1202" frameHeight="796"/>
+	<SubTexture name="guy idle0006" x="1931" y="858" width="950" height="789" frameX="-181" frameY="-5" frameWidth="1202" frameHeight="796"/>
+	<SubTexture name="guy left0000" x="2886" y="858" width="1334" height="750" frameX="0" frameY="-70" frameWidth="1334" frameHeight="838"/>
+	<SubTexture name="guy left0001" x="4225" y="858" width="1321" height="763" frameX="-10" frameY="-60" frameWidth="1334" frameHeight="838"/>
+	<SubTexture name="guy left0002" x="5551" y="858" width="1166" height="788" frameX="-126" frameY="-40" frameWidth="1334" frameHeight="838"/>
+	<SubTexture name="guy left0003" x="6722" y="858" width="965" height="828" frameX="-282" frameY="-8" frameWidth="1334" frameHeight="838"/>
+	<SubTexture name="guy left0004" x="5" y="1691" width="949" height="838" frameX="-294" frameY="0" frameWidth="1334" frameHeight="838"/>
+	<SubTexture name="guy right0000" x="959" y="1691" width="1961" height="766" frameX="0" frameY="-88" frameWidth="1961" frameHeight="873"/>
+	<SubTexture name="guy right0001" x="2925" y="1691" width="1916" height="782" frameX="-13" frameY="-75" frameWidth="1961" frameHeight="873"/>
+	<SubTexture name="guy right0002" x="4846" y="1691" width="1793" height="812" frameX="-53" frameY="-50" frameWidth="1961" frameHeight="873"/>
+	<SubTexture name="guy right0003" x="5" y="2534" width="1627" height="859" frameX="-111" frameY="-12" frameWidth="1961" frameHeight="873"/>
+	<SubTexture name="guy right0004" x="1637" y="2534" width="1592" height="873" frameX="-125" frameY="0" frameWidth="1961" frameHeight="873"/>
+	<SubTexture name="guy up0000" x="3234" y="2534" width="519" height="1037" frameX="-111" frameY="0" frameWidth="699" frameHeight="1037"/>
+	<SubTexture name="guy up0001" x="3758" y="2534" width="537" height="1026" frameX="-100" frameY="-7" frameWidth="699" frameHeight="1037"/>
+	<SubTexture name="guy up0002" x="4300" y="2534" width="581" height="956" frameX="-73" frameY="-53" frameWidth="699" frameHeight="1037"/>
+	<SubTexture name="guy up0003" x="4886" y="2534" width="684" height="862" frameX="-10" frameY="-115" frameWidth="699" frameHeight="1037"/>
+	<SubTexture name="guy up0004" x="5575" y="2534" width="699" height="851" frameX="0" frameY="-122" frameWidth="699" frameHeight="1037"/>
+</TextureAtlas>

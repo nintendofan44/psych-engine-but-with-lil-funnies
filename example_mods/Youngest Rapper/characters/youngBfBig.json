@@ -1,0 +1,100 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-6,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "BF idle dance",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				78,
+				-5
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "BF NOTE LEFT0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-2,
+				-74
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "BF NOTE DOWN0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				157,
+				43
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "BF NOTE UP0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-12,
+				-2
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "BF NOTE RIGHT0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-11,
+				3
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "BF HEY",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-10,
+				3
+			],
+			"anim": "scared",
+			"fps": 24,
+			"name": "BF idle shaking",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/YoungestBF",
+	"position": [
+		10,
+		330
+	],
+	"healthicon": "bf-young",
+	"flip_x": true,
+	"healthbar_colors": [
+		49,
+		176,
+		209
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1.5
+}

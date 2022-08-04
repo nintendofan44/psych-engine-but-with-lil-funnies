@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="cussKid.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="downFixed0000" x="5" y="5" width="1370" height="769"/>
+	<SubTexture name="downFixed0001" x="1380" y="5" width="1339" height="743" frameX="0" frameY="-26" frameWidth="1370" frameHeight="769"/>
+	<SubTexture name="downFixed0002" x="2724" y="5" width="1310" height="757" frameX="0" frameY="-12" frameWidth="1370" frameHeight="769"/>
+	<SubTexture name="downFixed0003" x="4039" y="5" width="1304" height="761" frameX="0" frameY="-8" frameWidth="1370" frameHeight="769"/>
+	<SubTexture name="idle0000" x="5348" y="5" width="992" height="700"/>
+	<SubTexture name="idle0001" x="6345" y="5" width="992" height="700"/>
+	<SubTexture name="idle0002" x="5" y="779" width="992" height="700"/>
+	<SubTexture name="idle0003" x="1002" y="779" width="992" height="700"/>
+	<SubTexture name="idle0004" x="1999" y="779" width="992" height="700"/>
+	<SubTexture name="idle0005" x="2996" y="779" width="992" height="700"/>
+	<SubTexture name="idle0006" x="3993" y="779" width="992" height="700"/>
+	<SubTexture name="leftFix0000" x="4990" y="779" width="1264" height="726"/>
+	<SubTexture name="leftFix0001" x="6259" y="779" width="1264" height="726"/>
+	<SubTexture name="leftFix0002" x="5" y="1510" width="1264" height="726"/>
+	<SubTexture name="leftFix0003" x="1274" y="1510" width="1264" height="726"/>
+	<SubTexture name="rightFix0000" x="2543" y="1510" width="1233" height="791" frameX="-17" frameY="0" frameWidth="1250" frameHeight="791"/>
+	<SubTexture name="rightFix0001" x="3781" y="1510" width="1238" height="791" frameX="-12" frameY="0" frameWidth="1250" frameHeight="791"/>
+	<SubTexture name="rightFix0002" x="5024" y="1510" width="1250" height="791"/>
+	<SubTexture name="rightFix0003" x="6279" y="1510" width="1239" height="791" frameX="-11" frameY="0" frameWidth="1250" frameHeight="791"/>
+	<SubTexture name="upFix0000" x="5" y="2306" width="1350" height="791"/>
+	<SubTexture name="upFix0001" x="1360" y="2306" width="1337" height="791" frameX="-13" frameY="0" frameWidth="1350" frameHeight="791"/>
+	<SubTexture name="upFix0002" x="2702" y="2306" width="1339" height="791" frameX="-11" frameY="0" frameWidth="1350" frameHeight="791"/>
+	<SubTexture name="upFix0003" x="4046" y="2306" width="1328" height="791" frameX="-22" frameY="0" frameWidth="1350" frameHeight="791"/>
+</TextureAtlas>

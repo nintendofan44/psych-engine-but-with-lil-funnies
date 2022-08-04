@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="seam.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="y0000" x="5" y="5" width="75" height="783" frameX="-1" frameY="-53" frameWidth="91" frameHeight="860"/>
+	<SubTexture name="y0001" x="85" y="5" width="74" height="834" frameX="-2" frameY="-26" frameWidth="91" frameHeight="860"/>
+	<SubTexture name="y0002" x="164" y="5" width="91" height="810" frameX="0" frameY="0" frameWidth="91" frameHeight="860"/>
+</TextureAtlas>
