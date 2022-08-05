@@ -1,26 +1,18 @@
-function onCreatePost()
-    setProperty('scoreTxt.y', 40)
-    setProperty('scoreTxt.size', 15)
-    setProperty('iconP1.y', -40)
-    setProperty('iconP2.y', -40)
-    setProperty('healthBar.y', 20)
-    setProperty('healthBarBG.y', 20)
-    setProperty('healthBar.scale.x', 0.8)
-    setProperty('healthBar.scale.y', 0.8)
-    setProperty('healthBarBG.scale.x', 0.8)
-    setProperty('healthBarBG.scale.y', 0.8)
-end
+local ttype = 'elasticinout';
+local dur = 2;
 
 function onSongStart()
-	noteTweenY("NoteMove1", 0, -(getPropertyFromGroup('playerStrums', 0, 'y') - 200) * 10, 2, elasticIn)
-	noteTweenY("NoteMove2", 1, -(getPropertyFromGroup('playerStrums', 1, 'y') - 200) * 10, 2, elasticIn)
-	noteTweenY("NoteMove3", 2, -(getPropertyFromGroup('playerStrums', 2, 'y') - 200) * 10, 2, elasticIn)
-	noteTweenY("NoteMove4", 3, -(getPropertyFromGroup('playerStrums', 3, 'y') - 200) * 10, 2, elasticIn)
-end
+	-- dad
+	noteTweenY("NoteMove0", 0, getPropertyFromGroup('opponentStrums', 0, 'y') - 200 * 10, dur, ttype)
+	noteTweenY("NoteMove1", 1, getPropertyFromGroup('opponentStrums', 1, 'y') - 200 * 10, dur, ttype)
+	noteTweenY("NoteMove2", 2, getPropertyFromGroup('opponentStrums', 2, 'y') - 200 * 10, dur, ttype)
+	noteTweenY("NoteMove3", 3, getPropertyFromGroup('opponentStrums', 3, 'y') - 200 * 10, dur, ttype)
 
-function onUpdatePost()
-    setProperty('iconP1.scale.x', 0.5)
-    setProperty('iconP1.scale.y', 0.5)
-    setProperty('iconP2.scale.x', 0.5)
-    setProperty('iconP2.scale.y', 0.5)
+	-- bf
+	if not middlescroll then
+		noteTweenX("asdad4", 4, getPropertyFromGroup('playerStrums', 0, 'x') - 32 * 10, dur, ttype)
+		noteTweenX("asdad5", 5, getPropertyFromGroup('playerStrums', 1, 'x') - 32 * 10, dur, ttype)
+		noteTweenX("asdad6", 6, getPropertyFromGroup('playerStrums', 2, 'x') - 32 * 10, dur, ttype)
+		noteTweenX("asdad7", 7, getPropertyFromGroup('playerStrums', 3, 'x') - 32 * 10, dur, ttype)
+	end
 end

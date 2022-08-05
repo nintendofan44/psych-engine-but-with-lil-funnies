@@ -594,12 +594,16 @@ class PlayState extends MusicBeatState
 				}
 				bgTransparent.scrollFactor.set();
 				add(bgTransparent);
-			
-				windowCoords = [327, 208];
+
 				windowSizeCoords = [706, 399];
 			
 				WindowUtils.getWindowsTransparent();
 				WindowUtils.setWindowSize(_window, windowSizeCoords[0], windowSizeCoords[1]);
+
+				var xx = Std.int((DesktopUtils.getDesktopWidth() - _window.width) / 2);
+				var yy = Std.int((DesktopUtils.getDesktopHeight() - _window.height) / 2);
+				windowCoords = [xx, yy];
+
 				WindowUtils.setWindowCoords(_window, windowCoords[0], windowCoords[1]);
 				WindowUtils.setWindowResizable(_window, false);
 				transparent_bg = true;
@@ -3023,7 +3027,7 @@ class PlayState extends MusicBeatState
 			line2.scale.set(1, FlxMath.lerp(0.5, line2.scale.y, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1)));
 		}
 
-		var iconOffset:Int = 26;
+		var iconOffset:Int = 24;
 		//iconP1.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01) - iconOffset);
 		//iconP2.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01)) - (iconP2.width - iconOffset);
 
@@ -5178,10 +5182,14 @@ class PlayState extends MusicBeatState
 	var curLightEvent:Int = -1;
 
 	public function resetWindow() {
-		windowCoords = [1280, 720];
-		windowSizeCoords = [100, 100];
+		windowSizeCoords = [1280, 720];
 		WindowUtils.getWindowsBackward();
 		WindowUtils.setWindowSize(_window, windowSizeCoords[0], windowSizeCoords[1]);
+
+		var xx = Std.int((DesktopUtils.getDesktopWidth() - _window.width) / 2);
+		var yy = Std.int((DesktopUtils.getDesktopHeight() - _window.height) / 2);
+		windowCoords = [xx, yy];
+
 		WindowUtils.setWindowCoords(_window, windowCoords[0], windowCoords[1]);
 		WindowUtils.setWindowResizable(_window, true);
 		if (_window.title != _gameName) WindowUtils.setWindowTitle(_window, _gameName);	
