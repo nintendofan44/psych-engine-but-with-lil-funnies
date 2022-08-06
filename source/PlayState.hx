@@ -1,5 +1,6 @@
 package;
 
+import helpers.OldBezier;
 import shaders.BH.BHShader;
 import shaders.BH;
 import shaders.Ocean;
@@ -1349,7 +1350,6 @@ class PlayState extends MusicBeatState
 		grpNoteSplashes.cameras = [camNOTEHUD];
 		notes.cameras = [camNOTES];
 		grpNoteSplashes.cameras = [camHUD];
-		notes.cameras = [camHUD];
 		healthBar.cameras = [camHUD];
 		healthBarBG.cameras = [camHUD];
 		iconP1.cameras = [camHUD];
@@ -3027,18 +3027,20 @@ class PlayState extends MusicBeatState
 			line2.scale.set(1, FlxMath.lerp(0.5, line2.scale.y, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1)));
 		}
 
-		var iconOffset:Int = 24;
-		//iconP1.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01) - iconOffset);
-		//iconP2.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01)) - (iconP2.width - iconOffset);
+		var offdiv = 500;
+		var iconOffset2:Float = 10 * (ClientPrefs.middleScroll ? iconP1.width / offdiv : iconP1.width / offdiv);
+		var iconOffset1:Float = 10 * (ClientPrefs.middleScroll ? iconP2.width / offdiv : iconP2.width / offdiv);
+		//iconP1.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01) - iconOffset1);
+		//iconP2.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01)) - (iconP2.width - iconOffset2);
 
 		// that should do it
 		var gah = 0.01;
 		if (ClientPrefs.middleScroll) {
-			iconP1.y = healthBar.y + (healthBar.height * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * gah)) + (iconP1.height - 150) / 2 - iconOffset;
-			iconP2.y = healthBar.y + (healthBar.height * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * gah)) - (iconP2.height) / 2 - iconOffset * 2;
+			iconP1.y = healthBar.y + (healthBar.height * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * gah)) + iconP1.height / 2 - iconOffset1;
+			iconP2.y = healthBar.y + (healthBar.height * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * gah)) - (iconP2.height * 2) / 2 - iconOffset2 * 2;
 		} else {
-			iconP1.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * gah)) + (iconP1.width - 150) / 2 - iconOffset;
-			iconP2.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * gah)) - (iconP2.width) / 2 - iconOffset * 2;
+			iconP1.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * gah)) + iconP1.width / 2 - iconOffset1;
+			iconP2.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * gah)) - (iconP2.width * 2) / 2 - iconOffset2 * 2;
 		}
 
 		if (health > 2)
@@ -3127,7 +3129,6 @@ class PlayState extends MusicBeatState
 			camSus.angle = FlxMath.lerp(0, camSus.angle, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
 			camNOTES.angle = FlxMath.lerp(0, camNOTES.angle, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
 			camNOTEHUD.angle = FlxMath.lerp(0, camNOTEHUD.angle, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
-
 		}
 
 		FlxG.watch.addQuick("beatShit", curBeat);
@@ -4861,7 +4862,7 @@ class PlayState extends MusicBeatState
 			camNOTEHUD.angle = -3.5;
 		}
 		
-		if (camZooming && FlxG.camera.zoom <= 1.4 && ClientPrefs.camZooms && curBeat % 2 == 0)
+		if (camZooming && FlxG.camera.zoom <= 3 && ClientPrefs.camZooms && curBeat % 2 == 0)
 		{
 			FlxG.camera.zoom += 0.02 * camZoomingMult;
 			camHUD.zoom += 0.05 * camZoomingMult;
@@ -5199,6 +5200,7 @@ class PlayState extends MusicBeatState
 	function stupid() { // function for organization, so i dont get lost
 		var twnDuration:Float = 3.0;
 		var twnStartDelay:Float = 0.7;
+		var bezier = OldBezier.oldBezier(12, .11, 1.84, .8, -1.15);
 
 		if (ClientPrefs.downScroll) {
 			t1 = FlxTween.tween(this, {
