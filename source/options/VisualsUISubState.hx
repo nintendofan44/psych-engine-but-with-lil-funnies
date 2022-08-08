@@ -70,11 +70,11 @@ class VisualsUISubState extends BaseOptionsMenu
 			true);
 		addOption(option);
 
-		var option:Option = new Option('Score Text Zoom on Hit',
-			"If unchecked, disables the Score text zooming\neverytime you hit a note.",
-			'scoreZoom',
+		var option:Option = new Option('Camera Rotation',
+			"rotate on beat",
+			'angleBop',
 			'bool',
-			true);
+			false);
 		addOption(option);
 
 		var option:Option = new Option('Health Bar Transparency',

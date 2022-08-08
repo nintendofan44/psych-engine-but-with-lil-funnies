@@ -301,8 +301,7 @@ class PlayState extends MusicBeatState
 	var finished_scale:Bool = false;
 	var immovableWindow:Bool = false;
 	public var transparent_bg:Bool = false;
-	public var windowCoords:Array<Int> = [0, 0];
-	public var windowSizeCoords:Array<Int> = [0, 0];
+	public var tweeningwindow:Bool = true;
 
 	// looks
 	var comboTxt:FlxText;
@@ -379,6 +378,14 @@ class PlayState extends MusicBeatState
 
 	/*var camWin:FlxCamera = null;
 	var spriteasdasdas:FlxSprite;*/
+
+	/*var offadd1:Int = -96;
+	var offadd2:Int = 17;*/
+	var offset1CW:Float = 0;
+	var offset1CH:Float = 0;
+	var offset2CW:Float = 0;
+	var offset2CH:Float = 0;
+	var overlap:Bool = true;
 
 	override public function create()
 	{
@@ -464,14 +471,20 @@ class PlayState extends MusicBeatState
 
 		FlxG.cameras.reset(camGame);
 		FlxG.cameras.setDefaultDrawTarget(camGame, true);
-		FlxG.cameras.add(camHUD);
-		FlxG.cameras.setDefaultDrawTarget(camHUD, false);
+		if (ClientPrefs.sustainEffect) {
+			FlxG.cameras.add(camSus);
+			FlxG.cameras.setDefaultDrawTarget(camSus, false);
+		}
 		FlxG.cameras.add(camNOTEHUD);
 		FlxG.cameras.setDefaultDrawTarget(camNOTEHUD, false);
-		FlxG.cameras.add(camSus);
-		FlxG.cameras.setDefaultDrawTarget(camSus, false);
+		if (!ClientPrefs.sustainEffect) {
+			FlxG.cameras.add(camSus);
+			FlxG.cameras.setDefaultDrawTarget(camSus, false);
+		}
 		FlxG.cameras.add(camNOTES);
 		FlxG.cameras.setDefaultDrawTarget(camNOTES, false);
+		FlxG.cameras.add(camHUD);
+		FlxG.cameras.setDefaultDrawTarget(camHUD, false);
 		FlxG.cameras.add(camOther);
 		FlxG.cameras.setDefaultDrawTarget(camOther, false);
 		grpNoteSplashes = new FlxTypedGroup<NoteSplash>();
@@ -595,17 +608,24 @@ class PlayState extends MusicBeatState
 				}
 				bgTransparent.scrollFactor.set();
 				add(bgTransparent);
-
-				windowSizeCoords = [706, 399];
 			
 				WindowUtils.getWindowsTransparent();
-				WindowUtils.setWindowSize(_window, windowSizeCoords[0], windowSizeCoords[1]);
+				FlxTween.tween(_window, {width: 706, height: 399}, 1, {
+					ease: FlxEase.expoInOut,
+					onComplete: function(twn:FlxTween)
+					{
+						var xx = Std.int((DesktopUtils.getDesktopWidth() - _window.width) / 2);
+						var yy = Std.int((DesktopUtils.getDesktopHeight() - _window.height) / 2);
 
-				var xx = Std.int((DesktopUtils.getDesktopWidth() - _window.width) / 2);
-				var yy = Std.int((DesktopUtils.getDesktopHeight() - _window.height) / 2);
-				windowCoords = [xx, yy];
-
-				WindowUtils.setWindowCoords(_window, windowCoords[0], windowCoords[1]);
+						FlxTween.tween(_window, {x: xx, y: yy}, 1, {
+							ease: FlxEase.expoInOut,
+							onComplete: function(twn:FlxTween)
+							{
+								tweeningwindow = false;
+							}
+						});
+					}
+				});
 				WindowUtils.setWindowResizable(_window, false);
 				transparent_bg = true;
 				immovableWindow = transparent_bg;
@@ -1139,7 +1159,7 @@ class PlayState extends MusicBeatState
 		//add(strumLine);
 
 		// le wiggle
-		if (ClientPrefs.galaxySustain) {
+		if (ClientPrefs.sustainEffect) {
 			wiggleShit.waveAmplitude = 0.07;
 			wiggleShit.effectType = WiggleEffect.WiggleEffectType.DREAMY;
 			wiggleShit.waveFrequency = 0;
@@ -2964,14 +2984,20 @@ class PlayState extends MusicBeatState
 
 		super.update(elapsed);
 
-		if (ClientPrefs.galaxySustain) {
+		if (ClientPrefs.sustainEffect) {
 			wiggleShit.waveAmplitude = FlxMath.lerp(wiggleShit.waveAmplitude, 0, 0.010 / (openfl.Lib.current.stage.frameRate / 60));
 			wiggleShit.waveFrequency = FlxMath.lerp(wiggleShit.waveFrequency, 0, 0.010 / (openfl.Lib.current.stage.frameRate / 60));
 			wiggleShit.update(elapsed);
 		}
 
-		if (immovableWindow)
-			if (_window != null) WindowUtils.setWindowCoords(_window, windowCoords[0], windowCoords[1]);
+		if (immovableWindow && !tweeningwindow) {
+			if (_window != null) {
+				var xx = Std.int((DesktopUtils.getDesktopWidth() - _window.width) / 2);
+				var yy = Std.int((DesktopUtils.getDesktopHeight() - _window.height) / 2);
+				WindowUtils.setWindowCoords(_window, xx, yy);
+			}
+		}
+
 
 		if(botplayTxt.visible) {
 			botplaySine += 180 * elapsed;
@@ -3015,32 +3041,117 @@ class PlayState extends MusicBeatState
 		// FlxG.watch.addQuick('VOL', vocals.amplitudeLeft);
 		// FlxG.watch.addQuick('VOLRight', vocals.amplitudeRight);
 
+		var xx1 = FlxMath.lerp(1, iconP1.scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
+		var yy1 = FlxMath.lerp(1, iconP1.scale.y, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
 
+		var xx2 = FlxMath.lerp(1, iconP2.scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
+		var yy2 = FlxMath.lerp(1, iconP2.scale.y, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
 
-		iconP1.scale.set(FlxMath.lerp(1, iconP1.scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1)),
-			FlxMath.lerp(1, iconP1.scale.y, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1)));
-		iconP2.scale.set(FlxMath.lerp(1, iconP2.scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1)),
-			FlxMath.lerp(1, iconP2.scale.y, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1)));
+		iconP1.scale.set(xx1,yy1);
+		iconP2.scale.set(xx2,yy2);
 
 		if (finished_scale) {
 			line.scale.set(1, FlxMath.lerp(0.5, line.scale.y, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1)));
 			line2.scale.set(1, FlxMath.lerp(0.5, line2.scale.y, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1)));
 		}
 
-		var offdiv = 500;
-		var iconOffset2:Float = 10 * (ClientPrefs.middleScroll ? iconP1.width / offdiv : iconP1.width / offdiv);
-		var iconOffset1:Float = 10 * (ClientPrefs.middleScroll ? iconP2.width / offdiv : iconP2.width / offdiv);
+		var offdiv = 1000;
+		var offadd1:Int = -96;
+		var offadd2:Int = 17;
+		/*if (FlxG.keys.pressed.I)
+		{
+			offadd1 -= 1;
+			addTextToDebug('offadd1: ' + offadd1, FlxColor.GREEN);
+		}
+		if (FlxG.keys.pressed.O)
+		{
+			offadd1 += 1;
+			addTextToDebug('offadd1: ' + offadd1, FlxColor.GREEN);
+		}
+		if (FlxG.keys.pressed.Y)
+		{
+			offadd2 -= 1;
+			addTextToDebug('offadd2: ' + offadd2, FlxColor.GREEN);
+		}
+		if (FlxG.keys.pressed.U)
+		{
+			offadd2 += 1;
+			addTextToDebug('offadd2: ' + offadd2, FlxColor.GREEN);
+		}*/
+
+		/*if (FlxG.keys.pressed.I)
+		{
+			if (ClientPrefs.middleScroll)
+			{
+				offset1CH -= .5;
+				addTextToDebug('offset1CH: ' + offset1CH, FlxColor.GREEN);
+			}
+			else
+			{
+				offset1CW -= .5;
+				addTextToDebug('offset1CW: ' + offset1CW, FlxColor.GREEN);
+			}
+		}
+		if (FlxG.keys.pressed.O)
+		{
+			if (ClientPrefs.middleScroll)
+			{
+				offset1CH += .5;
+				addTextToDebug('offset1CH: ' + offset1CH, FlxColor.GREEN);
+			}
+			else
+			{
+				offset1CW += .5;
+				addTextToDebug('offset1CW: ' + offset1CW, FlxColor.GREEN);
+			}
+		}*/
+
+		var iconOffset1:Float = -(10 * (ClientPrefs.middleScroll ? iconP1.height / offdiv : iconP1.width / offdiv)) - offadd1;
+		var iconOffset2:Float = -(10 * (ClientPrefs.middleScroll ? iconP2.height / offdiv : iconP2.width / offdiv)) + offadd2;
 		//iconP1.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01) - iconOffset1);
 		//iconP2.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01)) - (iconP2.width - iconOffset2);
 
 		// that should do it
 		var gah = 0.01;
-		if (ClientPrefs.middleScroll) {
-			iconP1.y = healthBar.y + (healthBar.height * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * gah)) + iconP1.height / 2 - iconOffset1;
-			iconP2.y = healthBar.y + (healthBar.height * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * gah)) - (iconP2.height * 2) / 2 - iconOffset2 * 2;
+
+		if (iconP2.overlaps(iconP1) && overlap)
+		{
+			if (ClientPrefs.middleScroll)
+			{
+				offset1CH += .5;
+				offset2CH += .5;
+			}
+			else
+			{
+				offset1CW += .5;
+				offset2CW += .5;
+			}
 		} else {
-			iconP1.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * gah)) + iconP1.width / 2 - iconOffset1;
-			iconP2.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * gah)) - (iconP2.width * 2) / 2 - iconOffset2 * 2;
+			overlap = false;
+		}
+
+		if (!overlap)
+		{
+			if (ClientPrefs.middleScroll)
+			{
+				if (offset1CH > 28.5) {
+					offset1CH -= .5;
+				}
+			}
+			else
+			{
+				if (offset1CW > 28.5) {
+					offset1CW -= .5;
+				}
+			}
+		}
+
+		if (ClientPrefs.middleScroll) {
+			iconP1.y = healthBar.y + (healthBar.height * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * gah)) + (iconP1.height + offset1CH) / 2 - iconOffset1;
+			iconP2.y = healthBar.y + (healthBar.height * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * gah)) - (iconP2.height + offset2CH) / 2 - iconOffset2 * 2;
+		} else {
+			iconP1.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * gah)) + (iconP1.width + offset1CW) / 2 - iconOffset1;
+			iconP2.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * gah)) - (iconP2.width + offset2CW) / 2 - iconOffset2 * 2;
 		}
 
 		if (health > 2)
@@ -3124,11 +3235,13 @@ class PlayState extends MusicBeatState
 			camNOTES.zoom = FlxMath.lerp(1, camNOTES.zoom, CoolUtil.boundTo(1 - (elapsed * 3.125 * camZoomingDecay), 0, 1));
 			camNOTEHUD.zoom = FlxMath.lerp(1, camNOTEHUD.zoom, CoolUtil.boundTo(1 - (elapsed * 3.125 * camZoomingDecay), 0, 1));
 
-			FlxG.camera.angle = FlxMath.lerp(0, FlxG.camera.angle, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
-			camHUD.angle = FlxMath.lerp(0, camHUD.angle, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
-			camSus.angle = FlxMath.lerp(0, camSus.angle, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
-			camNOTES.angle = FlxMath.lerp(0, camNOTES.angle, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
-			camNOTEHUD.angle = FlxMath.lerp(0, camNOTEHUD.angle, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
+			if (ClientPrefs.angleBop) {
+				FlxG.camera.angle = FlxMath.lerp(0, FlxG.camera.angle, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
+				camHUD.angle = FlxMath.lerp(0, camHUD.angle, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
+				camSus.angle = FlxMath.lerp(0, camSus.angle, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
+				camNOTES.angle = FlxMath.lerp(0, camNOTES.angle, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
+				camNOTEHUD.angle = FlxMath.lerp(0, camNOTEHUD.angle, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
+			}
 		}
 
 		FlxG.watch.addQuick("beatShit", curBeat);
@@ -4853,13 +4966,15 @@ class PlayState extends MusicBeatState
 			moveCameraSection(Std.int(curStep / 16));
 		}
 		
-		if (camZooming && FlxG.camera.angle <= 5 && ClientPrefs.camZooms && curBeat % 1 == 0)
-		{
-			FlxG.camera.angle = -3.5;
-			camHUD.angle = -3.5;
-			camSus.angle = -3.5;
-			camNOTES.angle = -3.5;
-			camNOTEHUD.angle = -3.5;
+		if (ClientPrefs.angleBop) {
+			if (camZooming && FlxG.camera.angle <= 5 && ClientPrefs.camZooms && curBeat % 1 == 0)
+			{
+				FlxG.camera.angle = -3.5;
+				camHUD.angle = -3.5;
+				camSus.angle = -3.5;
+				camNOTES.angle = -3.5;
+				camNOTEHUD.angle = -3.5;
+			}
 		}
 		
 		if (camZooming && FlxG.camera.zoom <= 3 && ClientPrefs.camZooms && curBeat % 2 == 0)
@@ -4870,12 +4985,14 @@ class PlayState extends MusicBeatState
 			camNOTES.zoom += 0.05 * camZoomingMult;
 			camNOTEHUD.zoom += 0.05 * camZoomingMult;
 
-			if (FlxG.camera.angle <= 5) {
-				FlxG.camera.angle = 3.5;
-				camHUD.angle = 3.5;
-				camSus.angle = 3.5;
-				camNOTES.angle = 3.5;
-				camNOTEHUD.angle = 3.5;
+			if (ClientPrefs.angleBop) {
+				if (FlxG.camera.angle <= 5) {
+					FlxG.camera.angle = 3.5;
+					camHUD.angle = 3.5;
+					camSus.angle = 3.5;
+					camNOTES.angle = 3.5;
+					camNOTEHUD.angle = 3.5;
+				}			
 			}
 		}
 
@@ -4907,7 +5024,7 @@ class PlayState extends MusicBeatState
 				// do nada
 		}
 
-		if (!ClientPrefs.galaxySustain) {
+		if (ClientPrefs.sustainEffect) {
 			wiggleShit.waveAmplitude = 0.010;
 			wiggleShit.waveFrequency = 10;
 		}
@@ -4915,9 +5032,6 @@ class PlayState extends MusicBeatState
 		var val:Float = 1.2;
 		iconP1.scale.set(val, val);
 		iconP2.scale.set(val, val);
-
-		iconP1.updateHitbox();
-		iconP2.updateHitbox();
 
 		if (finished_scale) {
 			line.scale.set(1, 0.6);
@@ -5026,6 +5140,14 @@ class PlayState extends MusicBeatState
 		#if LUA_ALLOWED
 		for (i in 0...luaArray.length) {
 			luaArray[i].set(variable, arg);
+		}
+		#end
+	}
+
+	public function getOnLuas(variable:String, arg:Dynamic) {
+		#if LUA_ALLOWED
+		for (i in 0...luaArray.length) {
+			luaArray[i].get(variable, arg);
 		}
 		#end
 	}
@@ -5183,15 +5305,23 @@ class PlayState extends MusicBeatState
 	var curLightEvent:Int = -1;
 
 	public function resetWindow() {
-		windowSizeCoords = [1280, 720];
 		WindowUtils.getWindowsBackward();
-		WindowUtils.setWindowSize(_window, windowSizeCoords[0], windowSizeCoords[1]);
+		FlxTween.tween(_window, {width: gameWidth, height: gameHeight}, 1, {
+			ease: FlxEase.expoInOut,
+			onComplete: function(twn:FlxTween)
+			{
+				var xx = Std.int((DesktopUtils.getDesktopWidth() - _window.width) / 2);
+				var yy = Std.int((DesktopUtils.getDesktopHeight() - _window.height) / 2);
 
-		var xx = Std.int((DesktopUtils.getDesktopWidth() - _window.width) / 2);
-		var yy = Std.int((DesktopUtils.getDesktopHeight() - _window.height) / 2);
-		windowCoords = [xx, yy];
-
-		WindowUtils.setWindowCoords(_window, windowCoords[0], windowCoords[1]);
+				FlxTween.tween(_window, {x: xx, y: yy}, 1, {
+					ease: FlxEase.expoInOut,
+					onComplete: function(twn:FlxTween)
+					{
+						tweeningwindow = false;
+					}
+				});
+			}
+		});
 		WindowUtils.setWindowResizable(_window, true);
 		if (_window.title != _gameName) WindowUtils.setWindowTitle(_window, _gameName);	
 		if (immovableWindow) immovableWindow = false;

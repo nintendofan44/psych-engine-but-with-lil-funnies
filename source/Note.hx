@@ -217,8 +217,8 @@ class Note extends FlxSprite
 
 		if (isSustainNote && prevNote != null)
 		{
-			/*alpha = (ClientPrefs.galaxySustain ? 1 : 0.6);
-			multAlpha = (ClientPrefs.galaxySustain ? 1 : 0.6);*/
+			/*alpha = (ClientPrefs.sustainEffect ? 1 : 0.6);
+			multAlpha = (ClientPrefs.sustainEffect ? 1 : 0.6);*/
 			alpha = 0.6;
 			multAlpha = 0.6;
 			hitsoundDisabled = true;

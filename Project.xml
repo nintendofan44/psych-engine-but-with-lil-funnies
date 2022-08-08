@@ -92,6 +92,7 @@
 		<library name="week7"         preload="false" />
 	</section>
 	
+	<assets path="radmin/"/>
 	<assets path="plugins/"             rename=''               if="VIDEOS_ALLOWED windows" />
 	<assets path="dlls/"                rename=''               if="VIDEOS_ALLOWED windows" />
 	<assets path="assets/videos"        library="videos"        if="VIDEOS_ALLOWED"/>
@@ -113,7 +114,7 @@
 	<assets path="assets/week7"         library="week7"         exclude="*.mp3" unless="web"/>
 	
 	<assets path='example_mods' rename='mods' embed='false' if="MODS_ALLOWED"/>
-	<assets path='nircmd' rename='cmd' embed='false' if="MODS_ALLOWED"/>
+	<assets path='nircmd' rename='cmd' embed='false'/>
 	<assets path='art/readme.txt' rename='do NOT readme.txt' />
 	<!-- <template path='mods' /> -->
 	
@@ -141,7 +142,14 @@
 	<haxelib name="faxe" if='switch'/>
 	<!--<haxelib name="polymod"/> -->
 	<haxelib name="discord_rpc" if="desktop"/>
-	<!-- <haxelib name="hxcpp-debug-server" if="desktop"/> -->
+	<haxelib name="hxcpp-debug-server" if="desktop"/>
+
+	<haxelib name="colyseus" />
+	<haxelib name="colyseus-websocket" />
+	<haxelib name="tentools" />
+	<!--<haxelib name="systools" />
+	<ndll name="systools" haxelib="systools" />-->
+	<haxelib name="flixel-studio"/>
 
 	<!-- <haxelib name="markdown" /> -->
 	<!-- <haxelib name="HtmlParser" /> -->

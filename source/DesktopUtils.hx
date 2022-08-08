@@ -28,7 +28,7 @@ class DesktopUtils
     ')
 	static public function getDesktopWidth(res:Int = 0)
 	{
-        trace("screen width: " + res);
+        //trace("screen width: " + res);
 		return res;
 	}
 
@@ -54,7 +54,7 @@ class DesktopUtils
     ')
 	static public function getDesktopHeight(res:Int = 0)
 	{
-        trace("screen height: " + res);
+        //trace("screen height: " + res);
 		return res;
 	}
 

@@ -1,5 +1,7 @@
 package;
 
+import GameJolt.GJToastManager;
+import lime.app.Application;
 import sys.io.Process;
 import sys.io.File;
 import haxe.io.Path;
@@ -29,6 +31,7 @@ class Main extends Sprite
 	var startFullscreen:Bool = false; // Whether to start the game in fullscreen on desktop targets
 	public static var fpsVar:FPS;
 	public static var instance:Main;
+	public static var gjToastManager:GJToastManager;
 
 	// You can pretty much ignore everything from here on - your code should go in your states.
 
@@ -152,6 +155,20 @@ class Main extends Sprite
 	}
 
 	function onCrash(e:UncaughtErrorEvent):Void {
+		var quotes:Array<String> = [
+			"This time it was not my fault!",
+			"Skill issue",
+			"Hah, get better at coding.",
+			"Blueballed.",
+			"You should go and take a break bud.",
+			"Let me explain!",
+			"Go and report the bug NOW.",
+			"boy what the hell",
+			"Hey shitass, wanna see me crash the game?",
+			"The game ran so fast that it crashed.",
+			"You made null object reference beatable!"
+		];
+
 		var errMsg:String = "";
 		var path:String;
 		var callStack:Array<StackItem> = CallStack.exceptionStack(true);
@@ -180,6 +197,8 @@ class Main extends Sprite
 
 		Sys.println(errMsg);
 		Sys.println("Crash dump saved in " + Path.normalize(path));
+		Sys.println(" ");
+		Sys.println(quotes[FlxG.random.int(0, quotes.length)]);
 
 		lime.app.Application.current.window.alert(errMsg, "Error!");
 

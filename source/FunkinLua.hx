@@ -200,8 +200,8 @@ class FunkinLua {
 		set('ghostTapping', ClientPrefs.ghostTapping);
 		set('hideHud', ClientPrefs.hideHud);
 		set('timeBarType', ClientPrefs.timeBarType);
-		set('scoreZoom', ClientPrefs.scoreZoom);
 		set('cameraZoomOnBeat', ClientPrefs.camZooms);
+		set('angleBop', ClientPrefs.angleBop);
 		set('flashingLights', ClientPrefs.flashing);
 		set('noteOffset', ClientPrefs.noteOffset);
 		set('healthBarAlpha', ClientPrefs.healthBarAlpha);
@@ -2837,12 +2837,19 @@ class FunkinLua {
 
 	public function set(variable:String, data:Dynamic) {
 		#if LUA_ALLOWED
-		if(lua == null) {
-			return;
-		}
+		if(lua == null) return;
 
 		Convert.toLua(lua, data);
 		Lua.setglobal(lua, variable);
+		#end
+	}
+
+	public function get(variable:String, data:Dynamic) {
+		#if LUA_ALLOWED
+		if(lua == null) return;
+
+		Convert.toLua(lua, data);
+		Lua.getglobal(lua, variable);
 		#end
 	}
 

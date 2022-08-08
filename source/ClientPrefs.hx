@@ -15,7 +15,10 @@ class ClientPrefs {
 	public static var globalAntialiasing:Bool = true;
 	public static var noteSplashes:Bool = true;
 	public static var lowQuality:Bool = false;
-	public static var galaxySustain:Bool = false;
+
+	public static var sustainEffect:Bool = false;
+	public static var angleBop:Bool = false;
+
 	public static var shaders:Bool = true;
 	public static var framerate:Int = 60;
 	public static var cursing:Bool = true;
@@ -26,7 +29,6 @@ class ClientPrefs {
 	public static var arrowHSV:Array<Array<Int>> = [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]];
 	public static var ghostTapping:Bool = true;
 	public static var timeBarType:String = 'Time Left';
-	public static var scoreZoom:Bool = true;
 	public static var noReset:Bool = false;
 	public static var healthBarAlpha:Float = 1;
 	public static var controllerMode:Bool = false;
@@ -104,7 +106,10 @@ class ClientPrefs {
 		FlxG.save.data.noteSplashes = noteSplashes;
 		FlxG.save.data.lowQuality = lowQuality;
 		FlxG.save.data.shaders = shaders;
-		FlxG.save.data.galaxySustain = galaxySustain;
+
+		FlxG.save.data.sustainEffect = sustainEffect;
+		FlxG.save.data.angleBop = angleBop;
+
 		FlxG.save.data.framerate = framerate;
 		//FlxG.save.data.cursing = cursing;
 		//FlxG.save.data.violence = violence;
@@ -114,7 +119,6 @@ class ClientPrefs {
 		FlxG.save.data.arrowHSV = arrowHSV;
 		FlxG.save.data.ghostTapping = ghostTapping;
 		FlxG.save.data.timeBarType = timeBarType;
-		FlxG.save.data.scoreZoom = scoreZoom;
 		FlxG.save.data.noReset = noReset;
 		FlxG.save.data.healthBarAlpha = healthBarAlpha;
 		FlxG.save.data.comboOffset = comboOffset;
@@ -171,9 +175,14 @@ class ClientPrefs {
 		if(FlxG.save.data.shaders != null) {
 			shaders = FlxG.save.data.shaders;
 		}
-		if(FlxG.save.data.galaxySustain != null) {
-			galaxySustain = FlxG.save.data.galaxySustain;
+
+		if(FlxG.save.data.sustainEffect != null) {
+			sustainEffect = FlxG.save.data.sustainEffect;
 		}
+		if(FlxG.save.data.angleBop != null) {
+			angleBop = FlxG.save.data.angleBop;
+		}
+
 		if(FlxG.save.data.framerate != null) {
 			framerate = FlxG.save.data.framerate;
 			if(framerate > FlxG.drawFramerate) {
@@ -207,9 +216,6 @@ class ClientPrefs {
 		}
 		if(FlxG.save.data.timeBarType != null) {
 			timeBarType = FlxG.save.data.timeBarType;
-		}
-		if(FlxG.save.data.scoreZoom != null) {
-			scoreZoom = FlxG.save.data.scoreZoom;
 		}
 		if(FlxG.save.data.noReset != null) {
 			noReset = FlxG.save.data.noReset;
