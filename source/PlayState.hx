@@ -1364,8 +1364,8 @@ class PlayState extends MusicBeatState
 
 		stupid();
 
-		line.cameras = [camHUD];
-		line2.cameras = [camHUD];
+		line.cameras = [camNOTEHUD];
+		line2.cameras = [camNOTEHUD];
 		strumLineNotes.cameras = [camNOTEHUD];
 		grpNoteSplashes.cameras = [camNOTEHUD];
 		notes.cameras = [camNOTES];
@@ -3079,7 +3079,7 @@ class PlayState extends MusicBeatState
 			addTextToDebug('offadd2: ' + offadd2, FlxColor.GREEN);
 		}*/
 
-		/*if (FlxG.keys.pressed.I)
+		if (FlxG.keys.pressed.I)
 		{
 			if (ClientPrefs.middleScroll)
 			{
@@ -3104,7 +3104,7 @@ class PlayState extends MusicBeatState
 				offset1CW += .5;
 				addTextToDebug('offset1CW: ' + offset1CW, FlxColor.GREEN);
 			}
-		}*/
+		}
 
 		var iconOffset1:Float = -(10 * (ClientPrefs.middleScroll ? iconP1.height / offdiv : iconP1.width / offdiv)) - offadd1;
 		var iconOffset2:Float = -(10 * (ClientPrefs.middleScroll ? iconP2.height / offdiv : iconP2.width / offdiv)) + offadd2;
@@ -3114,7 +3114,7 @@ class PlayState extends MusicBeatState
 		// that should do it
 		var gah = 0.01;
 
-		if (iconP2.overlaps(iconP1) && overlap)
+		if ((ClientPrefs.middleScroll ? iconP1 : iconP2).overlaps(ClientPrefs.middleScroll ? iconP2 : iconP1) && overlap)
 		{
 			if (ClientPrefs.middleScroll)
 			{
@@ -3134,7 +3134,7 @@ class PlayState extends MusicBeatState
 		{
 			if (ClientPrefs.middleScroll)
 			{
-				if (offset1CH > 28.5) {
+				if (offset1CH > -16) {
 					offset1CH -= .5;
 				}
 			}
