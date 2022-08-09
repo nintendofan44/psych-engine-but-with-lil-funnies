@@ -3034,9 +3034,7 @@ class PlayState extends MusicBeatState
 		}
 
 		if (FlxG.keys.anyJustPressed(debugKeysChart) && !endingSong && !inCutscene)
-		{
 			openChartEditor();
-		}
 
 		// FlxG.watch.addQuick('VOL', vocals.amplitudeLeft);
 		// FlxG.watch.addQuick('VOLRight', vocals.amplitudeRight);
@@ -3079,7 +3077,7 @@ class PlayState extends MusicBeatState
 			addTextToDebug('offadd2: ' + offadd2, FlxColor.GREEN);
 		}*/
 
-		if (FlxG.keys.pressed.I)
+		/*if (FlxG.keys.pressed.I)
 		{
 			if (ClientPrefs.middleScroll)
 			{
@@ -3104,7 +3102,7 @@ class PlayState extends MusicBeatState
 				offset1CW += .5;
 				addTextToDebug('offset1CW: ' + offset1CW, FlxColor.GREEN);
 			}
-		}
+		}*/
 
 		var iconOffset1:Float = -(10 * (ClientPrefs.middleScroll ? iconP1.height / offdiv : iconP1.width / offdiv)) - offadd1;
 		var iconOffset2:Float = -(10 * (ClientPrefs.middleScroll ? iconP2.height / offdiv : iconP2.width / offdiv)) + offadd2;
@@ -3134,15 +3132,13 @@ class PlayState extends MusicBeatState
 		{
 			if (ClientPrefs.middleScroll)
 			{
-				if (offset1CH > -16) {
+				if (offset1CH > -16)
 					offset1CH -= .5;
-				}
 			}
 			else
 			{
-				if (offset1CW > 28.5) {
+				if (offset1CW > 28.5)
 					offset1CW -= .5;
-				}
 			}
 		}
 
