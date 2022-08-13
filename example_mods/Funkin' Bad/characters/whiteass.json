@@ -1,0 +1,11 @@
+{
+	"idle_anim": "Idle",
+	"image": "MrWhite_Ass",
+	"position": [
+		70,
+		-70
+	],
+	"flipX": false,
+	"scale": 1.45,
+	"confirm_anim": "Idle"
+}

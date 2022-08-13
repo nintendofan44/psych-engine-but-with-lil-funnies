@@ -1,0 +1,32 @@
+{
+	"storyName": "Walter White.",
+	"difficulties": "Normal",
+	"hideFreeplay": false,
+	"weekBackground": "desert",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"whiteass",
+		"",
+		"bfbadass"
+	],
+	"songs": [
+		[
+			"Meth",
+			"mr-white",
+			[
+				35,
+				80,
+				35
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "Funkin' Bad",
+	"hiddenUntilUnlocked": false
+}

@@ -123,7 +123,7 @@ function onUpdatePost()
 			end
 
 			if isSustainNote then
-				noteX = noteX + 32;
+				noteX = noteX + 36;
 				--noteY = noteY
 			end
 
@@ -135,9 +135,61 @@ function onUpdatePost()
 			if math.abs(noteY - strumY) <= hitbox then
 				playAnimation('strum' .. directions[noteData + 1], 1, false)
 				triggerEvent('Play Animation', direcnote[noteData + 1], 'DAD')
-				removeFromGroup('notes', i)
-			end
 
+				--[[local div = 2;
+				if not downscroll then
+					div = 3.25;
+				end
+				local center = noteY + getPropertyFromClass('Note', 'swagWidth') / div;
+
+				local reduce = getPropertyFromGroup('opponentStrums', i - 1, 'sustainReduce')
+				local parent = getPropertyFromGroup('notes', i, 'parentNote')
+				local canbehit = getPropertyFromGroup('notes', i, 'canBeHit')
+				local goodhit = getPropertyFromGroup('notes', i, 'wasGoodHit')
+				local parentgoodhit = getPropertyFromGroup('notes', i, 'parentNote.wasGoodHit')
+				local prevgoodhit = getPropertyFromGroup('notes', i, 'prevNote.wasGoodHit')
+				local sustain = getPropertyFromGroup('notes', i, 'isSustainNote')
+				local mustpress = getPropertyFromGroup('notes', i, 'mustPress')
+				local ignore = getPropertyFromGroup('notes', i, 'ignoreNote')
+
+				local fw = getPropertyFromGroup('notes', i, 'frameWidth')
+				local fh = getPropertyFromGroup('notes', i, 'frameHeight')
+				local ww = getPropertyFromGroup('notes', i, 'width')
+				local hh = getPropertyFromGroup('notes', i, 'height')
+				local xx = getPropertyFromGroup('notes', i, 'x')
+				local yy = getPropertyFromGroup('notes', i, 'y')
+				local ox = getPropertyFromGroup('notes', i, 'offset.x')
+				local oy = getPropertyFromGroup('notes', i, 'offset.y')
+				local sx = getPropertyFromGroup('notes', i, 'scale.x')
+				local sy = getPropertyFromGroup('notes', i, 'scale.y')
+				
+				local cond1 = parentNote ~= nil and parentgoodhit;
+				local cond2 = mustpress or not ignore;
+				local cond3 = prevgoodhit and not canbehit;
+				local cond4 = goodhit or cond3;
+				local cond5 = not mustpress or cond4;
+
+				if reduce and cond1 and sustain and cond2 and cond5 then
+					if downscroll then
+						if yy - oy * sy + hh >= center then
+							createLuaRectangle('swagRect', 0, 0, fw, fh)
+							setProperty('swagRect.height', (center - yy) / sy)
+							setProperty('swagRect.y', fh - getProperty('swagRect.height'))
+							clipRect(getPropertyFromGroup('notes', i, ''), 'swagRect')
+						end
+					else
+						if yy + oy * sy <= center then
+							createLuaRectangle('swagRect', 0, 0, ww / sx, hh / sy)
+							setProperty('swagRect.y', (center - yy) / sy)
+							setProperty('swagRect.height', getProperty('swagRect.height') - getProperty('swagRect.y'))
+							clipRect(getPropertyFromGroup('notes', i, ''), 'swagRect')
+						end
+					end
+				end]]--
+				--if not sustain then
+					removeFromGroup('notes', i)
+				--end
+			end
 		end
 	end
 end

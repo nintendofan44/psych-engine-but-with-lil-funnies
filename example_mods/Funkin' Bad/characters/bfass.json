@@ -1,0 +1,11 @@
+{
+	"idle_anim": "Idle",
+	"image": "Boyfriend_Bad_Ass",
+	"position": [
+		-310,
+		-10
+	],
+	"flipX": false,
+	"scale": 1,
+	"confirm_anim": "Idle"
+}

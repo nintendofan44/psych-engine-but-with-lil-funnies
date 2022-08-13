@@ -1,0 +1,7 @@
+{
+	"name": "Funkin' Bad",
+	"description": "Jesse we need to cook",
+	"restart":false,
+	"runGlobally": false,
+	"color": [35, 80, 35]
+}
