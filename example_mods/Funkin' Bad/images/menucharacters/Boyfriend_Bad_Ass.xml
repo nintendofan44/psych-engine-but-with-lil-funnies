@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Boyfriend_Bad_Ass.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Idle0000" x="1029" y="509" width="481" height="457" frameX="0" frameY="-19" frameWidth="488" frameHeight="476"/>
+	<SubTexture name="Idle0001" x="1029" y="509" width="481" height="457" frameX="0" frameY="-19" frameWidth="488" frameHeight="476"/>
+	<SubTexture name="Idle0002" x="525" y="514" width="478" height="459" frameX="0" frameY="-17" frameWidth="488" frameHeight="476"/>
+	<SubTexture name="Idle0003" x="525" y="514" width="478" height="459" frameX="0" frameY="-17" frameWidth="488" frameHeight="476"/>
+	<SubTexture name="Idle0004" x="1029" y="20" width="482" height="469" frameX="-1" frameY="-7" frameWidth="488" frameHeight="476"/>
+	<SubTexture name="Idle0005" x="1029" y="20" width="482" height="469" frameX="-1" frameY="-7" frameWidth="488" frameHeight="476"/>
+	<SubTexture name="Idle0006" x="525" y="20" width="484" height="474" frameX="-3" frameY="-2" frameWidth="488" frameHeight="476"/>
+	<SubTexture name="Idle0007" x="525" y="20" width="484" height="474" frameX="-3" frameY="-2" frameWidth="488" frameHeight="476"/>
+	<SubTexture name="Idle0008" x="20" y="20" width="485" height="476" frameX="-3" frameY="0" frameWidth="488" frameHeight="476"/>
+	<SubTexture name="Idle0009" x="20" y="20" width="485" height="476" frameX="-3" frameY="0" frameWidth="488" frameHeight="476"/>
+	<SubTexture name="Idle0010" x="20" y="20" width="485" height="476" frameX="-3" frameY="0" frameWidth="488" frameHeight="476"/>
+	<SubTexture name="Idle0011" x="20" y="20" width="485" height="476" frameX="-3" frameY="0" frameWidth="488" frameHeight="476"/>
+	<SubTexture name="Idle0012" x="20" y="20" width="485" height="476" frameX="-3" frameY="0" frameWidth="488" frameHeight="476"/>
+	<SubTexture name="Idle0013" x="20" y="20" width="485" height="476" frameX="-3" frameY="0" frameWidth="488" frameHeight="476"/>
+</TextureAtlas>

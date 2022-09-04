@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="MrWhite_butMexico_Assets.png">
+	<!-- Created with Adobe Animate version 20.0.0.17400 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Down0000" x="0" y="0" width="517" height="593"/>
+	<SubTexture name="Down0001" x="0" y="0" width="517" height="593"/>
+	<SubTexture name="Down0002" x="521" y="0" width="517" height="593"/>
+	<SubTexture name="Down0003" x="521" y="0" width="517" height="593"/>
+	<SubTexture name="Idle0000" x="1042" y="0" width="517" height="593"/>
+	<SubTexture name="Left0000" x="0" y="597" width="517" height="593"/>
+	<SubTexture name="Left0001" x="0" y="597" width="517" height="593"/>
+	<SubTexture name="Left0002" x="521" y="597" width="517" height="593"/>
+	<SubTexture name="Left0003" x="521" y="597" width="517" height="593"/>
+	<SubTexture name="Right0000" x="1042" y="597" width="517" height="593"/>
+	<SubTexture name="Right0001" x="1042" y="597" width="517" height="593"/>
+	<SubTexture name="Right0002" x="0" y="1194" width="517" height="593"/>
+	<SubTexture name="Right0003" x="0" y="1194" width="517" height="593"/>
+	<SubTexture name="Up0000" x="521" y="1194" width="517" height="593"/>
+	<SubTexture name="Up0001" x="521" y="1194" width="517" height="593"/>
+	<SubTexture name="Up0002" x="1042" y="1194" width="517" height="593"/>
+	<SubTexture name="Up0003" x="1042" y="1194" width="517" height="593"/>
+</TextureAtlas>

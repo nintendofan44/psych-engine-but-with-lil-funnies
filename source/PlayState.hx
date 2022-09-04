@@ -96,6 +96,7 @@ class PlayState extends MusicBeatState
 	public var modchartTexts:Map<String, ModchartText> = new Map<String, ModchartText>();
 	public var modchartSaves:Map<String, FlxSave> = new Map<String, FlxSave>();
 	public var modchartObjects:Map<String, FlxSprite> = new Map<String, FlxSprite>();
+	public var modchartRectangles:Map<String, ModchartRect> = new Map<String, ModchartRect>();
 
 	//event variables
 	private var isCameraOnForcedPos:Bool = false;
@@ -1664,10 +1665,21 @@ class PlayState extends MusicBeatState
 		#end
 	}
 
-	public function getLuaObject(tag:String, text:Bool=true):FlxSprite {
-		if(modchartObjects.exists(tag))return modchartObjects.get(tag);
-		if(modchartSprites.exists(tag))return modchartSprites.get(tag);
-		if(text && modchartTexts.exists(tag))return modchartTexts.get(tag);
+	public function getLuaObject(tag:String, text:Bool = true):FlxSprite
+	{
+		if (modchartObjects.exists(tag))
+			return modchartObjects.get(tag);
+		if (modchartSprites.exists(tag))
+			return modchartSprites.get(tag);
+		if (text && modchartTexts.exists(tag))
+			return modchartTexts.get(tag);
+		return null;
+	}
+
+	public function getLuaRect(tag:String, text:Bool = true):FlxRect
+	{
+		if (modchartRectangles.exists(tag))
+			return modchartRectangles.get(tag);
 		return null;
 	}
 

@@ -1,3 +1,4 @@
+import flixel.math.FlxRect;
 #if LUA_ALLOWED
 import llua.Lua;
 import llua.LuaL;
@@ -1574,6 +1575,24 @@ class FunkinLua {
 			}
 		});
 
+		//rectongles
+		Lua_helper.add_callback(lua, "createLuaRectangle", function(tag:String, x:Float, y:Float, width:Float, height:Float) {
+			tag = tag.replace('.', '');
+			resetRectangleTag(tag);
+			var leRect:ModchartRect = new ModchartRect(x, y, width, height);
+			PlayState.instance.modchartRectangles.set(tag, leRect);
+		});
+
+		Lua_helper.add_callback(lua, "clipRect", function(obj:String, clip:FlxSprite, clipOn:FlxRect) {
+			if (PlayState.instance.getLuaObject(obj, false) != null) {
+				PlayState.instance.getLuaObject(obj, false).clipRect = clipOn;
+				return;
+			}
+
+			var object:FlxSprite = Reflect.getProperty(getInstance(), obj);
+			if (object != null) object.clipRect = clipOn;
+		});
+
 		Lua_helper.add_callback(lua, "makeLuaSprite", function(tag:String, image:String, x:Float, y:Float) {
 			tag = tag.replace('.', '');
 			resetSpriteTag(tag);
@@ -2619,6 +2638,14 @@ class FunkinLua {
 		PlayState.instance.modchartSprites.remove(tag);
 	}
 
+	function resetRectangleTag(tag:String) {
+		if(!PlayState.instance.modchartRectangles.exists(tag)) return;
+
+		var pee:ModchartRect = PlayState.instance.modchartRectangles.get(tag);
+		if(pee.wasAdded) pee.destroy();
+		PlayState.instance.modchartRectangles.remove(tag);
+	}
+
 	function cancelTween(tag:String) {
 		if(PlayState.instance.modchartTweens.exists(tag)) {
 			PlayState.instance.modchartTweens.get(tag).cancel();
@@ -2712,6 +2739,9 @@ class FunkinLua {
 	function cameraFromString(cam:String):FlxCamera {
 		switch(cam.toLowerCase()) {
 			case 'camhud' | 'hud': return PlayState.instance.camHUD;
+			case 'camsus' | 'sus': return PlayState.instance.camSus;
+			case 'camnotehud' | 'notehud': return PlayState.instance.camNOTEHUD;
+			case 'camnotes' | 'notes': return PlayState.instance.camNOTES;
 			case 'camother' | 'other': return PlayState.instance.camOther;
 		}
 		return PlayState.instance.camGame;
@@ -2909,6 +2939,17 @@ class ModchartSprite extends FlxSprite
 	{
 		super(x, y);
 		antialiasing = ClientPrefs.globalAntialiasing;
+	}
+}
+
+class ModchartRect extends FlxRect
+{
+	public var wasAdded:Bool = false;
+	//public var isInFront:Bool = false;
+
+	public function new(?x:Float = 0, ?y:Float = 0, ?width:Float = 0, ?height:Float = 0)
+	{
+		super(x, y, width, height);
 	}
 }
 

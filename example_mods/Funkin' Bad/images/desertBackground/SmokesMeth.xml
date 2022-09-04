@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="SmokesMeth.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="SmokesMeth0000" x="505" y="414" width="424" height="367" frameX="-36" frameY="-19" frameWidth="465" frameHeight="386"/>
+	<SubTexture name="SmokesMeth0001" x="505" y="414" width="424" height="367" frameX="-36" frameY="-19" frameWidth="465" frameHeight="386"/>
+	<SubTexture name="SmokesMeth0002" x="505" y="414" width="424" height="367" frameX="-36" frameY="-19" frameWidth="465" frameHeight="386"/>
+	<SubTexture name="SmokesMeth0003" x="505" y="20" width="434" height="374" frameX="-31" frameY="-11" frameWidth="465" frameHeight="386"/>
+	<SubTexture name="SmokesMeth0004" x="505" y="20" width="434" height="374" frameX="-31" frameY="-11" frameWidth="465" frameHeight="386"/>
+	<SubTexture name="SmokesMeth0005" x="505" y="20" width="434" height="374" frameX="-31" frameY="-11" frameWidth="465" frameHeight="386"/>
+	<SubTexture name="SmokesMeth0006" x="20" y="20" width="465" height="384" frameX="0" frameY="0" frameWidth="465" frameHeight="386"/>
+	<SubTexture name="SmokesMeth0007" x="20" y="20" width="465" height="384" frameX="0" frameY="0" frameWidth="465" frameHeight="386"/>
+	<SubTexture name="SmokesMeth0008" x="20" y="20" width="465" height="384" frameX="0" frameY="0" frameWidth="465" frameHeight="386"/>
+</TextureAtlas>
