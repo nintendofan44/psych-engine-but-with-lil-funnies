@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				55,
+				-103
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "dog left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-10,
+				-28
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "dog up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-39,
+				-130
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "dog down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-107,
+				-90
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "dog right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				60,
+				-38
+			],
+			"anim": "dialogue1",
+			"fps": 24,
+			"name": "dog dialogue 1",
+			"indices": []
+		},
+		{
+			"offsets": [
+				0,
+				-80
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "dog idle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/dog",
+	"position": [
+		-70,
+		-50
+	],
+	"healthicon": "dog",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"camera_position": [
+		80,
+		70
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

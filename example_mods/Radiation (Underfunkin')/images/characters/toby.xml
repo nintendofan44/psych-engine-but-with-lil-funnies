@@ -1,0 +1,904 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="toby.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="toby cough0000" x="2" y="2" width="388" height="659" frameX="-4" frameY="-8" frameWidth="392" frameHeight="667"/>
+	<SubTexture name="toby cough0001" x="2" y="2" width="388" height="659" frameX="-4" frameY="-8" frameWidth="392" frameHeight="667"/>
+	<SubTexture name="toby cough0002" x="392" y="2" width="392" height="664" frameX="0" frameY="-3" frameWidth="392" frameHeight="667"/>
+	<SubTexture name="toby cough0003" x="392" y="2" width="392" height="664" frameX="0" frameY="-3" frameWidth="392" frameHeight="667"/>
+	<SubTexture name="toby cough0004" x="786" y="2" width="392" height="667"/>
+	<SubTexture name="toby cough0005" x="786" y="2" width="392" height="667"/>
+	<SubTexture name="toby cough0006" x="2" y="2" width="388" height="659" frameX="-4" frameY="-8" frameWidth="392" frameHeight="667"/>
+	<SubTexture name="toby cough0007" x="2" y="2" width="388" height="659" frameX="-4" frameY="-8" frameWidth="392" frameHeight="667"/>
+	<SubTexture name="toby cough0008" x="392" y="2" width="392" height="664" frameX="0" frameY="-3" frameWidth="392" frameHeight="667"/>
+	<SubTexture name="toby cough0009" x="392" y="2" width="392" height="664" frameX="0" frameY="-3" frameWidth="392" frameHeight="667"/>
+	<SubTexture name="toby cough0010" x="786" y="2" width="392" height="667"/>
+	<SubTexture name="toby cough0011" x="786" y="2" width="392" height="667"/>
+	<SubTexture name="toby cough0012" x="786" y="2" width="392" height="667"/>
+	<SubTexture name="toby cough0013" x="2" y="2" width="388" height="659" frameX="-4" frameY="-8" frameWidth="392" frameHeight="667"/>
+	<SubTexture name="toby cough0014" x="2" y="2" width="388" height="659" frameX="-4" frameY="-8" frameWidth="392" frameHeight="667"/>
+	<SubTexture name="toby cough0015" x="392" y="2" width="392" height="664" frameX="0" frameY="-3" frameWidth="392" frameHeight="667"/>
+	<SubTexture name="toby cough0016" x="392" y="2" width="392" height="664" frameX="0" frameY="-3" frameWidth="392" frameHeight="667"/>
+	<SubTexture name="toby cough0017" x="786" y="2" width="392" height="667"/>
+	<SubTexture name="toby cough0018" x="786" y="2" width="392" height="667"/>
+	<SubTexture name="toby cough0019" x="786" y="2" width="392" height="667"/>
+	<SubTexture name="toby cough0020" x="786" y="2" width="392" height="667"/>
+	<SubTexture name="toby cough0021" x="786" y="2" width="392" height="667"/>
+	<SubTexture name="toby cough0022" x="786" y="2" width="392" height="667"/>
+	<SubTexture name="toby cough0023" x="786" y="2" width="392" height="667"/>
+	<SubTexture name="toby dialogue 10000" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10001" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10002" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10003" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10004" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10005" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10006" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10007" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10008" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10009" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10010" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10011" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10012" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10013" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10014" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10015" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10016" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10017" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10018" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10019" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10020" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10021" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10022" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10023" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10024" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10025" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10026" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10027" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10028" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10029" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10030" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10031" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10032" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10033" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10034" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10035" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10036" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10037" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10038" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10039" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10040" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10041" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10042" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10043" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10044" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10045" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10046" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10047" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10048" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10049" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10050" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10051" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10052" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10053" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10054" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10055" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10056" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10057" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10058" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10059" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10060" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10061" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10062" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10063" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10064" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10065" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10066" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10067" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10068" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10069" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10070" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10071" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10072" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10073" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10074" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10075" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10076" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10077" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10078" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10079" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10080" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10081" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10082" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10083" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10084" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10085" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10086" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10087" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10088" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10089" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10090" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10091" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10092" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10093" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10094" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10095" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10096" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10097" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10098" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10099" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10100" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10101" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10102" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10103" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10104" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10105" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10106" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10107" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10108" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10109" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10110" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10111" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10112" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10113" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10114" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10115" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10116" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10117" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10118" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10119" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10120" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10121" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10122" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10123" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10124" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10125" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10126" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10127" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10128" x="1684" y="2" width="500" height="694" frameX="-8" frameY="-21" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10129" x="1684" y="2" width="500" height="694" frameX="-8" frameY="-21" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10130" x="2186" y="2" width="388" height="659" frameX="-120" frameY="-56" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10131" x="2186" y="2" width="388" height="659" frameX="-120" frameY="-56" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10132" x="2576" y="2" width="392" height="664" frameX="-116" frameY="-51" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10133" x="2576" y="2" width="392" height="664" frameX="-116" frameY="-51" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10134" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10135" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10136" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10137" x="2186" y="2" width="388" height="659" frameX="-120" frameY="-56" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10138" x="2186" y="2" width="388" height="659" frameX="-120" frameY="-56" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10139" x="2576" y="2" width="392" height="664" frameX="-116" frameY="-51" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10140" x="2576" y="2" width="392" height="664" frameX="-116" frameY="-51" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10141" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10142" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10143" x="2186" y="2" width="388" height="659" frameX="-120" frameY="-56" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10144" x="2186" y="2" width="388" height="659" frameX="-120" frameY="-56" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10145" x="2576" y="2" width="392" height="664" frameX="-116" frameY="-51" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10146" x="2576" y="2" width="392" height="664" frameX="-116" frameY="-51" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10147" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10148" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10149" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10150" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10151" x="3364" y="2" width="392" height="662" frameX="-116" frameY="-53" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10152" x="3364" y="2" width="392" height="662" frameX="-116" frameY="-53" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10153" x="2576" y="2" width="392" height="664" frameX="-116" frameY="-51" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10154" x="2576" y="2" width="392" height="664" frameX="-116" frameY="-51" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10155" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10156" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10157" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10158" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10159" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10160" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10161" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10162" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10163" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10164" x="3364" y="2" width="392" height="662" frameX="-116" frameY="-53" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10165" x="3364" y="2" width="392" height="662" frameX="-116" frameY="-53" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10166" x="2576" y="2" width="392" height="664" frameX="-116" frameY="-51" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10167" x="2576" y="2" width="392" height="664" frameX="-116" frameY="-51" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10168" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10169" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10170" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10171" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10172" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10173" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10174" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10175" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10176" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10177" x="3364" y="2" width="392" height="662" frameX="-116" frameY="-53" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10178" x="3364" y="2" width="392" height="662" frameX="-116" frameY="-53" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10179" x="2576" y="2" width="392" height="664" frameX="-116" frameY="-51" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10180" x="2576" y="2" width="392" height="664" frameX="-116" frameY="-51" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10181" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10182" x="2970" y="2" width="392" height="667" frameX="-116" frameY="-48" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10183" x="3758" y="2" width="425" height="676" frameX="-83" frameY="-39" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10184" x="3758" y="2" width="425" height="676" frameX="-83" frameY="-39" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10185" x="4185" y="2" width="503" height="699" frameX="-5" frameY="-16" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10186" x="4690" y="2" width="503" height="699" frameX="-5" frameY="-16" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10187" x="5195" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10188" x="5699" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10189" x="5699" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10190" x="6203" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10191" x="6203" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10192" x="6707" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10193" x="6707" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10194" x="7211" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10195" x="7211" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10196" x="7211" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10197" x="7211" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10198" x="7211" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10199" x="7211" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10200" x="7211" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10201" x="7211" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10202" x="7211" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10203" x="7211" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10204" x="7211" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10205" x="7211" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10206" x="7211" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10207" x="7211" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10208" x="2" y="703" width="504" height="698" frameX="-4" frameY="-17" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10209" x="2" y="703" width="504" height="698" frameX="-4" frameY="-17" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10210" x="508" y="703" width="508" height="715"/>
+	<SubTexture name="toby dialogue 10211" x="1018" y="703" width="508" height="715"/>
+	<SubTexture name="toby dialogue 10212" x="1528" y="703" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10213" x="2036" y="703" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10214" x="2544" y="703" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10215" x="2544" y="703" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10216" x="3052" y="703" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10217" x="3052" y="703" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10218" x="3052" y="703" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10219" x="3560" y="703" width="504" height="710" frameX="-4" frameY="-5" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10220" x="4066" y="703" width="504" height="710" frameX="-4" frameY="-5" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10221" x="4572" y="703" width="500" height="694" frameX="-8" frameY="-21" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10222" x="5074" y="703" width="500" height="694" frameX="-8" frameY="-21" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10223" x="6203" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10224" x="6203" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10225" x="5576" y="703" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10226" x="5576" y="703" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10227" x="5699" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10228" x="5699" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10229" x="6203" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10230" x="6203" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10231" x="6080" y="703" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10232" x="6080" y="703" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10233" x="5699" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10234" x="5699" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10235" x="6080" y="703" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10236" x="6080" y="703" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10237" x="5195" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10238" x="5195" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10239" x="6584" y="703" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10240" x="6584" y="703" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10241" x="5699" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10242" x="5699" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10243" x="6203" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10244" x="6203" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10245" x="6080" y="703" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10246" x="6080" y="703" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10247" x="5195" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10248" x="5195" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10249" x="5195" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10250" x="5195" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10251" x="5195" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10252" x="5195" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10253" x="5195" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10254" x="5195" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10255" x="5195" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10256" x="5195" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10257" x="5195" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10258" x="5195" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10259" x="5195" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10260" x="5195" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10261" x="5195" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10262" x="5195" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10263" x="5195" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10264" x="5195" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 10265" x="5195" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20000" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20001" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20002" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20003" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20004" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20005" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20006" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20007" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20008" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20009" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20010" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20011" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20012" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20013" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20014" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20015" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20016" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20017" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20018" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20019" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20020" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20021" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20022" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20023" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20024" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20025" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20026" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20027" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20028" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20029" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20030" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20031" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20032" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20033" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20034" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20035" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20036" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20037" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20038" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20039" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20040" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20041" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20042" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20043" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20044" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20045" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20046" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20047" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20048" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20049" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20050" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20051" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20052" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20053" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20054" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20055" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20056" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20057" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20058" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20059" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20060" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20061" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20062" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20063" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20064" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20065" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20066" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20067" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20068" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20069" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20070" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20071" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20072" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20073" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20074" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20075" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20076" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20077" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20078" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20079" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20080" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20081" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20082" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20083" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20084" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20085" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20086" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20087" x="1180" y="2" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20088" x="7088" y="703" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20089" x="7088" y="703" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20090" x="7592" y="703" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20091" x="2" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20092" x="506" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20093" x="506" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20094" x="2" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20095" x="2" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20096" x="1010" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20097" x="1010" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20098" x="1514" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20099" x="1514" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20100" x="2018" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20101" x="2018" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20102" x="2" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20103" x="2" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20104" x="1010" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20105" x="1010" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20106" x="1010" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20107" x="1010" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20108" x="1010" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20109" x="1010" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20110" x="1010" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20111" x="1010" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20112" x="1010" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20113" x="1010" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20114" x="1010" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20115" x="1010" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20116" x="1010" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20117" x="1010" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20118" x="1010" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20119" x="1010" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20120" x="1010" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20121" x="1010" y="1420" width="502" height="697" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20122" x="2522" y="1420" width="504" height="698" frameX="-4" frameY="-17" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20123" x="2522" y="1420" width="504" height="698" frameX="-4" frameY="-17" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20124" x="3028" y="1420" width="508" height="715"/>
+	<SubTexture name="toby dialogue 20125" x="3028" y="1420" width="508" height="715"/>
+	<SubTexture name="toby dialogue 20126" x="3538" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20127" x="3538" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20128" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20129" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20130" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20131" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20132" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20133" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20134" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20135" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20136" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20137" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20138" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20139" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20140" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20141" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20142" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20143" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20144" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20145" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20146" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20147" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20148" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20149" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20150" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20151" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20152" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20153" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20154" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20155" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20156" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20157" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20158" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20159" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20160" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20161" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20162" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20163" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20164" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20165" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20166" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20167" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20168" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20169" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20170" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20171" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20172" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20173" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20174" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20175" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20176" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20177" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20178" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20179" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20180" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20181" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20182" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20183" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20184" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20185" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20186" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20187" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20188" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20189" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20190" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20191" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20192" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20193" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20194" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20195" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20196" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20197" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20198" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20199" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20200" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20201" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20202" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20203" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20204" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20205" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20206" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20207" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20208" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20209" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20210" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20211" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20212" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20213" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20214" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20215" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20216" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20217" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20218" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20219" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20220" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20221" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20222" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20223" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20224" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20225" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20226" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20227" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20228" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20229" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20230" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20231" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20232" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20233" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20234" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20235" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20236" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20237" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20238" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20239" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20240" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20241" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20242" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20243" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20244" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20245" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20246" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20247" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20248" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20249" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20250" x="4046" y="1420" width="506" height="713" frameX="-2" frameY="-2" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20251" x="4554" y="1420" width="0" height="0" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20252" x="4554" y="1420" width="0" height="0" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20253" x="4554" y="1420" width="0" height="0" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dialogue 20254" x="4554" y="1420" width="0" height="0" frameX="-6" frameY="-18" frameWidth="508" frameHeight="715"/>
+	<SubTexture name="toby dowN alt0000" x="4556" y="1420" width="503" height="657" frameX="0" frameY="-8" frameWidth="503" frameHeight="665"/>
+	<SubTexture name="toby dowN alt0001" x="4556" y="1420" width="503" height="657" frameX="0" frameY="-8" frameWidth="503" frameHeight="665"/>
+	<SubTexture name="toby dowN alt0002" x="5061" y="1420" width="503" height="665"/>
+	<SubTexture name="toby dowN alt0003" x="5061" y="1420" width="503" height="665"/>
+	<SubTexture name="toby dowN alt0004" x="5061" y="1420" width="503" height="665"/>
+	<SubTexture name="toby dowN alt0005" x="5061" y="1420" width="503" height="665"/>
+	<SubTexture name="toby dowN alt0006" x="5061" y="1420" width="503" height="665"/>
+	<SubTexture name="toby dowN alt0007" x="5061" y="1420" width="503" height="665"/>
+	<SubTexture name="toby dowN alt0008" x="5061" y="1420" width="503" height="665"/>
+	<SubTexture name="toby dowN alt0009" x="5061" y="1420" width="503" height="665"/>
+	<SubTexture name="toby dowN alt0010" x="5061" y="1420" width="503" height="665"/>
+	<SubTexture name="toby down0000" x="5566" y="1420" width="503" height="664" frameX="0" frameY="-3" frameWidth="503" frameHeight="667"/>
+	<SubTexture name="toby down0001" x="5566" y="1420" width="503" height="664" frameX="0" frameY="-3" frameWidth="503" frameHeight="667"/>
+	<SubTexture name="toby down0002" x="6071" y="1420" width="502" height="667" frameX="-1" frameY="0" frameWidth="503" frameHeight="667"/>
+	<SubTexture name="toby down0003" x="6071" y="1420" width="502" height="667" frameX="-1" frameY="0" frameWidth="503" frameHeight="667"/>
+	<SubTexture name="toby down0004" x="6071" y="1420" width="502" height="667" frameX="-1" frameY="0" frameWidth="503" frameHeight="667"/>
+	<SubTexture name="toby down0005" x="6071" y="1420" width="502" height="667" frameX="-1" frameY="0" frameWidth="503" frameHeight="667"/>
+	<SubTexture name="toby down0006" x="6071" y="1420" width="502" height="667" frameX="-1" frameY="0" frameWidth="503" frameHeight="667"/>
+	<SubTexture name="toby down0007" x="6071" y="1420" width="502" height="667" frameX="-1" frameY="0" frameWidth="503" frameHeight="667"/>
+	<SubTexture name="toby down0008" x="6071" y="1420" width="502" height="667" frameX="-1" frameY="0" frameWidth="503" frameHeight="667"/>
+	<SubTexture name="toby down0009" x="6071" y="1420" width="502" height="667" frameX="-1" frameY="0" frameWidth="503" frameHeight="667"/>
+	<SubTexture name="toby down0010" x="6071" y="1420" width="502" height="667" frameX="-1" frameY="0" frameWidth="503" frameHeight="667"/>
+	<SubTexture name="toby idle0000" x="6575" y="1420" width="502" height="682" frameX="0" frameY="-15" frameWidth="502" frameHeight="697"/>
+	<SubTexture name="toby idle0001" x="6575" y="1420" width="502" height="682" frameX="0" frameY="-15" frameWidth="502" frameHeight="697"/>
+	<SubTexture name="toby idle0002" x="7079" y="1420" width="501" height="681" frameX="-1" frameY="-16" frameWidth="502" frameHeight="697"/>
+	<SubTexture name="toby idle0003" x="7079" y="1420" width="501" height="681" frameX="-1" frameY="-16" frameWidth="502" frameHeight="697"/>
+	<SubTexture name="toby idle0004" x="7582" y="1420" width="502" height="694" frameX="0" frameY="-3" frameWidth="502" frameHeight="697"/>
+	<SubTexture name="toby idle0005" x="7582" y="1420" width="502" height="694" frameX="0" frameY="-3" frameWidth="502" frameHeight="697"/>
+	<SubTexture name="toby idle0006" x="2" y="2137" width="502" height="697"/>
+	<SubTexture name="toby idle0007" x="2" y="2137" width="502" height="697"/>
+	<SubTexture name="toby idle0008" x="2" y="2137" width="502" height="697"/>
+	<SubTexture name="toby idle0009" x="2" y="2137" width="502" height="697"/>
+	<SubTexture name="toby idle0010" x="2" y="2137" width="502" height="697"/>
+	<SubTexture name="toby idle0011" x="2" y="2137" width="502" height="697"/>
+	<SubTexture name="toby idle0012" x="2" y="2137" width="502" height="697"/>
+	<SubTexture name="toby idle0013" x="2" y="2137" width="502" height="697"/>
+	<SubTexture name="toby lefT alt0000" x="506" y="2137" width="520" height="688"/>
+	<SubTexture name="toby lefT alt0001" x="506" y="2137" width="520" height="688"/>
+	<SubTexture name="toby lefT alt0002" x="1028" y="2137" width="514" height="687" frameX="-6" frameY="-1" frameWidth="520" frameHeight="688"/>
+	<SubTexture name="toby lefT alt0003" x="1028" y="2137" width="514" height="687" frameX="-6" frameY="-1" frameWidth="520" frameHeight="688"/>
+	<SubTexture name="toby lefT alt0004" x="1028" y="2137" width="514" height="687" frameX="-6" frameY="-1" frameWidth="520" frameHeight="688"/>
+	<SubTexture name="toby lefT alt0005" x="1028" y="2137" width="514" height="687" frameX="-6" frameY="-1" frameWidth="520" frameHeight="688"/>
+	<SubTexture name="toby lefT alt0006" x="1028" y="2137" width="514" height="687" frameX="-6" frameY="-1" frameWidth="520" frameHeight="688"/>
+	<SubTexture name="toby lefT alt0007" x="1028" y="2137" width="514" height="687" frameX="-6" frameY="-1" frameWidth="520" frameHeight="688"/>
+	<SubTexture name="toby lefT alt0008" x="1028" y="2137" width="514" height="687" frameX="-6" frameY="-1" frameWidth="520" frameHeight="688"/>
+	<SubTexture name="toby lefT alt0009" x="1028" y="2137" width="514" height="687" frameX="-6" frameY="-1" frameWidth="520" frameHeight="688"/>
+	<SubTexture name="toby lefT alt0010" x="1028" y="2137" width="514" height="687" frameX="-6" frameY="-1" frameWidth="520" frameHeight="688"/>
+	<SubTexture name="toby lefT alt0011" x="1028" y="2137" width="514" height="687" frameX="-6" frameY="-1" frameWidth="520" frameHeight="688"/>
+	<SubTexture name="toby lefT alt0012" x="1028" y="2137" width="514" height="687" frameX="-6" frameY="-1" frameWidth="520" frameHeight="688"/>
+	<SubTexture name="toby lefT alt0013" x="1028" y="2137" width="514" height="687" frameX="-6" frameY="-1" frameWidth="520" frameHeight="688"/>
+	<SubTexture name="toby lefT alt0014" x="1028" y="2137" width="514" height="687" frameX="-6" frameY="-1" frameWidth="520" frameHeight="688"/>
+	<SubTexture name="toby lefT alt0015" x="1028" y="2137" width="514" height="687" frameX="-6" frameY="-1" frameWidth="520" frameHeight="688"/>
+	<SubTexture name="toby left0000" x="1544" y="2137" width="510" height="692" frameX="0" frameY="-2" frameWidth="510" frameHeight="694"/>
+	<SubTexture name="toby left0001" x="1544" y="2137" width="510" height="692" frameX="0" frameY="-2" frameWidth="510" frameHeight="694"/>
+	<SubTexture name="toby left0002" x="2056" y="2137" width="508" height="694" frameX="-2" frameY="0" frameWidth="510" frameHeight="694"/>
+	<SubTexture name="toby left0003" x="2056" y="2137" width="508" height="694" frameX="-2" frameY="0" frameWidth="510" frameHeight="694"/>
+	<SubTexture name="toby left0004" x="2056" y="2137" width="508" height="694" frameX="-2" frameY="0" frameWidth="510" frameHeight="694"/>
+	<SubTexture name="toby left0005" x="2056" y="2137" width="508" height="694" frameX="-2" frameY="0" frameWidth="510" frameHeight="694"/>
+	<SubTexture name="toby left0006" x="2056" y="2137" width="508" height="694" frameX="-2" frameY="0" frameWidth="510" frameHeight="694"/>
+	<SubTexture name="toby left0007" x="2056" y="2137" width="508" height="694" frameX="-2" frameY="0" frameWidth="510" frameHeight="694"/>
+	<SubTexture name="toby left0008" x="2056" y="2137" width="508" height="694" frameX="-2" frameY="0" frameWidth="510" frameHeight="694"/>
+	<SubTexture name="toby left0009" x="2056" y="2137" width="508" height="694" frameX="-2" frameY="0" frameWidth="510" frameHeight="694"/>
+	<SubTexture name="toby left0010" x="2056" y="2137" width="508" height="694" frameX="-2" frameY="0" frameWidth="510" frameHeight="694"/>
+	<SubTexture name="toby left0011" x="2056" y="2137" width="508" height="694" frameX="-2" frameY="0" frameWidth="510" frameHeight="694"/>
+	<SubTexture name="toby left0012" x="2056" y="2137" width="508" height="694" frameX="-2" frameY="0" frameWidth="510" frameHeight="694"/>
+	<SubTexture name="toby left0013" x="2056" y="2137" width="508" height="694" frameX="-2" frameY="0" frameWidth="510" frameHeight="694"/>
+	<SubTexture name="toby left0014" x="2056" y="2137" width="508" height="694" frameX="-2" frameY="0" frameWidth="510" frameHeight="694"/>
+	<SubTexture name="toby left0015" x="2056" y="2137" width="508" height="694" frameX="-2" frameY="0" frameWidth="510" frameHeight="694"/>
+	<SubTexture name="toby righT alt0000" x="2566" y="2137" width="483" height="689" frameX="-2" frameY="0" frameWidth="485" frameHeight="689"/>
+	<SubTexture name="toby righT alt0001" x="2566" y="2137" width="483" height="689" frameX="-2" frameY="0" frameWidth="485" frameHeight="689"/>
+	<SubTexture name="toby righT alt0002" x="3051" y="2137" width="485" height="689"/>
+	<SubTexture name="toby righT alt0003" x="3051" y="2137" width="485" height="689"/>
+	<SubTexture name="toby righT alt0004" x="3051" y="2137" width="485" height="689"/>
+	<SubTexture name="toby righT alt0005" x="3051" y="2137" width="485" height="689"/>
+	<SubTexture name="toby righT alt0006" x="3051" y="2137" width="485" height="689"/>
+	<SubTexture name="toby righT alt0007" x="3051" y="2137" width="485" height="689"/>
+	<SubTexture name="toby righT alt0008" x="3051" y="2137" width="485" height="689"/>
+	<SubTexture name="toby righT alt0009" x="3051" y="2137" width="485" height="689"/>
+	<SubTexture name="toby righT alt0010" x="3051" y="2137" width="485" height="689"/>
+	<SubTexture name="toby righT alt0011" x="3051" y="2137" width="485" height="689"/>
+	<SubTexture name="toby righT alt0012" x="3051" y="2137" width="485" height="689"/>
+	<SubTexture name="toby righT alt0013" x="3051" y="2137" width="485" height="689"/>
+	<SubTexture name="toby righT alt0014" x="3051" y="2137" width="485" height="689"/>
+	<SubTexture name="toby righT alt0015" x="3051" y="2137" width="485" height="689"/>
+	<SubTexture name="toby right0000" x="3538" y="2137" width="492" height="683" frameX="-3" frameY="-4" frameWidth="495" frameHeight="687"/>
+	<SubTexture name="toby right0001" x="3538" y="2137" width="492" height="683" frameX="-3" frameY="-4" frameWidth="495" frameHeight="687"/>
+	<SubTexture name="toby right0002" x="4032" y="2137" width="495" height="687"/>
+	<SubTexture name="toby right0003" x="4032" y="2137" width="495" height="687"/>
+	<SubTexture name="toby right0004" x="4032" y="2137" width="495" height="687"/>
+	<SubTexture name="toby right0005" x="4032" y="2137" width="495" height="687"/>
+	<SubTexture name="toby right0006" x="4032" y="2137" width="495" height="687"/>
+	<SubTexture name="toby right0007" x="4032" y="2137" width="495" height="687"/>
+	<SubTexture name="toby right0008" x="4032" y="2137" width="495" height="687"/>
+	<SubTexture name="toby right0009" x="4032" y="2137" width="495" height="687"/>
+	<SubTexture name="toby right0010" x="4032" y="2137" width="495" height="687"/>
+	<SubTexture name="toby right0011" x="4032" y="2137" width="495" height="687"/>
+	<SubTexture name="toby right0012" x="4032" y="2137" width="495" height="687"/>
+	<SubTexture name="toby right0013" x="4032" y="2137" width="495" height="687"/>
+	<SubTexture name="toby right0014" x="4032" y="2137" width="495" height="687"/>
+	<SubTexture name="toby right0015" x="4032" y="2137" width="495" height="687"/>
+	<SubTexture name="toby trans rights0000" x="4529" y="2137" width="502" height="677" frameX="0" frameY="-301" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0001" x="4529" y="2137" width="502" height="677" frameX="0" frameY="-301" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0002" x="5033" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0003" x="5537" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0004" x="5537" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0005" x="6041" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0006" x="6041" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0007" x="5033" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0008" x="5033" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0009" x="5537" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0010" x="5537" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0011" x="6041" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0012" x="6041" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0013" x="6545" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0014" x="5033" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0015" x="5033" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0016" x="6041" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0017" x="6041" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0018" x="6545" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0019" x="6545" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0020" x="5033" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0021" x="5033" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0022" x="7049" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0023" x="7049" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0024" x="5033" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0025" x="5033" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0026" x="5537" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0027" x="5537" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0028" x="6041" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0029" x="6041" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0030" x="5033" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0031" x="5033" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0032" x="6041" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0033" x="6041" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0034" x="7553" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0035" x="7553" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0036" x="7049" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0037" x="7049" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0038" x="5033" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0039" x="5033" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0040" x="5537" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0041" x="5537" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0042" x="6041" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0043" x="6041" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0044" x="6545" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0045" x="6545" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0046" x="6545" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0047" x="6545" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0048" x="6545" y="2137" width="502" height="684" frameX="0" frameY="-294" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0049" x="2" y="2836" width="495" height="681" frameX="-4" frameY="-297" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0050" x="2" y="2836" width="495" height="681" frameX="-4" frameY="-297" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0051" x="499" y="2836" width="464" height="553" frameX="-53" frameY="-426" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0052" x="499" y="2836" width="464" height="553" frameX="-53" frameY="-426" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0053" x="965" y="2836" width="465" height="556" frameX="-49" frameY="-423" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0054" x="965" y="2836" width="465" height="556" frameX="-49" frameY="-423" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0055" x="1432" y="2836" width="458" height="565" frameX="-47" frameY="-414" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0056" x="1432" y="2836" width="458" height="565" frameX="-47" frameY="-414" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0057" x="1892" y="2836" width="252" height="545" frameX="-122" frameY="-330" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0058" x="2146" y="2836" width="251" height="312" frameX="-121" frameY="-102" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0059" x="2399" y="2836" width="245" height="317" frameX="-110" frameY="-35" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0060" x="2646" y="2836" width="247" height="316" frameX="-96" frameY="-15" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0061" x="2895" y="2836" width="241" height="321" frameX="-100" frameY="-12" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0062" x="3138" y="2836" width="241" height="323" frameX="-92" frameY="-3" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0063" x="2146" y="2836" width="251" height="312" frameX="-78" frameY="0" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0064" x="2399" y="2836" width="245" height="317" frameX="-72" frameY="-15" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0065" x="2646" y="2836" width="247" height="316" frameX="-64" frameY="-63" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0066" x="2895" y="2836" width="241" height="321" frameX="-63" frameY="-129" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0067" x="3138" y="2836" width="241" height="323" frameX="-44" frameY="-235" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0068" x="2146" y="2836" width="251" height="312" frameX="-21" frameY="-382" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0069" x="2399" y="2836" width="245" height="317" frameX="-17" frameY="-508" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0070" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0071" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0072" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0073" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0074" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0075" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0076" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0077" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0078" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0079" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0080" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0081" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0082" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0083" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0084" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0085" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0086" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0087" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0088" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0089" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0090" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0091" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0092" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0093" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0094" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0095" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0096" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0097" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0098" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0099" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0100" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0101" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0102" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0103" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0104" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0105" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0106" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0107" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0108" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0109" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0110" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0111" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0112" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0113" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0114" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0115" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0116" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0117" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0118" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0119" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0120" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0121" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0122" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0123" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0124" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0125" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0126" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0127" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0128" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0129" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0130" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0131" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0132" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0133" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0134" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0135" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0136" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0137" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0138" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0139" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0140" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0141" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0142" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0143" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0144" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0145" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0146" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0147" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0148" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0149" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0150" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0151" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0152" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0153" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0154" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0155" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0156" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0157" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0158" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0159" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0160" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0161" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0162" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0163" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0164" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0165" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0166" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0167" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0168" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0169" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0170" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0171" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0172" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0173" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0174" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0175" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0176" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0177" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0178" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0179" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0180" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0181" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0182" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0183" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0184" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0185" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0186" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0187" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0188" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0189" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0190" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0191" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0192" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0193" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0194" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0195" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0196" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0197" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0198" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0199" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0200" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0201" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0202" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0203" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0204" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0205" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0206" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0207" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0208" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0209" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0210" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0211" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0212" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0213" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0214" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0215" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0216" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0217" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0218" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0219" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0220" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby trans rights0221" x="3381" y="2836" width="69" height="70" frameX="-86" frameY="-658" frameWidth="517" frameHeight="979"/>
+	<SubTexture name="toby uP alt0000" x="3452" y="2836" width="495" height="724"/>
+	<SubTexture name="toby uP alt0001" x="3452" y="2836" width="495" height="724"/>
+	<SubTexture name="toby uP alt0002" x="3949" y="2836" width="495" height="721" frameX="0" frameY="-3" frameWidth="495" frameHeight="724"/>
+	<SubTexture name="toby uP alt0003" x="3949" y="2836" width="495" height="721" frameX="0" frameY="-3" frameWidth="495" frameHeight="724"/>
+	<SubTexture name="toby uP alt0004" x="3949" y="2836" width="495" height="721" frameX="0" frameY="-3" frameWidth="495" frameHeight="724"/>
+	<SubTexture name="toby uP alt0005" x="3949" y="2836" width="495" height="721" frameX="0" frameY="-3" frameWidth="495" frameHeight="724"/>
+	<SubTexture name="toby uP alt0006" x="3949" y="2836" width="495" height="721" frameX="0" frameY="-3" frameWidth="495" frameHeight="724"/>
+	<SubTexture name="toby uP alt0007" x="3949" y="2836" width="495" height="721" frameX="0" frameY="-3" frameWidth="495" frameHeight="724"/>
+	<SubTexture name="toby uP alt0008" x="3949" y="2836" width="495" height="721" frameX="0" frameY="-3" frameWidth="495" frameHeight="724"/>
+	<SubTexture name="toby uP alt0009" x="3949" y="2836" width="495" height="721" frameX="0" frameY="-3" frameWidth="495" frameHeight="724"/>
+	<SubTexture name="toby uP alt0010" x="3949" y="2836" width="495" height="721" frameX="0" frameY="-3" frameWidth="495" frameHeight="724"/>
+	<SubTexture name="toby uP alt0011" x="3949" y="2836" width="495" height="721" frameX="0" frameY="-3" frameWidth="495" frameHeight="724"/>
+	<SubTexture name="toby uP alt0012" x="3949" y="2836" width="495" height="721" frameX="0" frameY="-3" frameWidth="495" frameHeight="724"/>
+	<SubTexture name="toby uP alt0013" x="3949" y="2836" width="495" height="721" frameX="0" frameY="-3" frameWidth="495" frameHeight="724"/>
+	<SubTexture name="toby uP alt0014" x="3949" y="2836" width="495" height="721" frameX="0" frameY="-3" frameWidth="495" frameHeight="724"/>
+	<SubTexture name="toby uP alt0015" x="3949" y="2836" width="495" height="721" frameX="0" frameY="-3" frameWidth="495" frameHeight="724"/>
+	<SubTexture name="toby up0000" x="4446" y="2836" width="502" height="719"/>
+	<SubTexture name="toby up0001" x="4446" y="2836" width="502" height="719"/>
+	<SubTexture name="toby up0002" x="4950" y="2836" width="502" height="715" frameX="0" frameY="-4" frameWidth="502" frameHeight="719"/>
+	<SubTexture name="toby up0003" x="4950" y="2836" width="502" height="715" frameX="0" frameY="-4" frameWidth="502" frameHeight="719"/>
+	<SubTexture name="toby up0004" x="4950" y="2836" width="502" height="715" frameX="0" frameY="-4" frameWidth="502" frameHeight="719"/>
+	<SubTexture name="toby up0005" x="4950" y="2836" width="502" height="715" frameX="0" frameY="-4" frameWidth="502" frameHeight="719"/>
+	<SubTexture name="toby up0006" x="4950" y="2836" width="502" height="715" frameX="0" frameY="-4" frameWidth="502" frameHeight="719"/>
+	<SubTexture name="toby up0007" x="4950" y="2836" width="502" height="715" frameX="0" frameY="-4" frameWidth="502" frameHeight="719"/>
+	<SubTexture name="toby up0008" x="4950" y="2836" width="502" height="715" frameX="0" frameY="-4" frameWidth="502" frameHeight="719"/>
+	<SubTexture name="toby up0009" x="4950" y="2836" width="502" height="715" frameX="0" frameY="-4" frameWidth="502" frameHeight="719"/>
+	<SubTexture name="toby up0010" x="4950" y="2836" width="502" height="715" frameX="0" frameY="-4" frameWidth="502" frameHeight="719"/>
+	<SubTexture name="toby up0011" x="4950" y="2836" width="502" height="715" frameX="0" frameY="-4" frameWidth="502" frameHeight="719"/>
+	<SubTexture name="toby up0012" x="4950" y="2836" width="502" height="715" frameX="0" frameY="-4" frameWidth="502" frameHeight="719"/>
+	<SubTexture name="toby up0013" x="4950" y="2836" width="502" height="715" frameX="0" frameY="-4" frameWidth="502" frameHeight="719"/>
+	<SubTexture name="toby up0014" x="4950" y="2836" width="502" height="715" frameX="0" frameY="-4" frameWidth="502" frameHeight="719"/>
+	<SubTexture name="toby up0015" x="4950" y="2836" width="502" height="715" frameX="0" frameY="-4" frameWidth="502" frameHeight="719"/>
+</TextureAtlas>

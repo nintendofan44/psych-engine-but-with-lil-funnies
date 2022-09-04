@@ -1,0 +1,100 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-1,
+				-80
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "dan idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-1,
+				-84
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "dan left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-1,
+				-67
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "dan up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-1,
+				-104
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "dan down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-1,
+				-78
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "dan right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-1,
+				-69
+			],
+			"anim": "dialogue1",
+			"fps": 24,
+			"name": "dan dialogue 1",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-1,
+				-72
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "dialogue2",
+			"indices": [],
+			"name": "dan dialogue 2"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/dan",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "dan",
+	"flip_x": true,
+	"healthbar_colors": [
+		82,
+		215,
+		87
+	],
+	"camera_position": [
+		130,
+		70
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

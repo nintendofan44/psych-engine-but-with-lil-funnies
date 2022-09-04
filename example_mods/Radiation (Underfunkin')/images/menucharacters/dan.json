@@ -1,0 +1,11 @@
+{
+	"idle_anim": "dan idle",
+	"image": "dan",
+	"position": [
+		-228,
+		9
+	],
+	"flipX": false,
+	"scale": 0.7,
+	"confirm_anim": "dan idle"
+}

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="starman.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="EB battle thing instance 10000" x="2" y="2" width="495" height="376"/>
+	<SubTexture name="EB battle thing instance 10001" x="2" y="2" width="495" height="376"/>
+	<SubTexture name="EB battle thing instance 10002" x="499" y="2" width="495" height="376"/>
+	<SubTexture name="EB battle thing instance 10003" x="499" y="2" width="495" height="376"/>
+	<SubTexture name="EB battle thing instance 10004" x="2" y="380" width="495" height="376"/>
+	<SubTexture name="EB battle thing instance 10005" x="2" y="380" width="495" height="376"/>
+	<SubTexture name="EB battle thing instance 10006" x="499" y="380" width="495" height="376"/>
+	<SubTexture name="EB battle thing instance 10007" x="499" y="380" width="495" height="376"/>
+	<SubTexture name="EB battle thing instance 10008" x="499" y="380" width="495" height="376"/>
+	<SubTexture name="EB battle thing instance 10009" x="499" y="380" width="495" height="376"/>
+	<SubTexture name="EB battle thing instance 10010" x="499" y="380" width="495" height="376"/>
+	<SubTexture name="EB battle thing instance 10011" x="499" y="380" width="495" height="376"/>
+	<SubTexture name="EB battle thing instance 10012" x="499" y="380" width="495" height="376"/>
+	<SubTexture name="EB battle thing instance 10013" x="499" y="380" width="495" height="376"/>
+</TextureAtlas>

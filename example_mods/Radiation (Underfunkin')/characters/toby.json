@@ -1,0 +1,166 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-2,
+				-80
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "toby idle"
+		},
+		{
+			"offsets": [
+				13,
+				-83
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "toby left"
+		},
+		{
+			"offsets": [
+				-3,
+				-58
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "toby up"
+		},
+		{
+			"offsets": [
+				-1,
+				-110
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "toby down"
+		},
+		{
+			"offsets": [
+				-9,
+				-90
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "toby right"
+		},
+		{
+			"offsets": [
+				4,
+				-62
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "dialogue1",
+			"indices": [],
+			"name": "toby dialogue 1"
+		},
+		{
+			"offsets": [
+				23,
+				-89
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-alt",
+			"indices": [],
+			"name": "toby lefT alt"
+		},
+		{
+			"offsets": [
+				-9,
+				-53
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-alt",
+			"indices": [],
+			"name": "toby uP alt"
+		},
+		{
+			"offsets": [
+				-1,
+				-112
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-alt",
+			"indices": [],
+			"name": "toby dowN alt"
+		},
+		{
+			"offsets": [
+				-19,
+				-88
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-alt",
+			"indices": [],
+			"name": "toby righT alt"
+		},
+		{
+			"offsets": [
+				-2,
+				201
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "transition",
+			"indices": [],
+			"name": "toby trans rights"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-112,
+				-110
+			],
+			"anim": "cough",
+			"fps": 24,
+			"name": "toby cough",
+			"indices": []
+		},
+		{
+			"offsets": [
+				4,
+				-62
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "dialogue2",
+			"indices": [],
+			"name": "toby dialogue 2"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/toby",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "toby",
+	"flip_x": false,
+	"healthbar_colors": [
+		185,
+		58,
+		103
+	],
+	"camera_position": [
+		80,
+		70
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="dan.png">
+	<!-- Created with Adobe Animate version 21.0.7.42652 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="dan idle instance 10000" x="2" y="2" width="542" height="441" frameX="0" frameY="-9" frameWidth="542" frameHeight="450"/>
+	<SubTexture name="dan idle instance 10001" x="2" y="2" width="542" height="441" frameX="0" frameY="-9" frameWidth="542" frameHeight="450"/>
+	<SubTexture name="dan idle instance 10002" x="546" y="2" width="542" height="442" frameX="0" frameY="-8" frameWidth="542" frameHeight="450"/>
+	<SubTexture name="dan idle instance 10003" x="546" y="2" width="542" height="442" frameX="0" frameY="-8" frameWidth="542" frameHeight="450"/>
+	<SubTexture name="dan idle instance 10004" x="1090" y="2" width="542" height="448" frameX="0" frameY="-2" frameWidth="542" frameHeight="450"/>
+	<SubTexture name="dan idle instance 10005" x="1090" y="2" width="542" height="448" frameX="0" frameY="-2" frameWidth="542" frameHeight="450"/>
+	<SubTexture name="dan idle instance 10006" x="2" y="452" width="542" height="450"/>
+	<SubTexture name="dan idle instance 10007" x="2" y="452" width="542" height="450"/>
+	<SubTexture name="dan idle instance 10008" x="2" y="452" width="542" height="450"/>
+	<SubTexture name="dan idle instance 10009" x="2" y="452" width="542" height="450"/>
+	<SubTexture name="dan idle instance 10010" x="2" y="452" width="542" height="450"/>
+	<SubTexture name="dan idle instance 10011" x="2" y="452" width="542" height="450"/>
+	<SubTexture name="dan idle instance 10012" x="2" y="452" width="542" height="450"/>
+	<SubTexture name="dan idle instance 10013" x="2" y="452" width="542" height="450"/>
+</TextureAtlas>

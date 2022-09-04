@@ -1,0 +1,32 @@
+{
+	"storyName": "You gotta turn him on first",
+	"difficulties": "Standard",
+	"hideFreeplay": false,
+	"weekBackground": "toby",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"toby",
+		"dan",
+		""
+	],
+	"songs": [
+		[
+			"Radiation",
+			"toby",
+			[
+				185,
+				58,
+				103
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "Underfunkin' spin-off 1",
+	"hiddenUntilUnlocked": false
+}
