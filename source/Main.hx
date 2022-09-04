@@ -188,7 +188,7 @@ class Main extends Sprite
 			}
 		}
 
-		errMsg += "\nUncaught Error: " + e.error;
+		errMsg += "\nUncaught Error: " + e.error + '\nMessage: [' + quotes[FlxG.random.int(0, quotes.length)] + ']';
 
 		if (!FileSystem.exists("./crash/"))
 			FileSystem.createDirectory("./crash/");
@@ -197,8 +197,6 @@ class Main extends Sprite
 
 		Sys.println(errMsg);
 		Sys.println("Crash dump saved in " + Path.normalize(path));
-		Sys.println(" ");
-		Sys.println(quotes[FlxG.random.int(0, quotes.length)]);
 
 		lime.app.Application.current.window.alert(errMsg, "Error!");
 

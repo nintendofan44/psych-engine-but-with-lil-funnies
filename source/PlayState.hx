@@ -170,6 +170,7 @@ class PlayState extends MusicBeatState
 	public var combo:Int = 0;
 
 	private var healthBarBG:AttachedSprite;
+	private var bgh:AttachedSprite;
 	public var healthBar:FlxBar;
 
 	public var ratingsData:Array<Rating> = [];
@@ -388,9 +389,12 @@ class PlayState extends MusicBeatState
 	var offset2CH:Float = 0;
 	var overlap:Bool = true;
 
+	public static var _on = false;
 	override public function create()
 	{
 		Paths.clearStoredMemory();
+
+		_on = true;
 
 		if (zoom == -1) {
 			var ratioX:Float = windowWidth / gameWidth;
@@ -1287,7 +1291,7 @@ class PlayState extends MusicBeatState
 
 		if (ClientPrefs.middleScroll) {
 			trace("FlxG.width * 0.9 = " + FlxG.width * 0.9); // heheheha
-			healthBarBG = new AttachedSprite('healthBarSIDE');
+			healthBarBG = new AttachedSprite('healthbar/old/healthBarSIDE');
 			healthBarBG.x = FlxG.width * 0.9;
 			healthBarBG.y = 0;
 			healthBarBG.screenCenter(Y);
@@ -1296,16 +1300,32 @@ class PlayState extends MusicBeatState
 			healthBarBG.alpha = ClientPrefs.healthBarAlpha;
 			add(healthBarBG);
 		} else {
-			healthBarBG = new AttachedSprite('healthBar');
+			healthBarBG = new AttachedSprite('healthbar/old/healthBar');
 			healthBarBG.y = FlxG.height * 0.9;
 			healthBarBG.screenCenter(X);
 			healthBarBG.scrollFactor.set();
 			healthBarBG.visible = !ClientPrefs.hideHud;
 			healthBarBG.xAdd = -4;
 			healthBarBG.yAdd = -4;
-			add(healthBarBG);
 			if(ClientPrefs.downScroll) healthBarBG.y = 0.11 * FlxG.height;
 		}
+
+		var path = (ClientPrefs.middleScroll ? 'healthbar/new/coolhealthborderSIDE' : 'healthbar/new/coolhealthborder');
+		bgh = new AttachedSprite(path);
+		bgh.scrollFactor.set();
+		bgh.visible = !ClientPrefs.hideHud;
+		bgh.alpha = ClientPrefs.healthBarAlpha;
+		bgh.updateHitbox();
+		if (ClientPrefs.middleScroll) {
+			bgh.x = healthBarBG.x - (healthBarBG.width + -5.15);
+			bgh.y = healthBarBG.y - (healthBarBG.height / 10.5);
+		} else {
+			bgh.x = healthBarBG.x - 48.5;
+			bgh.y = healthBarBG.y - 21;
+		}
+
+		add(bgh);
+		add(healthBarBG);
 
 		healthBar = new FlxBar(healthBarBG.x + 4, healthBarBG.y + 4, (ClientPrefs.middleScroll ? BOTTOM_TO_TOP : RIGHT_TO_LEFT), Std.int(healthBarBG.width - 8), Std.int(healthBarBG.height - 8), this,
 		'health', 0, 2);
@@ -1373,6 +1393,7 @@ class PlayState extends MusicBeatState
 		grpNoteSplashes.cameras = [camHUD];
 		healthBar.cameras = [camHUD];
 		healthBarBG.cameras = [camHUD];
+		bgh.cameras = [camHUD];
 		iconP1.cameras = [camHUD];
 		iconP2.cameras = [camHUD];
 		credTxt.cameras = [camHUD];
@@ -1687,10 +1708,10 @@ class PlayState extends MusicBeatState
 		if(gfCheck && char.curCharacter.startsWith('gf')) { //IF DAD IS GIRLFRIEND, HE GOES TO HER POSITION
 			char.setPosition(GF_X, GF_Y);
 			char.scrollFactor.set(0.95, 0.95);
-			char.danceEveryNumBeats = 2;
 		}
 		char.x += char.positionArray[0];
 		char.y += char.positionArray[1];
+		char.danceEveryNumBeats = 1;
 	}
 
 	public function startVideo(name:String):Void {
@@ -3252,6 +3273,13 @@ class PlayState extends MusicBeatState
 			}
 		}
 
+		var val = ClientPrefs.getGameplaySetting('challenge', 'disabled');
+		if (val) {
+			for (i in 0...7) {
+				FlxMath.lerp(0, getStrums(i).direction, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
+			}
+		}
+
 		FlxG.watch.addQuick("beatShit", curBeat);
 		FlxG.watch.addQuick("stepShit", curStep);
 
@@ -3979,6 +4007,7 @@ class PlayState extends MusicBeatState
 			}
 		}
 
+		_on = false;
 		//resetcamwin();
 
 		canPause = false;

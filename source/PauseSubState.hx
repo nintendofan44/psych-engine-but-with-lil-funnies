@@ -201,6 +201,7 @@ class PauseSubState extends MusicBeatSubstate
 					FlxG.sound.music.volume = 0;
 					PlayState.changedDifficulty = true;
 					PlayState.chartingMode = false;
+					PlayState._on = false;
 					skipTimeTracker = null;
 
 					if(skipTimeText != null)
@@ -230,6 +231,7 @@ class PauseSubState extends MusicBeatSubstate
 					practiceText.visible = PlayState.instance.practiceMode;
 				case "Restart Song":
 					restartSong();
+					PlayState._on = false;
 				case "Leave Charting Mode":
 					restartSong();
 					PlayState.chartingMode = false;
@@ -269,6 +271,7 @@ class PauseSubState extends MusicBeatSubstate
 					FlxG.sound.playMusic(Paths.music('freakyMenu'));
 					PlayState.changedDifficulty = false;
 					PlayState.chartingMode = false;
+					PlayState._on = false;
 			}
 		}
 	}

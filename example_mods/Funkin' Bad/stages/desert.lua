@@ -1,12 +1,13 @@
 
 function onCreatePost()
-
-    setProperty('camFollowPos.y', getProperty('camFollowPos.y') - 100);
-    
+    setProperty('camFollowPos.y', 376);
+    if getProperty('boyfriend.curCharacter') == 'cerbera' then
+        setProperty('boyfriendGroup.x', 770)
+        setProperty('boyfriendGroup.y', 133)
+    end
 end
 
 function onCreate()
-
     makeLuaSprite('Sky', 'desertBackground/BlueSkys', -600, -250)
     makeLuaSprite('Cloud', 'desertBackground/Clouds', -450, -250)
     setScrollFactor('Cloud', 0.5, 0.5);
@@ -21,9 +22,9 @@ function onCreate()
     setScrollFactor('bartop',0,0)
     setObjectCamera('bartop','hud')
     if not middlescroll then
-        setObjectCamera('bartop','notehud')
-    else
         setObjectCamera('bartop','sus')
+    else
+        setObjectCamera('bartop','notehud')
     end
     makeLuaSprite('barbot','',0,620)
     makeGraphic('barbot',1280,100,'000000')
@@ -31,9 +32,9 @@ function onCreate()
     setScrollFactor('barbot',0,0)
     setObjectCamera('barbot','hud')
     if not middlescroll then
-        setObjectCamera('barbot','notehud')
-    else
         setObjectCamera('barbot','sus')
+    else
+        setObjectCamera('barbot','notehud')
     end
 
     addLuaSprite('Sky', false)
@@ -42,7 +43,6 @@ function onCreate()
     addLuaSprite('Smokes', false)
     addLuaSprite('barbot',true)
     addLuaSprite('bartop',true)
-
 end
 
 function onStepHit()
@@ -67,7 +67,5 @@ function onStepHit()
 end
 
 function onBeatHit()
-
     objectPlayAnimation('Smokes', 'SmokesMoving', true);
-
 end
