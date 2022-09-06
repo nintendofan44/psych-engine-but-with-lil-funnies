@@ -322,17 +322,21 @@ class Character extends FlxSprite
 	{
 		if (!debugMode && !skipDance && !specialAnim)
 		{
-			if(danceIdle)
+			if (danceIdle)
 			{
 				danced = !danced;
 
+				var loopL = animation.getByName('danceLeft').looped;
+				var loopR = animation.getByName('danceRight').looped;
 				if (danced)
-					playAnim('danceRight' + idleSuffix, !animation.getByName('idle').looped);
+					playAnim('danceRight' + idleSuffix, !loopR);
 				else
-					playAnim('danceLeft' + idleSuffix, !animation.getByName('idle').looped);
+					playAnim('danceLeft' + idleSuffix, !loopL);
 			}
-			else if(animation.getByName('idle' + idleSuffix) != null) {
-					playAnim('idle' + idleSuffix, !animation.getByName('idle').looped);
+			else if (animation.getByName('idle' + idleSuffix) != null)
+			{
+				var loop = animation.getByName('idle').looped;
+				playAnim('idle' + idleSuffix, !loop);
 			}
 		}
 	}

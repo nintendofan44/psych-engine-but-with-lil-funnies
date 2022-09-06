@@ -1,5 +1,7 @@
 package editors;
 
+import flixel.util.FlxStringUtil;
+import flixel.util.FlxStringUtil;
 #if desktop
 import Discord.DiscordClient;
 #end
@@ -198,6 +200,9 @@ class ChartingState extends MusicBeatState
 	public static var curQuant = 0;
 	var text:String = "";
 	public static var vortex:Bool = false;
+
+	var timeTxt:FlxText;
+
 	override function create()
 	{
 		if (PlayState.SONG != null)
@@ -380,6 +385,14 @@ class ChartingState extends MusicBeatState
 		add(zoomTxt);
 
 		updateGrid();
+
+		timeTxt = new FlxText(0,0, FlxG.width, '');
+		timeTxt.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+		timeTxt.scrollFactor.set();
+		timeTxt.screenCenter();
+		timeTxt.borderSize = 2;
+		add(timeTxt);
+
 		super.create();
 	}
 
@@ -1967,6 +1980,16 @@ class ChartingState extends MusicBeatState
 		}
 		lastConductorPos = Conductor.songPosition;
 		super.update(elapsed);
+
+		var curTime:Float = Conductor.songPosition - ClientPrefs.noteOffset;
+		if(curTime < 0) curTime = 0;
+	
+		var timeElapsed:Int = Math.floor(curTime / 1000);
+		if(timeElapsed < 0) timeElapsed = 0;
+
+		var songLength = FlxG.sound.music.length;
+		var realSongLength:Int = Math.floor(songLength / 1000);
+		timeTxt.text = '' + FlxStringUtil.formatTime(timeElapsed, false) + '/' + FlxStringUtil.formatTime(realSongLength, false);
 	}
 
 	function updateZoom() {

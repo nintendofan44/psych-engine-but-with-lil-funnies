@@ -53,7 +53,6 @@ class ResetScoreSubState extends MusicBeatSubstate
 		if(week == -1) {
 			icon = new HealthIcon(character);
 			icon.setGraphicSize(Std.int(icon.width * tooLong));
-			icon.updateHitbox();
 			icon.setPosition(text.x - icon.width + (10 * tooLong), text.y - 30);
 			icon.alpha = 0;
 			add(icon);

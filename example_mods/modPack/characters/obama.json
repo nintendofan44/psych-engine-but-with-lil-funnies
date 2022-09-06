@@ -1,58 +1,58 @@
 {
 	"animations": [
 		{
-			"loop": false,
 			"offsets": [
 				370,
 				30
 			],
-			"fps": 24,
+			"loop": false,
 			"anim": "singLEFT",
-			"indices": [],
-			"name": "Obama Left"
+			"fps": 24,
+			"name": "Obama Left",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-30,
 				-280
 			],
-			"fps": 24,
+			"loop": false,
 			"anim": "singDOWN",
-			"indices": [],
-			"name": "Obama Down"
+			"fps": 24,
+			"name": "Obama Down",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-190,
 				420
 			],
-			"fps": 24,
+			"loop": false,
 			"anim": "singUP",
-			"indices": [],
-			"name": "Obama Up"
+			"fps": 24,
+			"name": "Obama Up",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				-440,
 				0
 			],
-			"fps": 24,
+			"loop": false,
 			"anim": "singRIGHT",
-			"indices": [],
-			"name": "Obama Right"
+			"fps": 24,
+			"name": "Obama Right",
+			"indices": []
 		},
 		{
-			"loop": false,
 			"offsets": [
 				0,
 				0
 			],
+			"indices": [],
 			"fps": 24,
 			"anim": "idle",
-			"indices": [],
+			"loop": true,
 			"name": "Obama Idle"
 		}
 	],

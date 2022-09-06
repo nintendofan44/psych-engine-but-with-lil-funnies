@@ -1,5 +1,7 @@
 package;
 
+import flixel.util.FlxTimer;
+import flixel.tweens.FlxEase;
 #if desktop
 import Discord.DiscordClient;
 #end
@@ -49,6 +51,11 @@ class FreeplayState extends MusicBeatState
 	var bg:FlxSprite;
 	var intendedColor:Int;
 	var colorTween:FlxTween;
+
+	public var selectThing:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image("freeplay/layout"));
+	public var selectThingShader:MenuItemShader;
+	/*public var selectThingIcon:FlxSprite = new FlxSprite(0, 0).loadGraphic(Paths.image("freeplay/iconLayout"));
+	public var selectThingIconShader:MenuItemShader;*/
 
 	override function create()
 	{
@@ -112,6 +119,7 @@ class FreeplayState extends MusicBeatState
 		for (i in 0...songs.length)
 		{
 			var songText:Alphabet = new Alphabet(0, (70 * i) + 30, songs[i].songName, true, false);
+			songText.ID = i;
 			songText.isMenuItem = true;
 			songText.targetY = i;
 			grpSongs.add(songText);
@@ -203,6 +211,14 @@ class FreeplayState extends MusicBeatState
 		text.setFormat(Paths.font("vcr.ttf"), size, FlxColor.WHITE, RIGHT);
 		text.scrollFactor.set();
 		add(text);
+
+        selectThing.shader = (selectThingShader = new MenuItemShader());
+        selectThing.antialiasing = true;
+        add(selectThing);
+
+		/*selectThingIcon.shader = (selectThingIconShader = new MenuItemShader());
+        selectThingIcon.antialiasing = true;
+        add(selectThingIcon);*/
 		super.create();
 	}
 
@@ -241,6 +257,8 @@ class FreeplayState extends MusicBeatState
 	var instPlaying:Int = -1;
 	private static var vocals:FlxSound = null;
 	var holdTime:Float = 0;
+	var specialTime:Float = 0;
+	var asda:Int = 0;
 	override function update(elapsed:Float)
 	{
 		if (FlxG.sound.music.volume < 0.7)
@@ -393,6 +411,19 @@ class FreeplayState extends MusicBeatState
 			FlxG.sound.play(Paths.sound('scrollMenu'));
 		}
 		super.update(elapsed);
+		specialTime += elapsed;
+		selectThingShader.setTime(specialTime);
+		//selectThingIconShader.setTime(specialTime);
+		/*if (FlxG.keys.pressed.O) {
+			asda++;
+			for (item in grpSongs.members) {
+				if (item.ID == curSelected) {
+					selectThing.x = item.x - asda;
+					selectThing.y = item.y - 20;
+				}
+			}
+			trace("asda: " + asda);
+		}*/
 	}
 
 	public static function destroyFreeplayVocals() {
@@ -530,6 +561,15 @@ class FreeplayState extends MusicBeatState
 		scoreBG.x = FlxG.width - (scoreBG.scale.x / 2);
 		diffText.x = Std.int(scoreBG.x + (scoreBG.width / 2));
 		diffText.x -= diffText.width / 2;
+
+		for (item in grpSongs.members) {
+			if (item.ID == curSelected) {
+				FlxTween.tween(selectThing, {x: item.x - 5, y: item.y - 20}, 1.1, {ease: FlxEase.cubeInOut});
+				//FlxTween.tween(selectThing, {x: (item.width - FlxG.width) / 64, y: item.y - 20}, 1.1, {ease: FlxEase.cubeInOut});
+			}
+		}
+		/*var icon = iconArray[curSelected];
+		FlxTween.tween(selectThingIcon, {x: icon.x + 10, y: icon.y + 10}, 1.1, {ease: FlxEase.cubeInOut});*/
 	}
 }
 
