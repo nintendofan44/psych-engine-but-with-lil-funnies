@@ -244,6 +244,21 @@ class Paths
 		return getPath('images/$key.png', IMAGE, library);
 	}
 
+	inline static public function shader(name:String, ?mod:String) {
+		if (mod == null) {
+			mod = "Friday Night Funkin'";
+		}
+		return '$mod:$name';
+	}
+
+	inline static public function shaderFrag(key:String, ?library:String) {
+		return getPath('images/cebola/$key.frag', TEXT, library);
+	}
+
+	inline static public function shaderVert(key:String, ?library:String) {
+		return getPath('images/cebola/$key.vert', TEXT, library);
+	}
+
 	static public function getTextFromFile(key:String, ?ignoreMods:Bool = false):String
 	{
 		#if sys

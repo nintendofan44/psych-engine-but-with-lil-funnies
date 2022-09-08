@@ -1,5 +1,6 @@
 package;
 
+import shaders.CustomShader;
 import helpers.OldBezier;
 import shaders.BH.BHShader;
 import shaders.BH;
@@ -390,6 +391,8 @@ class PlayState extends MusicBeatState
 	var overlap:Bool = true;
 
 	public static var _on = false;
+
+	var scroll:CustomShader = null;
 	override public function create()
 	{
 		Paths.clearStoredMemory();
@@ -666,6 +669,16 @@ class PlayState extends MusicBeatState
 					var galaxy_moment:BH = new BH();
 					galaxy.shader = galaxy_moment.shader;
 					curbg = galaxy;
+					#end
+				}
+			case 'cebola': // https://tenor.com/view/chola-animated-cry-more-gif-14878482.
+				if (ClientPrefs.shaders) {
+					#if windows
+					if (scroll == null) {
+						scroll = new CustomShader(Paths.shader(Paths.imageString('cebola/scroll')));
+						var filter:ShaderFilter = new ShaderFilter(scroll);
+						FlxG.camera.setFilters([filter]);
+					}
 					#end
 				}
 

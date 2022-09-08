@@ -108,7 +108,7 @@ class FreeplayState extends MusicBeatState
 			}
 		}*/
 
-		bg = new FlxSprite().loadGraphic(Paths.image('menuDesat'));
+		bg = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.BLACK);
 		bg.antialiasing = ClientPrefs.globalAntialiasing;
 		add(bg);
 		bg.screenCenter();
@@ -165,8 +165,8 @@ class FreeplayState extends MusicBeatState
 		add(scoreText);
 
 		if(curSelected >= songs.length) curSelected = 0;
-		bg.color = songs[curSelected].color;
-		intendedColor = bg.color;
+		selectThing.color = songs[curSelected].color;
+		intendedColor = selectThing.color;
 
 		if(lastDifficultyName == '')
 		{
@@ -472,7 +472,7 @@ class FreeplayState extends MusicBeatState
 				colorTween.cancel();
 			}
 			intendedColor = newColor;
-			colorTween = FlxTween.color(bg, 1, bg.color, intendedColor, {
+			colorTween = FlxTween.color(selectThing, 1, selectThing.color, intendedColor, {
 				onComplete: function(twn:FlxTween) {
 					colorTween = null;
 				}
@@ -561,13 +561,18 @@ class FreeplayState extends MusicBeatState
 		scoreBG.x = FlxG.width - (scoreBG.scale.x / 2);
 		diffText.x = Std.int(scoreBG.x + (scoreBG.width / 2));
 		diffText.x -= diffText.width / 2;
-
 		for (item in grpSongs.members) {
+			if (item.ID == curSelected) {
+				selectThing.x = item.x - 4;
+				selectThing.y = item.y - 20;
+			}
+		}
+		/*for (item in grpSongs.members) {
 			if (item.ID == curSelected) {
 				FlxTween.tween(selectThing, {x: item.x - 5, y: item.y - 20}, 1.1, {ease: FlxEase.cubeInOut});
 				//FlxTween.tween(selectThing, {x: (item.width - FlxG.width) / 64, y: item.y - 20}, 1.1, {ease: FlxEase.cubeInOut});
 			}
-		}
+		}*/
 		/*var icon = iconArray[curSelected];
 		FlxTween.tween(selectThingIcon, {x: icon.x + 10, y: icon.y + 10}, 1.1, {ease: FlxEase.cubeInOut});*/
 	}
