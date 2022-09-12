@@ -393,6 +393,10 @@ class PlayState extends MusicBeatState
 	public static var _on = false;
 
 	var scroll:CustomShader = null;
+
+	var lastMustHit:Bool = false;
+	var noteHits:Int = 0;
+	var noteCombo:FlxSprite;
 	override public function create()
 	{
 		Paths.clearStoredMemory();
@@ -1551,6 +1555,24 @@ class PlayState extends MusicBeatState
 
 		Conductor.safeZoneOffset = (ClientPrefs.safeFrames / 60) * 1000;
 		callOnLuas('onCreatePost', []);
+
+		CoolUtil.precacheSound('noteComboSound');
+
+		var x = BF_X / 10 + boyfriend.x / 4;
+		var y = BF_Y / 10 + boyfriend.y / 6 + 300;
+		if (isPixelStage || (camGame.zoom > 1)) {
+			x -= 180;
+			y /= 1.3;
+		}
+		noteCombo = new FlxSprite(x,y);
+		noteCombo.frames = Paths.getSparrowAtlas('noteCombo');
+		noteCombo.scrollFactor.set(0.5,0.5);
+		noteCombo.animation.addByPrefix('appear', 'appear', 24, false);
+		noteCombo.animation.addByPrefix('disappear', 'disappear', 40, false);
+		noteCombo.visible = false;
+		noteCombo.active = false;
+		noteCombo.antialiasing = ClientPrefs.globalAntialiasing;
+		add(noteCombo);
 
 		super.create();
 
@@ -2885,6 +2907,31 @@ class PlayState extends MusicBeatState
 		}*/
 		callOnLuas('onUpdate', [elapsed]);
 
+		if (noteCombo != null) {
+			if (PlayState.SONG.notes[Std.int(curStep / 16)] != null) {
+				if (lastMustHit != PlayState.SONG.notes[Std.int(curStep / 16)].mustHitSection) {
+					lastMustHit = PlayState.SONG.notes[Std.int(curStep / 16)].mustHitSection;
+					if (!lastMustHit && noteHits > 12 && (curBeat % 4 == 0 || curBeat % 6 == 0)) {
+						FlxG.sound.play(Paths.sound('noteComboSound'));
+		
+						noteCombo.visible = true;
+						noteCombo.active = true;
+						playCombo('appear', true);
+		
+						noteHits = 0;
+					}
+				}
+			}
+	
+			if (noteCombo.animation.finished) {
+				if (noteCombo.animation.curAnim != null && noteCombo.animation.curAnim.name == 'appear') {
+					playCombo("disappear");
+					noteCombo.visible = false;
+					noteCombo.active = false;
+				}
+			}
+		}
+
 		switch (curStage)
 		{
 			case 'tank':
@@ -3084,6 +3131,8 @@ class PlayState extends MusicBeatState
 
 		// FlxG.watch.addQuick('VOL', vocals.amplitudeLeft);
 		// FlxG.watch.addQuick('VOLRight', vocals.amplitudeRight);
+
+		stupidLerp(elapsed, 0.2, 1);
 
 		var xx1 = FlxMath.lerp(1, iconP1.scale.x, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
 		var yy1 = FlxMath.lerp(1, iconP1.scale.y, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
@@ -4327,6 +4376,7 @@ class PlayState extends MusicBeatState
 					if (canMiss) {
 						noteMissPress(key);
 						callOnLuas('noteMissPress', [key]);
+						noteHits = 0;
 					}
 				}
 
@@ -4465,6 +4515,14 @@ class PlayState extends MusicBeatState
 			}
 		});
 		combo = 0;
+		missSpr.scale.set(0.24, 0.24);
+		accuracySpr.scale.set(0.14, 0.14);
+		scoreSpr.scale.set(0.14, 0.14);
+		comboSpr.scale.set(0.14, 0.14);
+		missTxt.scale.set(1.15, 1.15);
+		accuracyTxt.scale.set(0.85, 0.85);
+		scoreTxt.scale.set(0.85, 0.85);
+		comboTxt.scale.set(0.85, 0.85);
 
 		health -= daNote.missHealth * healthLoss;
 		if(instakillOnMiss)
@@ -4497,6 +4555,7 @@ class PlayState extends MusicBeatState
 		}
 
 		callOnLuas('noteMiss', [notes.members.indexOf(daNote), daNote.noteData, daNote.noteType, daNote.isSustainNote, daNote.ID]);
+		noteHits = 0;
 	}
 
 	function noteMissPress(direction:Int = 1):Void //You pressed a key when there was no notes to press for this key
@@ -4517,6 +4576,14 @@ class PlayState extends MusicBeatState
 				gf.playAnim('sad');
 			}
 			combo = 0;
+			missSpr.scale.set(0.24, 0.24);
+			accuracySpr.scale.set(0.14, 0.14);
+			scoreSpr.scale.set(0.14, 0.14);
+			comboSpr.scale.set(0.14, 0.14);
+			missTxt.scale.set(1.15, 1.15);
+			accuracyTxt.scale.set(0.85, 0.85);
+			scoreTxt.scale.set(0.85, 0.85);
+			comboTxt.scale.set(0.85, 0.85);
 
 			if(!practiceMode) songScore -= 10;
 			if(!endingSong) {
@@ -4543,6 +4610,7 @@ class PlayState extends MusicBeatState
 			vocals.volume = 0;
 		}
 		callOnLuas('noteMissPress', [direction]);
+		noteHits = 0;
 	}
 
 	function opponentNoteHit(note:Note):Void
@@ -4643,6 +4711,12 @@ class PlayState extends MusicBeatState
 				combo += 1;
 				popUpScore(note);
 				if(combo > 9999) combo = 9999;
+				accuracySpr.scale.set(0.24, 0.24);
+				scoreSpr.scale.set(0.24, 0.24);
+				comboSpr.scale.set(0.24, 0.24);
+				accuracyTxt.scale.set(1.15, 1.15);
+				scoreTxt.scale.set(1.15, 1.15);
+				comboTxt.scale.set(1.15, 1.15);
 			}
 			health += note.hitHealth * healthGain;
 
@@ -4701,6 +4775,7 @@ class PlayState extends MusicBeatState
 			var leData:Int = Math.round(Math.abs(note.noteData));
 			var leType:String = note.noteType;
 			callOnLuas('goodNoteHit', [notes.members.indexOf(note), leData, leType, isSus, note.ID]);
+			if (!isSus) noteHits++;
 
 			if (!note.isSustainNote)
 			{
@@ -5703,4 +5778,59 @@ class PlayState extends MusicBeatState
 		camWin = camHUD;
 		dadGroup.cameras = [camGame];
 	}*/
+
+	function easyLerp(target:Float, num:Float, e:Float) {
+		return FlxMath.lerp(target, num, CoolUtil.boundTo(1 - (e * 9), 0, 1));
+	}
+
+	function playCombo(anim:String, force:Bool = false) {
+		if (noteCombo != null) {
+			noteCombo.animation.play(anim, force);
+
+			var ox = 0;
+			var oy = 0;
+			if (anim == "disappear") ox = -150;
+			noteCombo.offset.set(ox,oy);
+		}
+	}
+
+	function stupidLerp(elapsed:Float, that:Float, thatTxt:Float) {
+		comboSpr.scale.set(
+			easyLerp(that, comboSpr.scale.x, elapsed),
+			easyLerp(that, comboSpr.scale.y, elapsed)
+		);
+		comboTxt.scale.set(
+			easyLerp(thatTxt, comboTxt.scale.x, elapsed),
+			easyLerp(thatTxt, comboTxt.scale.y, elapsed)
+		);
+		missSpr.scale.set(
+			easyLerp(that, missSpr.scale.x, elapsed),
+			easyLerp(that, missSpr.scale.y, elapsed)
+		);
+		missTxt.scale.set(
+			easyLerp(thatTxt, missTxt.scale.x, elapsed),
+			easyLerp(thatTxt, missTxt.scale.y, elapsed)
+		);
+		accuracySpr.scale.set(
+			easyLerp(that, accuracySpr.scale.x, elapsed),
+			easyLerp(that, accuracySpr.scale.y, elapsed)
+		);
+		accuracyTxt.scale.set(
+			easyLerp(thatTxt, accuracyTxt.scale.x, elapsed),
+			easyLerp(thatTxt, accuracyTxt.scale.y, elapsed)
+		);
+		scoreSpr.scale.set(
+			easyLerp(that, scoreSpr.scale.x, elapsed),
+			easyLerp(that, scoreSpr.scale.y, elapsed)
+		);
+		scoreTxt.scale.set(
+			easyLerp(thatTxt, scoreTxt.scale.x, elapsed),
+			easyLerp(thatTxt, scoreTxt.scale.y, elapsed)
+		);
+
+		comboTxt.origin.set(comboTxt.frameWidth * 0, comboTxt.frameHeight * 0.5);
+		missTxt.origin.set(missTxt.frameWidth * 0, missTxt.frameHeight * 0.5);
+		accuracyTxt.origin.set(accuracyTxt.frameWidth * 0, accuracyTxt.frameHeight * 0.5);
+		scoreTxt.origin.set(scoreTxt.frameWidth * 0, scoreTxt.frameHeight * 0.5);
+	}
 }

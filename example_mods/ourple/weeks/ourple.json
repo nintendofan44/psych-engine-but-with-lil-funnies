@@ -1,7 +1,7 @@
 {
 	"songs": [
-		["Blubber", "agoti", [255, 255, 255]],
-		["Midnight", "agoti", [144, 96, 0]]
+		["Blubber", "jones", [255, 255, 255]],
+		["Midnight", "orange", [144, 96, 0]]
 	],
 
 	"weekCharacters": [
