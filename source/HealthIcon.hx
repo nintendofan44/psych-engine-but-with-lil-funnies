@@ -42,9 +42,9 @@ class HealthIcon extends FlxSprite
 			var file:Dynamic = Paths.image(name);
 
 			loadGraphic(file); //Load stupidly first for getting the file size
-			loadGraphic(file, true, Math.floor(width / 2), Math.floor(height)); //Then load it fr
-			offset.x = ((ClientPrefs.middleScroll ? height : width) - 150) / 2;
-			offset.y = ((ClientPrefs.middleScroll ? height : width) - 150) / 2;
+			loadGraphic(file, true, Math.floor(frameWidth / 2), Math.floor(frameHeight)); //Then load it fr
+			offset.x = ((ClientPrefs.middleScroll ? frameHeight : frameWidth) - 150) / 2;
+			offset.y = ((ClientPrefs.middleScroll ? frameHeight : frameWidth) - 150) / 2;
 
 			animation.add(char, [0, 1], 0, false, isPlayer);
 			animation.play(char);
@@ -60,7 +60,6 @@ class HealthIcon extends FlxSprite
 	override function updateHitbox()
 	{
 		super.updateHitbox();
-		trace("annnasndsanklasd");
 	}
 
 	public function getCharacter():String {

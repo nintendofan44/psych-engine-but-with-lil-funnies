@@ -397,6 +397,9 @@ class PlayState extends MusicBeatState
 	var lastMustHit:Bool = false;
 	var noteHits:Int = 0;
 	var noteCombo:FlxSprite;
+
+	var markiplier:Float = 0.0;
+	var markiplier2:Float = 0.0;
 	override public function create()
 	{
 		Paths.clearStoredMemory();
@@ -3141,109 +3144,26 @@ class PlayState extends MusicBeatState
 		var yy2 = FlxMath.lerp(1, iconP2.scale.y, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1));
 
 		iconP1.scale.set(xx1,yy1);
+		iconP1.updateHitbox();
 		iconP2.scale.set(xx2,yy2);
+		iconP2.updateHitbox();
 
 		if (finished_scale) {
 			line.scale.set(1, FlxMath.lerp(0.5, line.scale.y, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1)));
 			line2.scale.set(1, FlxMath.lerp(0.5, line2.scale.y, CoolUtil.boundTo(1 - (elapsed * 9), 0, 1)));
 		}
 
-		var offdiv = 1000;
-		var offadd1:Int = -96;
-		var offadd2:Int = 17;
-		/*if (FlxG.keys.pressed.I)
-		{
-			offadd1 -= 1;
-			addTextToDebug('offadd1: ' + offadd1, FlxColor.GREEN);
-		}
-		if (FlxG.keys.pressed.O)
-		{
-			offadd1 += 1;
-			addTextToDebug('offadd1: ' + offadd1, FlxColor.GREEN);
-		}
-		if (FlxG.keys.pressed.Y)
-		{
-			offadd2 -= 1;
-			addTextToDebug('offadd2: ' + offadd2, FlxColor.GREEN);
-		}
-		if (FlxG.keys.pressed.U)
-		{
-			offadd2 += 1;
-			addTextToDebug('offadd2: ' + offadd2, FlxColor.GREEN);
-		}*/
-
-		/*if (FlxG.keys.pressed.I)
-		{
-			if (ClientPrefs.middleScroll)
-			{
-				offset1CH -= .5;
-				addTextToDebug('offset1CH: ' + offset1CH, FlxColor.GREEN);
-			}
-			else
-			{
-				offset1CW -= .5;
-				addTextToDebug('offset1CW: ' + offset1CW, FlxColor.GREEN);
-			}
-		}
-		if (FlxG.keys.pressed.O)
-		{
-			if (ClientPrefs.middleScroll)
-			{
-				offset1CH += .5;
-				addTextToDebug('offset1CH: ' + offset1CH, FlxColor.GREEN);
-			}
-			else
-			{
-				offset1CW += .5;
-				addTextToDebug('offset1CW: ' + offset1CW, FlxColor.GREEN);
-			}
-		}*/
-
-		var iconOffset1:Float = -(10 * (ClientPrefs.middleScroll ? iconP1.height / offdiv : iconP1.width / offdiv)) - offadd1;
-		var iconOffset2:Float = -(10 * (ClientPrefs.middleScroll ? iconP2.height / offdiv : iconP2.width / offdiv)) + offadd2;
-		//iconP1.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01) - iconOffset1);
-		//iconP2.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01)) - (iconP2.width - iconOffset2);
-
-		// that should do it
-		var gah = 0.01;
-
-		if ((ClientPrefs.middleScroll ? iconP1 : iconP2).overlaps(ClientPrefs.middleScroll ? iconP2 : iconP1) && overlap)
-		{
-			if (ClientPrefs.middleScroll)
-			{
-				offset1CH += .5;
-				offset2CH += .5;
-			}
-			else
-			{
-				offset1CW += .5;
-				offset2CW += .5;
-			}
-		} else {
-			overlap = false;
-		}
-
-		if (!overlap)
-		{
-			if (ClientPrefs.middleScroll)
-			{
-				if (offset1CH > -16)
-					offset1CH -= .5;
-			}
-			else
-			{
-				if (offset1CW > 28.5)
-					offset1CW -= .5;
-			}
-		}
-
+		var iconOffset:Int = 26;
 		if (ClientPrefs.middleScroll) {
-			iconP1.y = healthBar.y + (healthBar.height * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * gah)) + (iconP1.height + offset1CH) / 2 - iconOffset1;
-			iconP2.y = healthBar.y + (healthBar.height * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * gah)) - (iconP2.height + offset2CH) / 2 - iconOffset2 * 2;
+			iconP1.y = healthBar.y + (healthBar.height * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01) - iconOffset);
+			iconP2.y = healthBar.y + (healthBar.height * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01)) - (iconP2.frameHeight - iconOffset);
 		} else {
-			iconP1.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * gah)) + (iconP1.width + offset1CW) / 2 - iconOffset1;
-			iconP2.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * gah)) - (iconP2.width + offset2CW) / 2 - iconOffset2 * 2;
+			iconP1.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01) - iconOffset);
+			iconP2.x = healthBar.x + (healthBar.width * (FlxMath.remapToRange(healthBar.percent, 0, 100, 100, 0) * 0.01)) - (iconP2.frameWidth - iconOffset);
 		}
+
+		iconP1.origin.set(iconP1.frameWidth * 1, iconP1.frameHeight * 1);
+		iconP2.origin.set(iconP2.frameWidth * 1, iconP2.frameHeight * 1);
 
 		if (health > 2)
 			health = 2;
@@ -5156,7 +5076,9 @@ class PlayState extends MusicBeatState
 
 		var val:Float = 1.2;
 		iconP1.scale.set(val, val);
+		iconP1.updateHitbox();
 		iconP2.scale.set(val, val);
+		iconP2.updateHitbox();
 
 		if (finished_scale) {
 			line.scale.set(1, 0.6);
