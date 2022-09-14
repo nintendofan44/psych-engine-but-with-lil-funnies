@@ -3383,6 +3383,7 @@ class PlayState extends MusicBeatState
 								var swagRect = new FlxRect(0, 0, daNote.frameWidth, daNote.frameHeight);
 								swagRect.height = (center - daNote.y) / daNote.scale.y;
 								swagRect.y = daNote.frameHeight - swagRect.height;
+								//swagRect.getRotatedBounds(strumDirection, FlxPoint.weak(0.5,0.5), swagRect);
 								daNote.clipRect = swagRect;
 							}
 						}
@@ -3393,6 +3394,7 @@ class PlayState extends MusicBeatState
 								var swagRect = new FlxRect(0, 0, daNote.width / daNote.scale.x, daNote.height / daNote.scale.y);
 								swagRect.y = (center - daNote.y) / daNote.scale.y;
 								swagRect.height -= swagRect.y;
+								//swagRect.getRotatedBounds(strumDirection, FlxPoint.weak(0.5,0.5), swagRect);
 								daNote.clipRect = swagRect;
 							}
 						}
@@ -5754,5 +5756,37 @@ class PlayState extends MusicBeatState
 		missTxt.origin.set(missTxt.frameWidth * 0, missTxt.frameHeight * 0.5);
 		accuracyTxt.origin.set(accuracyTxt.frameWidth * 0, accuracyTxt.frameHeight * 0.5);
 		scoreTxt.origin.set(scoreTxt.frameWidth * 0, scoreTxt.frameHeight * 0.5);
+	}
+
+	function rectCalc(degrees:Float, newRect:FlxRect, daNote:Note) {
+		var radians = FlxAngle.TO_RAD * degrees;
+		var cos = Math.cos(radians);
+		var sin = Math.sin(radians);
+
+		var left = -daNote.offset.x;
+		var top = -daNote.offset.y;
+		var right = -daNote.offset.x + daNote.width;
+		var bottom = -daNote.offset.y + daNote.height;
+
+		if (degrees < 90)
+		{
+			newRect.x += daNote.offset.x + cos * left - sin * bottom;
+			newRect.y += daNote.offset.y + sin * left + cos * top;
+		}
+		else if (degrees < 180)
+		{
+			newRect.x += daNote.offset.x + cos * right - sin * bottom;
+			newRect.y += daNote.offset.y + sin * left  + cos * bottom;
+		}
+		else if (degrees < 270)
+		{
+			newRect.x += daNote.offset.x + cos * right - sin * top;
+			newRect.y += daNote.offset.y + sin * right + cos * bottom;
+		}
+		else
+		{
+			newRect.x += daNote.offset.x + cos * left - sin * top;
+			newRect.y += daNote.offset.y + sin * right + cos * top;
+		}
 	}
 }

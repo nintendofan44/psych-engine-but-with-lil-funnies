@@ -100,3 +100,29 @@ function onBeatHit()
         end
     end
 end--]]
+
+function onCreatePost()
+    if downscroll then
+        --dad
+        noteTweenDirection('1', 0, -180, 3, 'expoinout')
+        noteTweenDirection('2', 1, -180, 3, 'expoinout')
+        noteTweenDirection('3', 2, -180, 3, 'expoinout')
+        noteTweenDirection('4', 3, -180, 3, 'expoinout')
+
+        noteTweenY('1y', 0, 50, 3, 'expoinout')
+        noteTweenY('2y', 1, 50, 3, 'expoinout')
+        noteTweenY('3y', 2, 50, 3, 'expoinout')
+        noteTweenY('4y', 3, 50, 3, 'expoinout')
+    else
+        --bf
+        noteTweenDirection('5', 4, 180, 3, 'expoinout')
+        noteTweenDirection('6', 5, 180, 3, 'expoinout')
+        noteTweenDirection('7', 6, 180, 3, 'expoinout')
+        noteTweenDirection('8', 7, 180, 3, 'expoinout')
+
+        noteTweenDirection('5', 0, 50, 3, 'expoinout')
+        noteTweenDirection('6', 1, 50, 3, 'expoinout')
+        noteTweenDirection('7', 2, 50, 3, 'expoinout')
+        noteTweenDirection('8', 3, 50, 3, 'expoinout')
+    end
+end
