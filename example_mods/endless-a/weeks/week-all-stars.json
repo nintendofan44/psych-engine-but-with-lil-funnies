@@ -1,0 +1,32 @@
+{
+	"storyName": "sonci",
+	"difficulties": "",
+	"hideFreeplay": false,
+	"weekBackground": "",
+	"freeplayColor": [
+        86,
+        0,
+        135
+	],
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"bf",
+		""
+	],
+	"songs": [
+		[
+			"endless-a",
+			"majin-allstars",
+			[
+				86,
+				0,
+				135
+			]
+		]
+	],
+	"hideStoryMode": true,
+	"weekName": "sonc",
+	"hiddenUntilUnlocked": false
+}

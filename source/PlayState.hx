@@ -398,8 +398,9 @@ class PlayState extends MusicBeatState
 	var noteHits:Int = 0;
 	var noteCombo:FlxSprite;
 
-	var markiplier:Float = 0.0;
-	var markiplier2:Float = 0.0;
+	var turn:String = '';
+	var origCamX:Float = 0.0;
+	var origCamY:Float = 0.0;
 	override public function create()
 	{
 		Paths.clearStoredMemory();
@@ -2910,6 +2911,31 @@ class PlayState extends MusicBeatState
 		}*/
 		callOnLuas('onUpdate', [elapsed]);
 
+		var char:Character = dad;
+
+		switch (turn) {
+			case 'dad':
+				char = dad;
+			case 'boyfriend':
+				char = boyfriend;
+			case 'gf':
+				char = gf;
+		}
+
+		switch (char.animation.curAnim.name)
+		{
+			case 'singLEFT', 'singLEFT-alt':
+				camFollow.x = origCamX - 30;
+			case 'singRIGHT', 'singRIGHT-alt':
+				camFollow.x = origCamX + 30;
+			case 'singDOWN', 'singDOWN-alt':
+				camFollow.y = origCamY + 30;
+			case 'singUP' | 'singUP-alt':
+				camFollow.y = origCamY - 30;
+			default:
+				camFollow.set(origCamX, origCamY);
+		}
+
 		if (noteCombo != null) {
 			if (PlayState.SONG.notes[Std.int(curStep / 16)] != null) {
 				if (lastMustHit != PlayState.SONG.notes[Std.int(curStep / 16)].mustHitSection) {
@@ -3236,6 +3262,11 @@ class PlayState extends MusicBeatState
 			}
 
 			// Conductor.lastSongPos = FlxG.sound.music.time;
+		}
+
+		if (generatedMusic && PlayState.SONG.notes[Std.int(curStep / 16)] != null && !endingSong && !isCameraOnForcedPos)
+		{
+			moveCameraSection(Std.int(curStep / 16));
 		}
 
 		if (camZooming)
@@ -3673,6 +3704,9 @@ class PlayState extends MusicBeatState
 
 					FlxG.camera.zoom += camZoom;
 					camHUD.zoom += hudZoom;
+					camSus.zoom += hudZoom;
+					camNOTES.zoom += hudZoom;
+					camNOTEHUD.zoom += hudZoom;
 				}
 
 			case 'Trigger BG Ghouls':
@@ -3871,9 +3905,14 @@ class PlayState extends MusicBeatState
 
 		if (gf != null && SONG.notes[id].gfSection)
 		{
+			turn = 'gf';
 			camFollow.set(gf.getMidpoint().x, gf.getMidpoint().y);
 			camFollow.x += gf.cameraPosition[0] + girlfriendCameraOffset[0];
 			camFollow.y += gf.cameraPosition[1] + girlfriendCameraOffset[1];
+
+			origCamX = camFollow.x;
+			origCamY = camFollow.y;
+
 			tweenCamIn();
 			callOnLuas('onMoveCamera', ['gf']);
 			return;
@@ -3896,16 +3935,25 @@ class PlayState extends MusicBeatState
 	{
 		if(isDad)
 		{
+			turn = 'dad';
 			camFollow.set(dad.getMidpoint().x + 150, dad.getMidpoint().y - 100);
 			camFollow.x += dad.cameraPosition[0] + opponentCameraOffset[0];
 			camFollow.y += dad.cameraPosition[1] + opponentCameraOffset[1];
+
+			origCamX = camFollow.x;
+			origCamY = camFollow.y;
+
 			tweenCamIn();
 		}
 		else
 		{
+			turn = 'boyfriend';
 			camFollow.set(boyfriend.getMidpoint().x - 100, boyfriend.getMidpoint().y - 100);
 			camFollow.x -= boyfriend.cameraPosition[0] - boyfriendCameraOffset[0];
 			camFollow.y += boyfriend.cameraPosition[1] + boyfriendCameraOffset[1];
+
+			origCamX = camFollow.x;
+			origCamY = camFollow.y;
 
 			if (Paths.formatToSongPath(SONG.song) == 'tutorial' && cameraTwn == null && FlxG.camera.zoom != 1)
 			{
@@ -5007,11 +5055,6 @@ class PlayState extends MusicBeatState
 			// Conductor.changeBPM(SONG.bpm);
 		}
 		// FlxG.log.add('change bpm' + SONG.notes[Std.int(curStep / 16)].changeBPM);
-
-		if (generatedMusic && PlayState.SONG.notes[Std.int(curStep / 16)] != null && !endingSong && !isCameraOnForcedPos)
-		{
-			moveCameraSection(Std.int(curStep / 16));
-		}
 		
 		if (ClientPrefs.angleBop) {
 			if (camZooming && FlxG.camera.angle <= 5 && ClientPrefs.camZooms && curBeat % 1 == 0)

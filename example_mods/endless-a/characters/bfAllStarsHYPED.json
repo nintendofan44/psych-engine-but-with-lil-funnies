@@ -1,0 +1,133 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-5,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "bf idle dance",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				2,
+				-1
+			],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "bf LEFT MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-62,
+				86
+			],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "bf UP MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-17,
+				-50
+			],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "bf DOWN MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-45,
+				16
+			],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "bf RIGHT MISS",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-26,
+				-5
+			],
+			"anim": "hey",
+			"fps": 24,
+			"name": "bfHEY",
+			"indices": []
+		},
+		{
+			"offsets": [
+				93,
+				-2
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "bfHYPEleft"
+		},
+		{
+			"offsets": [
+				-65,
+				5
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "bfHYPEright"
+		},
+		{
+			"offsets": [
+				8,
+				137
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "bfHYPEup"
+		},
+		{
+			"offsets": [
+				40,
+				-38
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "bfHYPEdown"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/bfALLSTARSHYPED",
+	"position": [
+		0,
+		350
+	],
+	"healthicon": "bfAllstars",
+	"flip_x": true,
+	"healthbar_colors": [
+		28,
+		10,
+		120
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

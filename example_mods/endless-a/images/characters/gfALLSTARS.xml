@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="gfALLSTARS.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="GF Dancing Beat0000" x="4" y="4" width="525" height="557" frameX="0" frameY="-26" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0001" x="533" y="4" width="525" height="557" frameX="0" frameY="-26" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0002" x="1062" y="4" width="517" height="564" frameX="-4" frameY="-19" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0003" x="1583" y="4" width="517" height="570" frameX="-4" frameY="-13" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0004" x="2104" y="4" width="517" height="571" frameX="-4" frameY="-12" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0005" x="2625" y="4" width="517" height="571" frameX="-4" frameY="-12" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0006" x="3146" y="4" width="517" height="576" frameX="-4" frameY="-7" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0007" x="3667" y="4" width="517" height="576" frameX="-4" frameY="-7" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0008" x="4188" y="4" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0009" x="4709" y="4" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0010" x="5230" y="4" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0011" x="5751" y="4" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0012" x="4188" y="4" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0013" x="4709" y="4" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0014" x="5230" y="4" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0015" x="6272" y="4" width="525" height="577" frameX="0" frameY="-6" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0016" x="6801" y="4" width="525" height="577" frameX="0" frameY="-6" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0017" x="7330" y="4" width="517" height="581" frameX="-4" frameY="-2" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0018" x="4" y="591" width="517" height="581" frameX="-4" frameY="-2" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0019" x="525" y="591" width="517" height="581" frameX="-4" frameY="-2" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0020" x="1046" y="591" width="517" height="581" frameX="-4" frameY="-2" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0021" x="1567" y="591" width="517" height="582" frameX="-4" frameY="-1" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0022" x="2088" y="591" width="517" height="582" frameX="-4" frameY="-1" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0023" x="2609" y="591" width="517" height="582" frameX="-4" frameY="-1" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0024" x="3130" y="591" width="517" height="582" frameX="-4" frameY="-1" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0025" x="3651" y="591" width="517" height="582" frameX="-4" frameY="-1" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0026" x="4172" y="591" width="517" height="582" frameX="-4" frameY="-1" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0027" x="2609" y="591" width="517" height="582" frameX="-4" frameY="-1" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0028" x="3130" y="591" width="517" height="582" frameX="-4" frameY="-1" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Dancing Beat0029" x="3651" y="591" width="517" height="582" frameX="-4" frameY="-1" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF Victory0000" x="4693" y="591" width="525" height="557" frameX="-25" frameY="-21" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0001" x="5222" y="591" width="525" height="557" frameX="-25" frameY="-21" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0002" x="5751" y="591" width="517" height="561" frameX="-29" frameY="-17" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0003" x="6272" y="591" width="517" height="561" frameX="-29" frameY="-17" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0004" x="6793" y="591" width="528" height="578" frameX="-18" frameY="0" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0005" x="7325" y="591" width="546" height="571" frameX="0" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0006" x="4" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0007" x="525" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0008" x="1046" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0009" x="1567" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0010" x="2088" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0011" x="2609" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0012" x="3130" y="1177" width="528" height="571" frameX="-18" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0013" x="3662" y="1177" width="546" height="571" frameX="0" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0014" x="4212" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0015" x="4733" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0016" x="5254" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0017" x="5775" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0018" x="6296" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0019" x="6817" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0020" x="7338" y="1177" width="528" height="571" frameX="-18" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0021" x="4" y="1752" width="546" height="571" frameX="0" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0022" x="554" y="1752" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0023" x="1075" y="1752" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0024" x="1596" y="1752" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0025" x="2117" y="1752" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0026" x="2638" y="1752" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0027" x="3159" y="1752" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0028" x="3680" y="1752" width="528" height="571" frameX="-18" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0029" x="7325" y="591" width="546" height="571" frameX="0" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0030" x="4" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0031" x="525" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0032" x="1046" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0033" x="1567" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0034" x="2088" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0035" x="2609" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0036" x="3130" y="1177" width="528" height="571" frameX="-18" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0037" x="3662" y="1177" width="546" height="571" frameX="0" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0038" x="4212" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0039" x="4733" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0040" x="5254" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0041" x="5775" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0042" x="6296" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0043" x="6817" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0044" x="7338" y="1177" width="528" height="571" frameX="-18" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0045" x="4" y="1752" width="546" height="571" frameX="0" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0046" x="554" y="1752" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0047" x="1075" y="1752" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0048" x="1596" y="1752" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0049" x="2117" y="1752" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0050" x="2638" y="1752" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0051" x="3159" y="1752" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0052" x="3680" y="1752" width="528" height="571" frameX="-18" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0053" x="7325" y="591" width="546" height="571" frameX="0" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0054" x="4" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0055" x="525" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0056" x="1046" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0057" x="1567" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0058" x="2088" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0059" x="2609" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0060" x="3130" y="1177" width="528" height="571" frameX="-18" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0061" x="3662" y="1177" width="546" height="571" frameX="0" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0062" x="4212" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0063" x="4733" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0064" x="5254" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0065" x="5775" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0066" x="6296" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0067" x="6817" y="1177" width="517" height="571" frameX="-29" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0068" x="7338" y="1177" width="528" height="571" frameX="-18" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory0069" x="4" y="1752" width="546" height="571" frameX="0" frameY="-7" frameWidth="550" frameHeight="578"/>
+	<SubTexture name="GF Victory Loop0000" x="4212" y="1752" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0001" x="4733" y="1752" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0002" x="5254" y="1752" width="528" height="571" frameX="-18" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0003" x="5786" y="1752" width="546" height="571"/>
+	<SubTexture name="GF Victory Loop0004" x="6336" y="1752" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0005" x="6857" y="1752" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0006" x="7378" y="1752" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0007" x="4" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0008" x="525" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0009" x="1046" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0010" x="1567" y="2327" width="528" height="571" frameX="-18" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0011" x="2099" y="2327" width="546" height="571"/>
+	<SubTexture name="GF Victory Loop0012" x="2649" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0013" x="3170" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0014" x="3691" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0015" x="4212" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0016" x="4733" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0017" x="5254" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0018" x="5775" y="2327" width="528" height="571" frameX="-18" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0019" x="6307" y="2327" width="546" height="571"/>
+	<SubTexture name="GF Victory Loop0020" x="6857" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0021" x="7378" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0022" x="4" y="2902" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0023" x="525" y="2902" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0024" x="4212" y="1752" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0025" x="4733" y="1752" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0026" x="5254" y="1752" width="528" height="571" frameX="-18" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0027" x="5786" y="1752" width="546" height="571"/>
+	<SubTexture name="GF Victory Loop0028" x="6336" y="1752" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0029" x="6857" y="1752" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0030" x="7378" y="1752" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0031" x="4" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0032" x="525" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0033" x="1046" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0034" x="1567" y="2327" width="528" height="571" frameX="-18" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0035" x="2099" y="2327" width="546" height="571"/>
+	<SubTexture name="GF Victory Loop0036" x="2649" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0037" x="3170" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0038" x="3691" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0039" x="4212" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0040" x="4733" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0041" x="5254" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0042" x="5775" y="2327" width="528" height="571" frameX="-18" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0043" x="6307" y="2327" width="546" height="571"/>
+	<SubTexture name="GF Victory Loop0044" x="6857" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0045" x="7378" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0046" x="4" y="2902" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0047" x="525" y="2902" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0048" x="4212" y="1752" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0049" x="4733" y="1752" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0050" x="5254" y="1752" width="528" height="571" frameX="-18" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0051" x="5786" y="1752" width="546" height="571"/>
+	<SubTexture name="GF Victory Loop0052" x="6336" y="1752" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0053" x="6857" y="1752" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0054" x="7378" y="1752" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0055" x="4" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0056" x="525" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0057" x="1046" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0058" x="1567" y="2327" width="528" height="571" frameX="-18" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0059" x="2099" y="2327" width="546" height="571"/>
+	<SubTexture name="GF Victory Loop0060" x="2649" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0061" x="3170" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0062" x="3691" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF Victory Loop0063" x="4212" y="2327" width="517" height="571" frameX="-29" frameY="0" frameWidth="546" frameHeight="571"/>
+	<SubTexture name="GF sad0000" x="1046" y="2902" width="525" height="569" frameX="0" frameY="-14" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0001" x="1575" y="2902" width="525" height="569" frameX="0" frameY="-14" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0002" x="2104" y="2902" width="517" height="577" frameX="-4" frameY="-6" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0003" x="2625" y="2902" width="517" height="577" frameX="-4" frameY="-6" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0004" x="3146" y="2902" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0005" x="3667" y="2902" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0006" x="4188" y="2902" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0007" x="4709" y="2902" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0008" x="5230" y="2902" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0009" x="5751" y="2902" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0010" x="4188" y="2902" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0011" x="4709" y="2902" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0012" x="3146" y="2902" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0013" x="3667" y="2902" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0014" x="4188" y="2902" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0015" x="4709" y="2902" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0016" x="5230" y="2902" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0017" x="5751" y="2902" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0018" x="4188" y="2902" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0019" x="4709" y="2902" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0020" x="3146" y="2902" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0021" x="3667" y="2902" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0022" x="4188" y="2902" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0023" x="4709" y="2902" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+	<SubTexture name="GF sad0024" x="5230" y="2902" width="517" height="583" frameX="-4" frameY="0" frameWidth="525" frameHeight="583"/>
+</TextureAtlas>

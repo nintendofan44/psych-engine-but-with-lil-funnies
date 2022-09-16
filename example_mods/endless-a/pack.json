@@ -1,0 +1,11 @@
+{
+	"name": "Endless All Stars",
+	"description": "all stars",
+	"restart": true,
+	"runGlobally": false,
+	"color": [
+		86,
+		0,
+		135
+	]
+}
