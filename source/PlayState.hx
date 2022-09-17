@@ -3900,7 +3900,8 @@ class PlayState extends MusicBeatState
 				var evtName:String = eventName;
 				var debugString:String = 'Such event does not exist. (Event Name: ' + evtName + ') | (Value 1:' + value1 + ') | (Value 2:' + value2 + ')';
 				addTextToDebug(debugString, FlxColor.WHITE); // forgor abt this
-				return trace(debugString);
+				trace(debugString);
+				return;
 		}
 		callOnLuas('onEvent', [eventName, value1, value2]);
 	}
