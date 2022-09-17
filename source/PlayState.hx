@@ -3896,6 +3896,11 @@ class PlayState extends MusicBeatState
 				} else {
 					Reflect.setProperty(this, value1, value2);
 				}
+			default: // maybe this will prevent crashes from non-existing events -nintendofan44
+				var evtName:String = eventName;
+				var debugString:String = 'Such event does not exist. (Event Name: ' + evtName + ') | (Value 1:' + value1 + ') | (Value 2:' + value2 + ')';
+				addTextToDebug(debugString, FlxColor.WHITE); // forgor abt this
+				return trace(debugString);
 		}
 		callOnLuas('onEvent', [eventName, value1, value2]);
 	}

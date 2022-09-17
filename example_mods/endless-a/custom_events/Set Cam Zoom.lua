@@ -4,7 +4,7 @@ function onEvent(name, value1, value2)
 			setProperty("defaultCamZoom", value1)
 			debugPrint(value2)
 		else
-			doTweenZoom("camz", "camGame", tonumber(value1), tonumber(value2), "sineInOut")
+			doTweenZoom("camz", "camGame", tonumber(value1), tonumber(value2), "sineinout")
 		end
 	end
 end
