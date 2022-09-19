@@ -90,6 +90,14 @@ class PlayState extends MusicBeatState
 		['Sick!', 1], //From 90% to 99%
 		['Perfect!!', 1] //The value on this one isn't used actually, since Perfect is always "1"
 	];
+
+	//event variables
+	private var isCameraOnForcedPos:Bool = false;
+
+	public var boyfriendMap:Map<String, Boyfriend> = new Map();
+	public var dadMap:Map<String, Character> = new Map();
+	public var gfMap:Map<String, Character> = new Map();
+	public var variables:Map<String, Dynamic> = new Map();
 	public var modchartTweens:Map<String, FlxTween> = new Map<String, FlxTween>();
 	public var modchartSprites:Map<String, ModchartSprite> = new Map<String, ModchartSprite>();
 	public var modchartTimers:Map<String, FlxTimer> = new Map<String, FlxTimer>();
@@ -98,18 +106,6 @@ class PlayState extends MusicBeatState
 	public var modchartSaves:Map<String, FlxSave> = new Map<String, FlxSave>();
 	public var modchartObjects:Map<String, FlxSprite> = new Map<String, FlxSprite>();
 	public var modchartRectangles:Map<String, ModchartRect> = new Map<String, ModchartRect>();
-
-	//event variables
-	private var isCameraOnForcedPos:Bool = false;
-	#if (haxe >= "4.0.0")
-	public var boyfriendMap:Map<String, Boyfriend> = new Map();
-	public var dadMap:Map<String, Character> = new Map();
-	public var gfMap:Map<String, Character> = new Map();
-	#else
-	public var boyfriendMap:Map<String, Boyfriend> = new Map<String, Boyfriend>();
-	public var dadMap:Map<String, Character> = new Map<String, Character>();
-	public var gfMap:Map<String, Character> = new Map<String, Character>();
-	#end
 
 	public var BF_X:Float = 770;
 	public var BF_Y:Float = 100;
@@ -164,6 +160,7 @@ class PlayState extends MusicBeatState
 	public var camZooming:Bool = false;
 	public var camZoomingMult:Float = 1;
 	public var camZoomingDecay:Float = 1;
+	public var _boomspeed:Float = 2;
 	private var curSong:String = "";
 
 	public var gfSpeed:Int = 1;
@@ -401,6 +398,8 @@ class PlayState extends MusicBeatState
 	var turn:String = '';
 	var origCamX:Float = 0.0;
 	var origCamY:Float = 0.0;
+
+	var infinity:FlxSprite;
 	override public function create()
 	{
 		Paths.clearStoredMemory();
@@ -578,6 +577,8 @@ class PlayState extends MusicBeatState
 				girlfriend: [400, 130],
 				opponent: [100, 100],
 				hide_girlfriend: false,
+
+				hide_time: false,
 
 				camera_boyfriend: [0, 0],
 				camera_opponent: [0, 0],
@@ -1578,6 +1579,22 @@ class PlayState extends MusicBeatState
 		noteCombo.antialiasing = ClientPrefs.globalAntialiasing;
 		add(noteCombo);
 
+		if (stageData.hide_time)
+		{
+			infinity = new FlxSprite(0,0);
+			infinity.frames = Paths.getSparrowAtlas('infinity', 'shared');
+			infinity.scrollFactor.set(0,0);
+			infinity.animation.addByPrefix('idle', 'idle', 24, false);
+			infinity.animation.addByPrefix('unhide', 'unhide', 24, false);
+			infinity.antialiasing = ClientPrefs.globalAntialiasing;
+			infinity.cameras = [camHUD];
+			infinity.centerOrigin();
+			infinity.centerOffsets();
+			infinity.scale.set(0.78, 0.78);
+			add(infinity);
+			timeTxt.alpha = 0;
+		}
+
 		super.create();
 
 		Paths.clearUnusedMemory();
@@ -1733,6 +1750,8 @@ class PlayState extends MusicBeatState
 			return modchartSprites.get(tag);
 		if (text && modchartTexts.exists(tag))
 			return modchartTexts.get(tag);
+		if(variables.exists(tag))
+			return variables.get(tag);
 		return null;
 	}
 
@@ -2911,6 +2930,14 @@ class PlayState extends MusicBeatState
 		}*/
 		callOnLuas('onUpdate', [elapsed]);
 
+		var stageData:StageFile = StageData.getStageFile(curStage);
+		if (stageData.hide_time)
+		{
+			if (infinity != null) {
+				infinity.setPosition(timeTxt.x,timeTxt.y);
+			}
+		}
+
 		var char:Character = dad;
 
 		switch (turn) {
@@ -3709,6 +3736,26 @@ class PlayState extends MusicBeatState
 					camNOTEHUD.zoom += hudZoom;
 				}
 
+			case 'Set Cam Zoom':
+				var camZoom:Float = Std.parseFloat(value1);
+				var duration:Float = Std.parseFloat(value2);
+				if (Math.isNaN(duration)) {
+					defaultCamZoom = camZoom;
+					FlxG.camera.zoom = defaultCamZoom;
+				} else {
+					FlxTween.tween(this, {defaultCamZoom: camZoom}, duration, {ease: FlxEase.sineInOut});
+				}
+
+			case 'Cam Zoom Speed':
+				var boomspeed:Float = Std.parseFloat(value1);
+				var bam:Float = Std.parseFloat(value2);
+				if(Math.isNaN(boomspeed)) boomspeed = 2;
+				if(Math.isNaN(bam)) bam = 1;
+				_boomspeed = boomspeed;
+				camZoomingMult = bam;
+
+			case 'Note Spin-Dash':
+
 			case 'Trigger BG Ghouls':
 				if(curStage == 'schoolEvil' && !ClientPrefs.lowQuality) {
 					bgGhouls.dance(true);
@@ -3896,12 +3943,12 @@ class PlayState extends MusicBeatState
 				} else {
 					Reflect.setProperty(this, value1, value2);
 				}
-			default: // maybe this will prevent crashes from non-existing events -nintendofan44
+			/*default: // maybe this will prevent crashes from non-existing events -nintendofan44
 				var evtName:String = eventName;
 				var debugString:String = 'Such event does not exist. (Event Name: ' + evtName + ') | (Value 1:' + value1 + ') | (Value 2:' + value2 + ')';
 				addTextToDebug(debugString, FlxColor.WHITE); // forgor abt this
 				trace(debugString);
-				return;
+				return;*/
 		}
 		callOnLuas('onEvent', [eventName, value1, value2]);
 	}
@@ -4053,6 +4100,9 @@ class PlayState extends MusicBeatState
 		camZooming = false;
 		inCutscene = false;
 		updateTime = false;
+
+		var stageData:StageFile = StageData.getStageFile(curStage);
+		if (stageData.hide_time) unhideTime();
 
 		deathCounter = 0;
 		seenCutscene = false;
@@ -5073,7 +5123,7 @@ class PlayState extends MusicBeatState
 			}
 		}
 		
-		if (camZooming && FlxG.camera.zoom <= 3 && ClientPrefs.camZooms && curBeat % 2 == 0)
+		if (camZooming && FlxG.camera.zoom <= 3 && ClientPrefs.camZooms && curBeat % _boomspeed == 0)
 		{
 			FlxG.camera.zoom += 0.02 * camZoomingMult;
 			camHUD.zoom += 0.05 * camZoomingMult;
@@ -5837,5 +5887,74 @@ class PlayState extends MusicBeatState
 			newRect.x += daNote.offset.x + cos * left - sin * top;
 			newRect.y += daNote.offset.y + sin * right + cos * top;
 		}
+	}
+
+	function spinDash() {
+		FlxTween.tween(getStrums(0), {angle: 359.99}, 0.15, {ease: FlxEase.circInOut, onComplete:
+			function (twn:FlxTween)
+			{
+				getStrums(0).angle = 0;
+			}
+		});
+		FlxTween.tween(getStrums(1), {angle: 359.99}, 0.15, {ease: FlxEase.circInOut, onComplete:
+			function (twn:FlxTween)
+			{
+				getStrums(1).angle = 0;
+			}
+		});
+		FlxTween.tween(getStrums(2), {angle: 359.99}, 0.15, {ease: FlxEase.circInOut, onComplete:
+			function (twn:FlxTween)
+			{
+				getStrums(2).angle = 0;
+			}
+		});
+		FlxTween.tween(getStrums(3), {angle: 359.99}, 0.15, {ease: FlxEase.circInOut, onComplete:
+			function (twn:FlxTween)
+			{
+				getStrums(3).angle = 0;
+			}
+		});
+		FlxTween.tween(getStrums(4), {angle: 359.99}, 0.15, {ease: FlxEase.circInOut, onComplete:
+			function (twn:FlxTween)
+			{
+				getStrums(4).angle = 0;
+			}
+		});
+		FlxTween.tween(getStrums(5), {angle: 359.99}, 0.15, {ease: FlxEase.circInOut, onComplete:
+			function (twn:FlxTween)
+			{
+				getStrums(5).angle = 0;
+			}
+		});
+		FlxTween.tween(getStrums(6), {angle: 359.99}, 0.15, {ease: FlxEase.circInOut, onComplete:
+			function (twn:FlxTween)
+			{
+				getStrums(6).angle = 0;
+			}
+		});
+		FlxTween.tween(getStrums(7), {angle: 359.99}, 0.15, {ease: FlxEase.circInOut, onComplete:
+			function (twn:FlxTween)
+			{
+				getStrums(7).angle = 0;
+			}
+		});
+	}
+
+	function unhideTime() {
+		FlxTween.tween(infinity, {angle: 359.99}, 0.55, {ease: FlxEase.expoInOut, onComplete:
+			function (twn:FlxTween)
+			{
+				infinity.angle = 0;
+			}
+		});
+		infinity.animation.play('unhide');
+		FlxTween.tween(infinity, {alpha: 0}, 1.15, {
+			ease: FlxEase.circInOut,
+			onComplete: function(twn:FlxTween)
+			{
+				remove(infinity);
+				FlxTween.tween(timeTxt, {alpha: 1}, 1.15, {ease: FlxEase.circInOut});
+			}
+		});
 	}
 }

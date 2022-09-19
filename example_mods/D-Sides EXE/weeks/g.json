@@ -1,0 +1,32 @@
+{
+  "storyName": "Main Week",
+  "difficulties": "Hard, gun",
+  "hideFreeplay": false,
+  "weekBackground": "stage",
+  "freeplayColor": [
+    146,
+    113,
+    253
+  ],
+  "weekBefore": "tutorial",
+  "startUnlocked": true,
+  "weekCharacters": [
+    "",
+    "",
+    ""
+  ],
+  "songs": [
+    [
+      "too-slow",
+      "mighty",
+      [
+        106,
+        0,
+        93
+      ]
+    ]
+  ],
+  "hideStoryMode": false,
+  "weekName": "g",
+  "hiddenUntilUnlocked": false
+}

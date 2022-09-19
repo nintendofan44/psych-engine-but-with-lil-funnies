@@ -1,0 +1,78 @@
+{
+  "animations": [
+    {
+      "offsets": [
+        18,
+        6
+      ],
+      "indices": [],
+      "fps": 13,
+      "anim": "singRIGHT",
+      "loop": false,
+      "name": "right"
+    },
+    {
+      "offsets": [
+        2,
+        -1
+      ],
+      "indices": [],
+      "fps": 13,
+      "anim": "singLEFT",
+      "loop": false,
+      "name": "left"
+    },
+    {
+      "offsets": [
+        78,
+        -60
+      ],
+      "indices": [],
+      "fps": 13,
+      "anim": "singDOWN",
+      "loop": false,
+      "name": "down"
+    },
+    {
+      "offsets": [
+        6,
+        -49
+      ],
+      "indices": [],
+      "fps": 13,
+      "anim": "singUP",
+      "loop": false,
+      "name": "up"
+    },
+    {
+      "offsets": [
+        0,
+        0
+      ],
+      "indices": [],
+      "fps": 17,
+      "anim": "idle",
+      "loop": true,
+      "name": "idle"
+    }
+  ],
+  "no_antialiasing": false,
+  "image": "characters/BurninGold",
+  "position": [
+    -50,
+    150
+  ],
+  "healthicon": "burningold",
+  "flip_x": false,
+  "healthbar_colors": [
+    255,
+    218,
+    99
+  ],
+  "camera_position": [
+    40,
+    20
+  ],
+  "sing_duration": 6.1,
+  "scale": 1.2
+}

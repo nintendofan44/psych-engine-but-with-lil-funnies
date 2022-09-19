@@ -1,0 +1,34 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-220
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Rui Idle",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/rui",
+	"position": [
+		370,
+		-90
+	],
+	"healthicon": "mitee",
+	"flip_x": true,
+	"healthbar_colors": [
+		100,
+		60,
+		140
+	],
+	"camera_position": [
+		130,
+		180
+	],
+	"sing_duration": 6.1,
+	"scale": 0.8
+}

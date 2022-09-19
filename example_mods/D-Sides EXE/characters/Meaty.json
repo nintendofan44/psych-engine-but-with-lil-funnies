@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "IdleMeaty",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-250,
+				20
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "RightNoteMeaty",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-80,
+				210
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "MeatyUp",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				-190,
+				-290
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "DownMeaty",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				70,
+				-10
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "LeftMeaty",
+			"indices": []
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/Meaty",
+	"position": [
+		-40,
+		170
+	],
+	"healthicon": "meaty",
+	"flip_x": false,
+	"healthbar_colors": [
+		163,
+		73,
+		164
+	],
+	"camera_position": [
+		180,
+		120
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

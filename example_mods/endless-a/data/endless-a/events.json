@@ -30,7 +30,7 @@
 				6096.77419354839,
 				[
 					[
-						"Cam Boom Speed",
+						"Cam Zoom Speed",
 						"0.5",
 						"3"
 					]
@@ -40,7 +40,7 @@
 				8225.8064516129,
 				[
 					[
-						"Cam Boom Speed",
+						"Cam Zoom Speed",
 						"1",
 						"1"
 					]
@@ -50,7 +50,7 @@
 				12290.3225806452,
 				[
 					[
-						"Cam Boom Speed",
+						"Cam Zoom Speed",
 						"0.5",
 						"3"
 					]
@@ -60,7 +60,7 @@
 				13935.4838709677,
 				[
 					[
-						"Cam Boom Speed",
+						"Cam Zoom Speed",
 						"1",
 						"1"
 					]
@@ -70,7 +70,7 @@
 				18483.8709677419,
 				[
 					[
-						"Cam Boom Speed",
+						"Cam Zoom Speed",
 						"0.5",
 						"3"
 					],
@@ -85,7 +85,7 @@
 				20032.2580645161,
 				[
 					[
-						"Cam Boom Speed",
+						"Cam Zoom Speed",
 						"1",
 						"1"
 					]
@@ -105,7 +105,7 @@
 				24677.4193548387,
 				[
 					[
-						"Cam Boom Speed",
+						"Cam Zoom Speed",
 						"0.5",
 						"3"
 					],
@@ -130,7 +130,7 @@
 				27096.7741935484,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -140,7 +140,7 @@
 				27483.8709677419,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -180,7 +180,7 @@
 				33290.3225806452,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -190,7 +190,7 @@
 				33677.4193548387,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -200,7 +200,7 @@
 				37064.5161290323,
 				[
 					[
-						"Cam Boom Speed",
+						"Cam Zoom Speed",
 						"0.5",
 						"3"
 					]
@@ -210,7 +210,7 @@
 				38709.6774193548,
 				[
 					[
-						"Cam Boom Speed",
+						"Cam Zoom Speed",
 						"1",
 						"1"
 					]
@@ -220,7 +220,7 @@
 				39483.8709677419,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -230,7 +230,7 @@
 				39870.9677419355,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -280,7 +280,7 @@
 				45677.4193548387,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -290,7 +290,7 @@
 				46064.5161290323,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -310,7 +310,7 @@
 				51096.7741935484,
 				[
 					[
-						"Cam Boom Speed",
+						"Cam Zoom Speed",
 						"0.5",
 						"5"
 					]
@@ -320,7 +320,7 @@
 				51870.9677419355,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -330,7 +330,7 @@
 				52258.0645161291,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -340,7 +340,7 @@
 				52645.1612903226,
 				[
 					[
-						"Cam Boom Speed",
+						"Cam Zoom Speed",
 						"0.5",
 						"3"
 					]
@@ -350,7 +350,7 @@
 				57290.3225806452,
 				[
 					[
-						"Cam Boom Speed",
+						"Cam Zoom Speed",
 						"0.5",
 						"5"
 					]
@@ -360,7 +360,7 @@
 				58064.5161290323,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -370,7 +370,7 @@
 				58451.6129032259,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -380,7 +380,7 @@
 				58838.7096774194,
 				[
 					[
-						"Cam Boom Speed",
+						"Cam Zoom Speed",
 						"0.5",
 						"3"
 					]
@@ -390,7 +390,7 @@
 				61838.7096774194,
 				[
 					[
-						"Cam Boom Speed",
+						"Cam Zoom Speed",
 						"1",
 						"1"
 					]
@@ -400,7 +400,7 @@
 				64258.0645161291,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -410,7 +410,7 @@
 				64645.1612903226,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -420,7 +420,7 @@
 				70451.6129032259,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -430,7 +430,7 @@
 				70838.7096774194,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -470,7 +470,7 @@
 				76645.1612903227,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -480,7 +480,7 @@
 				77032.2580645162,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -490,7 +490,7 @@
 				82838.7096774195,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -500,7 +500,7 @@
 				83225.806451613,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -520,7 +520,7 @@
 				87483.870967742,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -530,7 +530,7 @@
 				87870.9677419356,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -560,7 +560,7 @@
 				89032.2580645162,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -570,7 +570,7 @@
 				89419.3548387098,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -580,7 +580,7 @@
 				95225.806451613,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -590,7 +590,7 @@
 				95612.9032258066,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -600,7 +600,7 @@
 				101419.35483871,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -610,7 +610,7 @@
 				101806.451612903,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -620,7 +620,7 @@
 				106838.70967742,
 				[
 					[
-						"Cam Boom Speed",
+						"Cam Zoom Speed",
 						"0.5",
 						"5"
 					]
@@ -630,7 +630,7 @@
 				107612.903225807,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -640,7 +640,7 @@
 				108000,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -650,7 +650,7 @@
 				112935.483870968,
 				[
 					[
-						"Cam Boom Speed",
+						"Cam Zoom Speed",
 						"1",
 						"1"
 					]
@@ -660,7 +660,7 @@
 				113806.451612903,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -670,7 +670,7 @@
 				114193.548387097,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -680,7 +680,7 @@
 				120000,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -690,7 +690,7 @@
 				120387.096774194,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -700,7 +700,7 @@
 				126193.548387097,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -710,7 +710,7 @@
 				126580.645161291,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -720,7 +720,7 @@
 				130064.516129032,
 				[
 					[
-						"Cam Boom Speed",
+						"Cam Zoom Speed",
 						"0.5",
 						"3"
 					]
@@ -730,7 +730,7 @@
 				132290.322580645,
 				[
 					[
-						"Cam Boom Speed",
+						"Cam Zoom Speed",
 						"1",
 						"1"
 					]
@@ -740,7 +740,7 @@
 				132387.096774194,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -750,7 +750,7 @@
 				132774.193548387,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -760,7 +760,7 @@
 				136258.064516129,
 				[
 					[
-						"Cam Boom Speed",
+						"Cam Zoom Speed",
 						"0.5",
 						"3"
 					]
@@ -780,7 +780,7 @@
 				138580.64516129,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -790,7 +790,7 @@
 				138967.741935484,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -800,7 +800,7 @@
 				144774.193548387,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -810,7 +810,7 @@
 				145161.290322581,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -820,7 +820,7 @@
 				150967.741935484,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -830,7 +830,7 @@
 				151354.838709677,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -840,7 +840,7 @@
 				157161.290322581,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]
@@ -850,7 +850,7 @@
 				157548.387096774,
 				[
 					[
-						"TweenSpin",
+						"Note Spin-Dash",
 						"",
 						""
 					]

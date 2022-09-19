@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="meaty pringle.png">
+<SubTexture name="meaty pringle idle0000" x="0" y="736" width="403" height="321" frameX="-55" frameY="-155" frameWidth="770" frameHeight="490" />
+<SubTexture name="meaty pringle idle0001" x="403" y="736" width="394" height="321" frameX="-48" frameY="-155" frameWidth="770" frameHeight="490" />
+<SubTexture name="meaty pringle idle0002" x="975" y="0" width="357" height="325" frameX="-36" frameY="-151" frameWidth="770" frameHeight="490" />
+<SubTexture name="meaty pringle idle0003" x="445" y="398" width="341" height="332" frameX="-44" frameY="-143" frameWidth="770" frameHeight="490" />
+<SubTexture name="meaty pringle down0000" x="0" y="1057" width="448" height="276" frameX="-2" frameY="-199" frameWidth="770" frameHeight="490" />
+<SubTexture name="meaty pringle down0001" x="797" y="736" width="420" height="318" frameX="-16" frameY="-157" frameWidth="770" frameHeight="490" />
+<SubTexture name="meaty pringle up0000" x="0" y="0" width="285" height="398" frameX="-76" frameY="-79" frameWidth="770" frameHeight="490" />
+<SubTexture name="meaty pringle up0001" x="285" y="0" width="309" height="361" frameX="-64" frameY="-116" frameWidth="770" frameHeight="490" />
+<SubTexture name="meaty pringle right0000" x="0" y="398" width="445" height="338" frameX="-87" frameY="-138" frameWidth="770" frameHeight="490" />
+<SubTexture name="meaty pringle right0001" x="594" y="0" width="381" height="341" frameX="-87" frameY="-135" frameWidth="770" frameHeight="490" />
+<SubTexture name="meaty pringle left0000" x="1332" y="0" width="361" height="317" frameX="-2" frameY="-153" frameWidth="770" frameHeight="490" />
+<SubTexture name="meaty pringle left0001" x="1332" y="317" width="328" height="308" frameX="-34" frameY="-160" frameWidth="770" frameHeight="490" />
+</TextureAtlas>

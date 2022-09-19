@@ -1,0 +1,3 @@
+Change Room
+
+This is the event used to change the stage sprites in D-Sides Too Slow.

@@ -2,6 +2,7 @@
 	"directory": "",
 	"defaultZoom": 0.7,
 	"isPixelStage": false,
+	"hide_time": true,
 	"boyfriend": [
 		1070,
 		240

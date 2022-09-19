@@ -91,7 +91,10 @@ class ChartingState extends MusicBeatState
 		['Screen Shake', "Value 1: Camera shake\nValue 2: HUD shake\n\nEvery value works as the following example: \"1, 0.05\".\nThe first number (1) is the duration.\nThe second number (0.05) is the intensity."],
 		['Change Character', "Value 1: Character to change (Dad, BF, GF)\nValue 2: New character's name"],
 		['Change Scroll Speed', "Value 1: Scroll Speed Multiplier (1 is default)\nValue 2: Time it takes to change fully in seconds."],
-		['Set Property', "Value 1: Variable name\nValue 2: New value"]
+		['Set Property', "Value 1: Variable name\nValue 2: New value"],
+		['Set Cam Zoom', "Value 1: Camera zoom\nValue 2: Tween duration, you can leave this blank for\ninstant zoom setting"],
+		['Cam Zoom Speed', "Value 1: Cam zoom speed, higher is slower\nValue 2: Tween duration, you can leave this blank for\ninsta"],
+		['Note SpinDash', "Does what you expect"]
 	];
 
 	var _file:FileReference;
@@ -1990,6 +1993,10 @@ class ChartingState extends MusicBeatState
 		var songLength = FlxG.sound.music.length;
 		var realSongLength:Int = Math.floor(songLength / 1000);
 		timeTxt.text = '' + FlxStringUtil.formatTime(timeElapsed, false) + '/' + FlxStringUtil.formatTime(realSongLength, false);
+		if (quant != null) {
+			if (timeTxt.overlaps(quant)) timeTxt.x -= 1;
+			timeTxt.y = quant.y;
+		}
 	}
 
 	function updateZoom() {

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="infinity.png">
+	<!-- Created with Adobe Animate version 22.0.7.214 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="idle0000" x="0" y="0" width="272" height="60" frameX="0" frameY="0" frameWidth="322" frameHeight="114"/>
+	<SubTexture name="unhide0000" x="0" y="0" width="272" height="60" frameX="-25" frameY="-37" frameWidth="322" frameHeight="114"/>
+	<SubTexture name="unhide0001" x="292" y="0" width="287" height="69" frameX="-15" frameY="-35" frameWidth="322" frameHeight="114"/>
+	<SubTexture name="unhide0002" x="599" y="0" width="296" height="86" frameX="-8" frameY="-26" frameWidth="322" frameHeight="114"/>
+	<SubTexture name="unhide0003" x="0" y="106" width="310" height="89" frameX="0" frameY="-25" frameWidth="322" frameHeight="114"/>
+	<SubTexture name="unhide0004" x="330" y="106" width="314" height="112" frameX="-8" frameY="0" frameWidth="322" frameHeight="114"/>
+	<SubTexture name="unhide0005" x="664" y="106" width="293" height="85" frameX="-12" frameY="-20" frameWidth="322" frameHeight="114"/>
+	<SubTexture name="unhide0006" x="0" y="238" width="273" height="63" frameX="-22" frameY="-32" frameWidth="322" frameHeight="114"/>
+</TextureAtlas>

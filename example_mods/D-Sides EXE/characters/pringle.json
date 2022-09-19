@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				-60,
+				0
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "meaty pringle idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-100,
+				0
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "meaty pringle right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-70,
+				0
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "meaty pringle up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-70,
+				0
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "meaty pringle down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-40,
+				-10
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "meaty pringle left",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/meaty_pringle",
+	"position": [
+		130,
+		80
+	],
+	"healthicon": "meaty",
+	"flip_x": false,
+	"healthbar_colors": [
+		160,
+		127,
+		191
+	],
+	"camera_position": [
+		-320,
+		-30
+	],
+	"sing_duration": 6.1,
+	"scale": 1.4
+}

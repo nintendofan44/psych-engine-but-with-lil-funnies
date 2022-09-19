@@ -1,5 +1,8 @@
 package;
 
+import flixel.FlxCamera;
+import flixel.math.FlxAngle;
+import flixel.system.scaleModes.BaseScaleMode;
 import GameJolt.GJToastManager;
 import lime.app.Application;
 import sys.io.Process;
@@ -32,6 +35,8 @@ class Main extends Sprite
 	public static var fpsVar:FPS;
 	public static var instance:Main;
 	public static var gjToastManager:GJToastManager;
+
+	public var luaArray:Array<FunkinLua> = [];
 
 	// You can pretty much ignore everything from here on - your code should go in your states.
 
@@ -105,12 +110,13 @@ class Main extends Sprite
 		}
 		#end
 
-		FlxG.autoPause = false;
-
 		/*testWindow = new FlxWindow(50, 50, 800, 800, "Test", ClientPrefs.framerate, true, false, true);
 		testWindow.window.stage.addChild(testWindow);*/
 
+		widescreenInit();
+
 		#if html5
+		FlxG.autoPause = false;
 		FlxG.mouse.visible = false;
 		#end
 	}
@@ -124,6 +130,7 @@ class Main extends Sprite
 			element: null,
 			frameRate: ClientPrefs.framerate,
 			#if !web fullscreen: false, #end
+			width: 600,
 			height: 500,
 			hidden: #if munit true #else false #end,
 			maximized: false,
@@ -131,7 +138,6 @@ class Main extends Sprite
 			parameters: {},
 			resizable: true,
 			title: "Window 2",
-			width: 600,
 			x: 50,
 			y: 50
 		};
@@ -201,5 +207,79 @@ class Main extends Sprite
 		lime.app.Application.current.window.alert(errMsg, "Error!");
 
 		Sys.exit(1);
+	}
+
+	function widescreenInit() {
+		var windowWidth:Float = 0;
+		var windowHeight:Float = 0;
+		
+		var scaleModeX:Float = 1;
+		var scaleModeY:Float = 1;
+		
+		FlxG.scaleMode = new BaseScaleMode();
+		
+		function widescreenPostUpdateCam(cam:FlxCamera) {
+			var canvas = cam.canvas;
+			var flashSprite = cam.flashSprite;
+			var _flashOffset = cam._flashOffset;
+			var _scrollRect = cam._scrollRect;
+			
+			_scrollRect.scrollRect.x = 0;
+			_scrollRect.scrollRect.y = 0;
+			_scrollRect.scrollRect.width = windowHeight;
+			_scrollRect.scrollRect.height = windowHeight;
+			_scrollRect.x = 0;
+			_scrollRect.y = 0;
+			
+			flashSprite.x -= cam.width * 0.5 * FlxG.scaleMode.scale.x * cam.initialZoom;
+			flashSprite.y -= cam.height * 0.5 * FlxG.scaleMode.scale.y * cam.initialZoom;
+			
+			var offsetX = flashSprite.x - (cam.x * FlxG.scaleMode.scale.x);
+			var offsetY = flashSprite.y - (cam.y * FlxG.scaleMode.scale.y);
+			
+			flashSprite.x = cam.x * scaleModeX;
+			flashSprite.y = cam.y * scaleModeY;
+			
+			if (canvas == null) return;
+			var mat = canvas.__transform;
+			
+			var aW = cam.width / 2;
+			var aH = cam.height / 2;
+			
+			mat.identity();
+			
+			mat.translate(-aW, -aH); // AnchorPoint In
+			
+			mat.scale(cam.scaleX, cam.scaleY); // Scaling
+			
+			mat.rotate(cam.angle * FlxAngle.TO_RAD); // Angle
+			
+			mat.translate(aW + offsetX, aH + offsetY); // AnchorPoint Out
+			
+			mat.scale(scaleModeX, scaleModeY); // ScaleMode
+			mat.translate(windowWidth / 2 - (aW * scaleModeX), 0);
+		}
+		
+		function widescreenPostUpdate(?e) {
+			if (FlxG.game._lostFocus && FlxG.autoPause) return;
+			
+			windowWidth = Lib.application.window.width;
+			windowHeight = Lib.application.window.height;
+			
+			if (FlxG.game != null) {
+				FlxG.game.x = 0;
+				FlxG.game.y = 0;
+			}
+
+			scaleModeX = windowWidth / FlxG.width;
+			scaleModeY = windowHeight / FlxG.height;
+
+			for (i in 0...FlxG.cameras.list.length) {
+				widescreenPostUpdateCam(FlxG.cameras.list[i]);
+			}
+		}
+		
+		FlxG.stage.addEventListener(Event.ENTER_FRAME, widescreenPostUpdate);
+		widescreenPostUpdate();
 	}
 }

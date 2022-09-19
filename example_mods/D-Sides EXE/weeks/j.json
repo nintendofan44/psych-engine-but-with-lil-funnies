@@ -1,0 +1,32 @@
+{
+  "storyName": "Extra",
+  "difficulties": "Hard",
+  "hideFreeplay": false,
+  "weekBackground": "stage",
+  "weekBefore": "tutorial",
+  "freeplayColor": [
+    146,
+    113,
+    253
+  ],
+  "startUnlocked": true,
+  "hideStoryMode": true,
+  "songs": [
+    [
+      "too-fest",
+      "meaty",
+      [
+        106,
+        0,
+        93
+      ]
+    ]
+  ],
+  "weekCharacters": [
+    "",
+    "",
+    ""
+  ],
+  "hiddenUntilUnlocked": false,
+  "weekName": "j"
+}

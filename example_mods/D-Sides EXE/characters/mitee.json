@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-1,
+				-221
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Mitee.Jpeg.large singLEFT"
+		},
+		{
+			"offsets": [
+				0,
+				-220
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "idle",
+			"loop": true,
+			"name": "Mitee.Jpeg.large idle"
+		},
+		{
+			"offsets": [
+				8,
+				-222
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN",
+			"loop": false,
+			"name": "Mitee.Jpeg.large singDOWN"
+		},
+		{
+			"offsets": [
+				-2,
+				-227
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP",
+			"loop": false,
+			"name": "Mitee.Jpeg.large singUP"
+		},
+		{
+			"offsets": [
+				9,
+				-223
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"loop": false,
+			"name": "Mitee.Jpeg.large singRIGHT"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Mitee.Jpeg.large",
+	"position": [
+		80,
+		-90
+	],
+	"healthicon": "mitee",
+	"flip_x": false,
+	"healthbar_colors": [
+		100,
+		60,
+		140
+	],
+	"camera_position": [
+		130,
+		180
+	],
+	"sing_duration": 6.1,
+	"scale": 0.8
+}

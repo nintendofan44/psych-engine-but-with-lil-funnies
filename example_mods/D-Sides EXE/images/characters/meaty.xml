@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="meaty.png">
+	<!-- Created with Adobe Animate version 22.0.6.202 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="DownMeaty0000" x="0" y="0" width="386" height="235" frameX="-49" frameY="-20" frameWidth="435" frameHeight="260"/>
+	<SubTexture name="DownMeaty0001" x="0" y="0" width="386" height="235" frameX="-49" frameY="-20" frameWidth="435" frameHeight="260"/>
+	<SubTexture name="DownMeaty0002" x="386" y="0" width="350" height="260" frameX="0" frameY="0" frameWidth="435" frameHeight="260"/>
+	<SubTexture name="DownMeaty0003" x="386" y="0" width="350" height="260" frameX="0" frameY="0" frameWidth="435" frameHeight="260"/>
+	<SubTexture name="DownMeaty0004" x="736" y="0" width="282" height="224" frameX="-33" frameY="-35" frameWidth="435" frameHeight="260"/>
+	<SubTexture name="DownMeaty0005" x="736" y="0" width="282" height="224" frameX="-33" frameY="-35" frameWidth="435" frameHeight="260"/>
+	<SubTexture name="IdleMeaty0000" x="1018" y="0" width="572" height="470" frameX="0" frameY="-21" frameWidth="572" frameHeight="491"/>
+	<SubTexture name="IdleMeaty0001" x="1590" y="0" width="565" height="476" frameX="-4" frameY="-14" frameWidth="572" frameHeight="491"/>
+	<SubTexture name="IdleMeaty0002" x="1590" y="0" width="565" height="476" frameX="-4" frameY="-14" frameWidth="572" frameHeight="491"/>
+	<SubTexture name="IdleMeaty0003" x="2155" y="0" width="556" height="482" frameX="-5" frameY="-9" frameWidth="572" frameHeight="491"/>
+	<SubTexture name="IdleMeaty0004" x="2155" y="0" width="556" height="482" frameX="-5" frameY="-9" frameWidth="572" frameHeight="491"/>
+	<SubTexture name="IdleMeaty0005" x="2711" y="0" width="553" height="490" frameX="-7" frameY="0" frameWidth="572" frameHeight="491"/>
+	<SubTexture name="IdleMeaty0006" x="2711" y="0" width="553" height="490" frameX="-7" frameY="0" frameWidth="572" frameHeight="491"/>
+	<SubTexture name="IdleMeaty0007" x="2711" y="0" width="553" height="490" frameX="-7" frameY="0" frameWidth="572" frameHeight="491"/>
+	<SubTexture name="IdleMeaty0008" x="2711" y="0" width="553" height="490" frameX="-7" frameY="0" frameWidth="572" frameHeight="491"/>
+	<SubTexture name="IdleMeaty0009" x="2711" y="0" width="553" height="490" frameX="-7" frameY="0" frameWidth="572" frameHeight="491"/>
+	<SubTexture name="IdleMeaty0010" x="2711" y="0" width="553" height="490" frameX="-7" frameY="0" frameWidth="572" frameHeight="491"/>
+	<SubTexture name="IdleMeaty0011" x="2711" y="0" width="553" height="490" frameX="-7" frameY="0" frameWidth="572" frameHeight="491"/>
+	<SubTexture name="IdleMeaty0012" x="2711" y="0" width="553" height="490" frameX="-7" frameY="0" frameWidth="572" frameHeight="491"/>
+	<SubTexture name="IdleMeaty0013" x="2711" y="0" width="553" height="490" frameX="-7" frameY="0" frameWidth="572" frameHeight="491"/>
+	<SubTexture name="LeftMeaty0000" x="3264" y="0" width="579" height="475" frameX="0" frameY="0" frameWidth="612" frameHeight="486"/>
+	<SubTexture name="LeftMeaty0001" x="3264" y="0" width="579" height="475" frameX="0" frameY="0" frameWidth="612" frameHeight="486"/>
+	<SubTexture name="LeftMeaty0002" x="0" y="490" width="551" height="469" frameX="-61" frameY="-17" frameWidth="612" frameHeight="486"/>
+	<SubTexture name="LeftMeaty0003" x="0" y="490" width="551" height="469" frameX="-61" frameY="-17" frameWidth="612" frameHeight="486"/>
+	<SubTexture name="LeftMeaty0004" x="0" y="490" width="551" height="469" frameX="-61" frameY="-17" frameWidth="612" frameHeight="486"/>
+	<SubTexture name="LeftMeaty0005" x="0" y="490" width="551" height="469" frameX="-61" frameY="-17" frameWidth="612" frameHeight="486"/>
+	<SubTexture name="MeatyUp0000" x="551" y="490" width="660" height="728" frameX="0" frameY="0" frameWidth="692" frameHeight="728"/>
+	<SubTexture name="MeatyUp0001" x="551" y="490" width="660" height="728" frameX="0" frameY="0" frameWidth="692" frameHeight="728"/>
+	<SubTexture name="MeatyUp0002" x="1211" y="490" width="684" height="653" frameX="-8" frameY="-66" frameWidth="692" frameHeight="728"/>
+	<SubTexture name="MeatyUp0003" x="1211" y="490" width="684" height="653" frameX="-8" frameY="-66" frameWidth="692" frameHeight="728"/>
+	<SubTexture name="MeatyUp0004" x="1895" y="490" width="684" height="657" frameX="-8" frameY="-66" frameWidth="692" frameHeight="728"/>
+	<SubTexture name="MeatyUp0005" x="1895" y="490" width="684" height="657" frameX="-8" frameY="-66" frameWidth="692" frameHeight="728"/>
+	<SubTexture name="RightNoteMeaty0000" x="2579" y="490" width="408" height="502" frameX="-16" frameY="0" frameWidth="424" frameHeight="518"/>
+	<SubTexture name="RightNoteMeaty0001" x="2579" y="490" width="408" height="502" frameX="-16" frameY="0" frameWidth="424" frameHeight="518"/>
+	<SubTexture name="RightNoteMeaty0002" x="2987" y="490" width="417" height="483" frameX="0" frameY="-35" frameWidth="424" frameHeight="518"/>
+	<SubTexture name="RightNoteMeaty0003" x="2987" y="490" width="417" height="483" frameX="0" frameY="-35" frameWidth="424" frameHeight="518"/>
+	<SubTexture name="RightNoteMeaty0004" x="2987" y="490" width="417" height="483" frameX="0" frameY="-35" frameWidth="424" frameHeight="518"/>
+	<SubTexture name="RightNoteMeaty0005" x="2987" y="490" width="417" height="483" frameX="0" frameY="-35" frameWidth="424" frameHeight="518"/>
+</TextureAtlas>

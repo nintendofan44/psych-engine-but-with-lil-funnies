@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="dick.png"><SubTexture name="dick idle0000" x="0" y="0" width="416" height="142" frameX="-3" frameY="-6" frameWidth="423" frameHeight="150" />
+<SubTexture name="dick up0000" x="0" y="0" width="416" height="142" frameX="-3" frameY="-6" frameWidth="423" frameHeight="150" />
+<SubTexture name="dick down0000" x="0" y="0" width="416" height="142" frameX="-3" frameY="-6" frameWidth="423" frameHeight="150" />
+<SubTexture name="dick left0000" x="0" y="0" width="416" height="142" frameX="-3" frameY="-6" frameWidth="423" frameHeight="150" />
+<SubTexture name="dick right0000" x="0" y="0" width="416" height="142" frameX="-3" frameY="-6" frameWidth="423" frameHeight="150" />
+</TextureAtlas>

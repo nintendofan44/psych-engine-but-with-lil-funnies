@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Shitass.png"><SubTexture name="Shitass up0000" x="0" y="0" width="388" height="640" frameX="0" frameY="0" frameWidth="388" frameHeight="640" />
+<SubTexture name="Shitass up0001" x="388" y="0" width="388" height="640" frameX="0" frameY="0" frameWidth="388" frameHeight="640" />
+<SubTexture name="Shitass up0002" x="776" y="0" width="388" height="640" frameX="0" frameY="0" frameWidth="388" frameHeight="640" />
+<SubTexture name="Shitass right0000" x="1164" y="0" width="388" height="640" frameX="0" frameY="0" frameWidth="388" frameHeight="640" />
+<SubTexture name="Shitass right0001" x="0" y="640" width="388" height="640" frameX="0" frameY="0" frameWidth="388" frameHeight="640" />
+<SubTexture name="Shitass right0002" x="388" y="640" width="388" height="640" frameX="0" frameY="0" frameWidth="388" frameHeight="640" />
+<SubTexture name="Shitass left0000" x="776" y="640" width="388" height="640" frameX="0" frameY="0" frameWidth="388" frameHeight="640" />
+<SubTexture name="Shitass left0001" x="1164" y="640" width="388" height="640" frameX="0" frameY="0" frameWidth="388" frameHeight="640" />
+<SubTexture name="Shitass left0002" x="1552" y="0" width="388" height="640" frameX="0" frameY="0" frameWidth="388" frameHeight="640" />
+<SubTexture name="Shitass down0000" x="1552" y="640" width="388" height="640" frameX="0" frameY="0" frameWidth="388" frameHeight="640" />
+<SubTexture name="Shitass down0001" x="0" y="1280" width="388" height="640" frameX="0" frameY="0" frameWidth="388" frameHeight="640" />
+<SubTexture name="Shitass down0002" x="388" y="1280" width="388" height="640" frameX="0" frameY="0" frameWidth="388" frameHeight="640" />
+<SubTexture name="Shitass idle0000" x="776" y="1280" width="388" height="640" frameX="0" frameY="0" frameWidth="388" frameHeight="640" />
+<SubTexture name="Shitass idle0001" x="1164" y="1280" width="388" height="640" frameX="0" frameY="0" frameWidth="388" frameHeight="640" />
+<SubTexture name="Shitass idle0002" x="1552" y="1280" width="388" height="640" frameX="0" frameY="0" frameWidth="388" frameHeight="640" />
+<SubTexture name="Shitass idle0003" x="1940" y="0" width="388" height="640" frameX="0" frameY="0" frameWidth="388" frameHeight="640" />
+<SubTexture name="Shitass idle0004" x="1940" y="640" width="388" height="640" frameX="0" frameY="0" frameWidth="388" frameHeight="640" />
+<SubTexture name="Shitass idle0005" x="1940" y="1280" width="388" height="640" frameX="0" frameY="0" frameWidth="388" frameHeight="640" />
+<SubTexture name="Shitass idle0006" x="2328" y="0" width="388" height="640" frameX="0" frameY="0" frameWidth="388" frameHeight="640" />
+<SubTexture name="Shitass idle0007" x="2328" y="640" width="388" height="640" frameX="0" frameY="0" frameWidth="388" frameHeight="640" />
+<SubTexture name="Shitass idle0008" x="2328" y="1280" width="388" height="640" frameX="0" frameY="0" frameWidth="388" frameHeight="640" />
+</TextureAtlas>
