@@ -1,0 +1,13 @@
+{
+	"storyName": "Fun Is Infinite",
+	"difficulties": "Encore",
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"weekBefore": "tutorial",
+	"freeplayColor": [146,113,253],
+	"startUnlocked": true,
+	"hideStoryMode": true,
+	"songs": [["Endless","majinog",[0,0,255]]],
+	"weekCharacters": ["","",""],
+	"weekName": "Fun Is Infinite"
+}
