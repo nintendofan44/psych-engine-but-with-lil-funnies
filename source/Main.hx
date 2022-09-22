@@ -36,8 +36,6 @@ class Main extends Sprite
 	public static var instance:Main;
 	public static var gjToastManager:GJToastManager;
 
-	public var luaArray:Array<FunkinLua> = [];
-
 	// You can pretty much ignore everything from here on - your code should go in your states.
 
 	public static function main():Void
