@@ -1,0 +1,168 @@
+{
+	"dialogue_pos": "left",
+	"position": [
+		-10,
+		-50
+	],
+	"no_antialiasing": false,
+	"scale": 1,
+	"animations": [
+		{
+			"idle_offsets": [
+				0,
+				0
+			],
+			"anim": "happy",
+			"loop_offsets": [
+				0,
+				0
+			],
+			"idle_name": "JIMMY DIALOGUE HAPPY ",
+			"loop_name": "JIMMY DIALOGUE HAPPY "
+		},
+		{
+			"loop_name": "JIMMY DIALOGUE SMIRK ",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "JIMMY DIALOGUE SMIRK ",
+			"anim": "smirk",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "JIMMY DIALOGUE CHALLENGE ",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "JIMMY DIALOGUE CHALLENGE ",
+			"anim": "challenge",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "JIMMY DIALOGUE SHOCKED ",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "JIMMY DIALOGUE SHOCKED ",
+			"anim": "shocked",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "JIMMY DIALOGUE NEUTRAL ",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "JIMMY DIALOGUE NEUTRAL",
+			"anim": "neutral",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "JIMMY DIALOGUE ANXIOUS ",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "JIMMY DIALOGUE ANXIOUS ",
+			"anim": "anxious",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "JIMMY DIALOGUE SHEEPISH ",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "JIMMY DIALOGUE SHEEPISH ",
+			"anim": "sheepish",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "JIMMY DIALOGUE EXASPERATED ",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "JIMMY DIALOGUE EXASPERATED ",
+			"anim": "exasperated",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "JIMMY DIALOGUE ARM SHOCKED ",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "JIMMY DIALOGUE ARM SHOCKED ",
+			"anim": "armshocked",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "JIMMY DIALOGUE ARM ANXIOUS ",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "JIMMY DIALOGUE ARM ANXIOUS ",
+			"anim": "armanxious",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "JIMMY DIALOGUE ARM HESITANT ",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "JIMMY DIALOGUE ARM HESITANT ",
+			"anim": "armhesitant",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "JIMMY DIALOGUE ARM SMIRK ",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "JIMMY DIALOGUE ARM SMIRK ",
+			"anim": "armsmirk",
+			"loop_offsets": [
+				0,
+				0
+			]
+		}
+	],
+	"image": "Jimmy_Assets"
+}

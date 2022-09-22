@@ -1,0 +1,60 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "exasperated",
+			"text": "Hey, so uh..."
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "I kinda had a different idea for that third song a while back."
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "smirk",
+			"text": "one would even call it a"
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "smirk",
+			"text": "rough draft."
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "bruh that joke so bad you making me speak english"
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "oh also this is my old sprite"
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "there goes the fourth wall"
+		}
+	]
+}

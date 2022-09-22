@@ -1,0 +1,111 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				140,
+				30
+			],
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "LeftPose"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-20,
+				-75
+			],
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "DownPose"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				124,
+				21
+			],
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "UpPose"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-61,
+				2
+			],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "RightPose"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				4,
+				-32
+			],
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Idle"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				51,
+				7
+			],
+			"fps": 24,
+			"anim": "attack",
+			"indices": [],
+			"name": "ActionAttack"
+		},
+		{
+			"loop": true,
+			"offsets": [
+				40,
+				6
+			],
+			"anim": "chuckle",
+			"fps": 24,
+			"name": "ChucklePose",
+			"indices": []
+		},
+		{
+			"offsets": [
+				140,
+				30
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "ohshit",
+			"loop": false,
+			"name": "LeftOh"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/JimmyAssets",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "jimmy",
+	"flip_x": false,
+	"healthbar_colors": [
+		75,
+		222,
+		26
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

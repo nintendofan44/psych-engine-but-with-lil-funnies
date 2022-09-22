@@ -1,0 +1,100 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"anim": "idle",
+			"fps": 12,
+			"name": "EllisNotHereIdle",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-100,
+				0
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "dropdown",
+			"indices": [],
+			"name": "EllisDropsDown"
+		},
+		{
+			"offsets": [
+				-110,
+				10
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "idle-alt",
+			"indices": [],
+			"name": "EllisIsNowHereIdle"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				7,
+				11
+			],
+			"anim": "singUP",
+			"fps": 12,
+			"name": "EllisUpPose",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-20,
+				11
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "EllisDownPose"
+		},
+		{
+			"offsets": [
+				111,
+				31
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "EllisLeftPose"
+		},
+		{
+			"offsets": [
+				-138,
+				21
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "EllisRightPose"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/secret/unwellissheet",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "bf",
+	"flip_x": false,
+	"healthbar_colors": [
+		75,
+		222,
+		26
+	],
+	"camera_position": [
+		-200,
+		-300
+	],
+	"sing_duration": 6.1,
+	"scale": 1.5
+}

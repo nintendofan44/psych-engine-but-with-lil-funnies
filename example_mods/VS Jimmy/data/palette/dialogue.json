@@ -1,0 +1,44 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "challenge",
+			"text": "Hell yeah!! We're on a roll out here!"
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "(random bf noises I ain't writing them lol)"
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "neutral",
+			"text": "Damn, I didn't even notice the crowd back there. Hm... Guess theres only one thing left to do."
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "challenge",
+			"text": "Let's give these people a finale they won't forget!!"
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "excited",
+			"text": "(again with bf sounds)"
+		}
+	]
+}

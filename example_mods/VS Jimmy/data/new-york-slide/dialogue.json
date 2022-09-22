@@ -1,0 +1,60 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "Holy shit, is that THE Boyfriend.xml??"
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "bep boop"
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "smirk",
+			"text": "I hear you're pretty big around these parts."
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "bap"
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "happy",
+			"text": "Say, wanna lay down some bars? It'd be an honor, dude."
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "bf",
+			"boxState": "normal",
+			"expression": "talk",
+			"text": "boopie scoop"
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "challenge",
+			"text": "Aight, sweet, it's on!!"
+		}
+	]
+}

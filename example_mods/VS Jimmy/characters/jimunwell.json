@@ -1,0 +1,100 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "idle",
+			"indices": [],
+			"name": "JimIdle"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "popin",
+			"indices": [],
+			"name": "JimPopIn"
+		},
+		{
+			"offsets": [
+				-66,
+				1
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singUP",
+			"indices": [],
+			"name": "JimUp"
+		},
+		{
+			"offsets": [
+				-150,
+				-5
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "JimDown"
+		},
+		{
+			"offsets": [
+				-80,
+				-10
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "JimLeft"
+		},
+		{
+			"offsets": [
+				-71,
+				-18
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "JimRight"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "what",
+			"indices": [],
+			"name": "JimWhat"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/secret/jimunwell",
+	"position": [
+		-80,
+		0
+	],
+	"healthicon": "jimunwell",
+	"flip_x": false,
+	"healthbar_colors": [
+		0,
+		0,
+		0
+	],
+	"camera_position": [
+		-100,
+		-120
+	],
+	"sing_duration": 6.1,
+	"scale": 2
+}

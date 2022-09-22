@@ -1,0 +1,89 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				170,
+				0
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "PhilLeft"
+		},
+		{
+			"offsets": [
+				-30,
+				5
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "PhilDown"
+		},
+		{
+			"offsets": [
+				-136,
+				1
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singUP",
+			"indices": [],
+			"name": "PhilUp"
+		},
+		{
+			"offsets": [
+				-341,
+				2
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "PhilRight"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "idle",
+			"indices": [],
+			"name": "PhilIdle"
+		},
+		{
+			"offsets": [
+				0,
+				0
+			],
+			"loop": false,
+			"fps": 12,
+			"anim": "idle-alt",
+			"indices": [],
+			"name": "PhilAlt"
+		}
+	],
+	"no_antialiasing": true,
+	"image": "characters/secret/philunwell",
+	"position": [
+		80,
+		0
+	],
+	"healthicon": "philunwell",
+	"flip_x": true,
+	"healthbar_colors": [
+		255,
+		255,
+		255
+	],
+	"camera_position": [
+		240,
+		-120
+	],
+	"sing_duration": 6.1,
+	"scale": 2
+}

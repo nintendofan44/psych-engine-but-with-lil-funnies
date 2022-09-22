@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="jimmy-dialogue.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="JIMMY DIALOGUE HAPPY 0000" x="0" y="0" width="599" height="599" frameX="0" frameY="0" frameWidth="600" frameHeight="600"/>
+	<SubTexture name="JIMMY DIALOGUE SMIRK 0000" x="600" y="0" width="599" height="599" frameX="0" frameY="0" frameWidth="600" frameHeight="600"/>
+	<SubTexture name="JIMMY DIALOGUE CHALLENGE 0000" x="1200" y="0" width="599" height="599" frameX="0" frameY="0" frameWidth="600" frameHeight="600"/>
+	<SubTexture name="JIMMY DIALOGUE SHOCKED 0000" x="1800" y="0" width="599" height="599" frameX="0" frameY="0" frameWidth="600" frameHeight="600"/>
+	<SubTexture name="JIMMY DIALOGUE NEUTRAL 0000" x="2400" y="0" width="599" height="599" frameX="0" frameY="0" frameWidth="600" frameHeight="600"/>
+	<SubTexture name="JIMMY DIALOGUE ANXIOUS 0000" x="3000" y="0" width="599" height="599" frameX="0" frameY="0" frameWidth="600" frameHeight="600"/>
+	<SubTexture name="JIMMY DIALOGUE SHEEPISH 0000" x="0" y="600" width="599" height="599" frameX="0" frameY="0" frameWidth="600" frameHeight="600"/>
+	<SubTexture name="JIMMY DIALOGUE EXASPERATED 0000" x="600" y="600" width="599" height="599" frameX="0" frameY="0" frameWidth="600" frameHeight="600"/>
+	<SubTexture name="JIMMY DIALOGUE ARM SHOCKED 0000" x="1200" y="600" width="599" height="599" frameX="0" frameY="0" frameWidth="600" frameHeight="600"/>
+	<SubTexture name="JIMMY DIALOGUE ARM ANXIOUS 0000" x="1800" y="600" width="599" height="599" frameX="0" frameY="0" frameWidth="600" frameHeight="600"/>
+	<SubTexture name="JIMMY DIALOGUE ARM HESITANT 0000" x="2400" y="600" width="599" height="599" frameX="0" frameY="0" frameWidth="600" frameHeight="600"/>
+	<SubTexture name="JIMMY DIALOGUE ARM SMIRK 0000" x="3000" y="600" width="599" height="599" frameX="0" frameY="0" frameWidth="600" frameHeight="600"/>
+</TextureAtlas>

@@ -1,0 +1,100 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				80,
+				10
+			],
+			"loop": false,
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "LeftPose",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-30,
+				-125
+			],
+			"loop": false,
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "DownPose",
+			"indices": []
+		},
+		{
+			"offsets": [
+				104,
+				10
+			],
+			"loop": false,
+			"anim": "singUP",
+			"fps": 24,
+			"name": "UpPose",
+			"indices": []
+		},
+		{
+			"offsets": [
+				-45,
+				-30
+			],
+			"loop": false,
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "RightPose",
+			"indices": []
+		},
+		{
+			"offsets": [
+				4,
+				-22
+			],
+			"loop": false,
+			"anim": "idle",
+			"fps": 24,
+			"name": "Idle",
+			"indices": []
+		},
+		{
+			"offsets": [
+				51,
+				-18
+			],
+			"loop": false,
+			"anim": "attack",
+			"fps": 24,
+			"name": "ActionAttack",
+			"indices": []
+		},
+		{
+			"offsets": [
+				36,
+				-7
+			],
+			"indices": [],
+			"fps": 24,
+			"anim": "chuckle",
+			"loop": true,
+			"name": "ChucklePose"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/JimmyAssetsOld",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "jimmy-old",
+	"flip_x": false,
+	"healthbar_colors": [
+		75,
+		222,
+		26
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

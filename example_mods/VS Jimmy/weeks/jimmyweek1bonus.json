@@ -1,0 +1,26 @@
+{
+	"storyName": "jimbonus",
+	"difficulties": "Easy, Hard",
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"bf",
+		"gf"
+	],
+	"songs": [
+		[
+			"Rough Draft",
+			"jimmy-old",
+			[
+				120,
+				149,
+				120
+			]
+		]
+	],
+	"hideStoryMode": true,
+	"weekName": "Vs Jimmy Bonus"
+}

@@ -1,0 +1,56 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				260,
+				190
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "firstDeath",
+			"indices": [],
+			"name": "GameOverInit"
+		},
+		{
+			"offsets": [
+				63,
+				179
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "deathConfirm",
+			"indices": [],
+			"name": "GameOverRetryConfirm"
+		},
+		{
+			"offsets": [
+				63,
+				179
+			],
+			"loop": true,
+			"fps": 24,
+			"anim": "deathLoop",
+			"indices": [],
+			"name": "GameOverLoop"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/JimGameOver",
+	"position": [
+		-400,
+		-400
+	],
+	"healthicon": "jimmydeadend",
+	"flip_x": true,
+	"healthbar_colors": [
+		75,
+		222,
+		26
+	],
+	"camera_position": [
+		600,
+		-400
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

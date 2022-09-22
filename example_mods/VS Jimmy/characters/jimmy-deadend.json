@@ -1,0 +1,144 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				130,
+				-40
+			],
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "JimLeftDifPer"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				130,
+				30
+			],
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"indices": [],
+			"name": "JimLeftMISS"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				40,
+				-15
+			],
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "JimDownDifPer"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				60,
+				55
+			],
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "JimDownMISS"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				84,
+				-49
+			],
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "JimUpDifPer"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				94,
+				-9
+			],
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "JimUpMISS"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				49,
+				-78
+			],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "JimRightDifPer"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				49,
+				-68
+			],
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"indices": [],
+			"name": "JimRightMISS"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				4,
+				-32
+			],
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "JimIdleDifPer"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				-28
+			],
+			"anim": "laugh",
+			"fps": 24,
+			"name": "JimIdleLaugh",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				0,
+				-26
+			],
+			"anim": "mad",
+			"fps": 24,
+			"name": "JimIdleMAD",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/JimDeadEnd",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "jimmydeadend",
+	"flip_x": true,
+	"healthbar_colors": [
+		75,
+		222,
+		26
+	],
+	"camera_position": [
+		250,
+		-80
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

@@ -1,0 +1,76 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "neutral",
+			"text": "...I won?"
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "anxious",
+			"text": "I mean--"
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "sheepish",
+			"text": "Of course I won! Haha..."
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "dad",
+			"boxState": "normal",
+			"expression": "kill",
+			"text": "..."
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "exasperated",
+			"text": "hey uh... You're not looking too hot. What? Were my bars too fire--"
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "dad",
+			"boxState": "normal",
+			"expression": "kill",
+			"text": "Get your ass out of my sight."
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "anxious",
+			"text": "mmm okay youre mad I'll just"
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "dad",
+			"boxState": "normal",
+			"expression": "kill",
+			"text": "GO."
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "GOING!!"
+		}
+	]
+}

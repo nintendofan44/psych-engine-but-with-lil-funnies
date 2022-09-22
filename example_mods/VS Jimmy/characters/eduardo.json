@@ -1,0 +1,100 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				3,
+				-7
+			],
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "EduardoLeft"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				18,
+				-20
+			],
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "EduardoDown"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-16,
+				21
+			],
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "EduardoUp"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				-2,
+				-6
+			],
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "EduardoRight"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				0,
+				0
+			],
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "EduardoIdle"
+		},
+		{
+			"offsets": [
+				-3,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "well",
+			"indices": [],
+			"name": "EduardoWell"
+		},
+		{
+			"loop": false,
+			"offsets": [
+				458,
+				0
+			],
+			"anim": "cardboard",
+			"fps": 24,
+			"name": "EduardoCardboard",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/secret/eduardosheet",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "eduardo",
+	"flip_x": false,
+	"healthbar_colors": [
+		0,
+		0,
+		0
+	],
+	"camera_position": [
+		-200,
+		-100
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

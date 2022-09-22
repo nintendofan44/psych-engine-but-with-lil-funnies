@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="JimGameOverSheet.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="GameOverInit0000" x="0" y="0" width="914" height="1330" pivotX="197.9" pivotY="598.95" frameX="-55" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0001" x="914" y="0" width="970" height="1330" frameX="-21" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0002" x="1884" y="0" width="970" height="1330" frameX="-21" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0003" x="2854" y="0" width="1003" height="1330" frameX="-8" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0004" x="0" y="1330" width="1003" height="1330" frameX="-8" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0005" x="1003" y="1330" width="1002" height="1330" frameX="0" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0006" x="2005" y="1330" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0007" x="2005" y="1330" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0008" x="2005" y="1330" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0009" x="2005" y="1330" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0010" x="2005" y="1330" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0011" x="2005" y="1330" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0012" x="2005" y="1330" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0013" x="2005" y="1330" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0014" x="2005" y="1330" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0015" x="2704" y="1330" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0016" x="2704" y="1330" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0017" x="2704" y="1330" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0018" x="0" y="2660" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0019" x="0" y="2660" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0020" x="699" y="2660" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0021" x="699" y="2660" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0022" x="1398" y="2660" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0023" x="1398" y="2660" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0024" x="2097" y="2660" width="699" height="1347" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0025" x="2796" y="2660" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0026" x="2796" y="2660" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0027" x="2796" y="2660" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0028" x="2796" y="2660" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0029" x="2796" y="2660" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0030" x="2796" y="2660" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0031" x="2796" y="2660" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0032" x="2796" y="2660" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0033" x="2796" y="2660" width="699" height="1330" frameX="-197" frameY="0" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0034" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0035" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0036" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0037" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0038" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0039" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0040" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0041" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0042" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0043" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0044" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0045" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0046" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0047" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0048" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0049" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0050" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0051" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0052" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0053" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0054" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0055" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0056" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverInit0057" x="0" y="4007" width="699" height="723" frameX="-197" frameY="-598" frameWidth="1011" frameHeight="1347"/>
+	<SubTexture name="GameOverLoop0000" x="699" y="4007" width="699" height="1330" pivotX="0" pivotY="598.95"/>
+	<SubTexture name="GameOverLoop0001" x="1398" y="4007" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0002" x="1398" y="4007" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0003" x="2097" y="4007" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0004" x="2097" y="4007" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0005" x="2796" y="4007" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0006" x="2796" y="4007" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0007" x="0" y="5337" width="698" height="1330" frameX="-1" frameY="0" frameWidth="699" frameHeight="1330"/>
+	<SubTexture name="GameOverLoop0008" x="698" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0009" x="698" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0010" x="698" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0011" x="698" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0012" x="698" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0013" x="698" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0014" x="698" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0015" x="698" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0016" x="698" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0017" x="699" y="4007" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0018" x="1398" y="4007" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0019" x="1398" y="4007" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0020" x="2097" y="4007" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0021" x="2097" y="4007" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0022" x="2796" y="4007" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0023" x="2796" y="4007" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0024" x="698" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0025" x="698" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0026" x="698" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0027" x="698" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0028" x="698" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0029" x="698" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0030" x="0" y="5337" width="698" height="1330" frameX="-1" frameY="0" frameWidth="699" frameHeight="1330"/>
+	<SubTexture name="GameOverLoop0031" x="698" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0032" x="698" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverLoop0033" x="698" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0000" x="1397" y="5337" width="699" height="1330" pivotX="0" pivotY="598.95"/>
+	<SubTexture name="GameOverRetryConfirm0001" x="2096" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0002" x="2096" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0003" x="2795" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0004" x="2096" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0005" x="2795" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0006" x="2795" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0007" x="2795" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0008" x="2795" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0009" x="2795" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0010" x="2795" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0011" x="2795" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0012" x="2795" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0013" x="0" y="6667" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0014" x="0" y="6667" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0015" x="0" y="6667" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0016" x="0" y="6667" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0017" x="0" y="6667" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0018" x="1397" y="5337" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0019" x="699" y="4007" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0020" x="699" y="4007" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0021" x="699" y="4007" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0022" x="699" y="4007" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0023" x="699" y="4007" width="699" height="1330"/>
+	<SubTexture name="GameOverRetryConfirm0024" x="699" y="4007" width="699" height="1330"/>
+</TextureAtlas>

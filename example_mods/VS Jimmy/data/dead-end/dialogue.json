@@ -1,0 +1,108 @@
+{
+	"dialogue": [
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "shocked",
+			"text": "Uh... Heeyyyyy--"
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "armshocked",
+			"text": "AH"
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "dad",
+			"boxState": "normal",
+			"expression": "mad",
+			"text": "Give me one good reason I shouldn't strangle the life outta ya here an' now."
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "armanxious",
+			"text": "Uh- um- I uhhhhhhh..."
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "armanxious",
+			"text": "(C'mon Jimmy, think of something....)"
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "armhesitant",
+			"text": "I uh... Bet you can't beat me at singing."
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "dad",
+			"boxState": "normal",
+			"expression": "angry",
+			"text": "what."
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "armhesitant",
+			"text": "(Jimmy quickly explains how he'll bet his life over a song and that he gets to live if he wins)"
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "jimmy",
+			"boxState": "normal",
+			"expression": "armsmirk",
+			"text": "So yea what do you say huh"
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "dad",
+			"boxState": "normal",
+			"expression": "stern",
+			"text": "..."
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "dad",
+			"boxState": "normal",
+			"expression": "confused",
+			"text": "Ah, what the hell. I'll humor ya, boh. 'Bout time I made up for that half-assed stage show anyhow."
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "dad",
+			"boxState": "normal",
+			"expression": "angry",
+			"text": "But when I'm through kickin' your ass..."
+		},
+		{
+			"sound": "",
+			"speed": 0.03,
+			"portrait": "dad",
+			"boxState": "normal",
+			"expression": "mad",
+			"text": "You're gonna wish you ain't got the balls to go up against me."
+		}
+	]
+}

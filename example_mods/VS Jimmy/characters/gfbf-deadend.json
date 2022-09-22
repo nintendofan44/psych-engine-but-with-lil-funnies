@@ -1,0 +1,188 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				3,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "GFandBFDown"
+		},
+		{
+			"offsets": [
+				21,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "GFandBFLeft"
+		},
+		{
+			"offsets": [
+				-13,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "GFandBFUp"
+		},
+		{
+			"offsets": [
+				-5,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "wakeup",
+			"indices": [],
+			"name": "GFandBFWakeup"
+		},
+		{
+			"offsets": [
+				2,
+				1
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "GFandBFRight"
+		},
+		{
+			"offsets": [
+				-2,
+				1
+			],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				12,
+				13,
+				14
+			],
+			"fps": 32,
+			"anim": "danceLeft",
+			"loop": false,
+			"name": "GFandBFAlt"
+		},
+		{
+			"offsets": [
+				-2,
+				1
+			],
+			"indices": [
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31
+			],
+			"fps": 32,
+			"anim": "danceRight",
+			"loop": false,
+			"name": "GFandBFAlt"
+		},
+		{
+			"offsets": [
+				17,
+				0
+			],
+			"indices": [
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				12,
+				13,
+				14
+			],
+			"fps": 32,
+			"anim": "danceLeft-alt",
+			"loop": false,
+			"name": "GFandBFIdle"
+		},
+		{
+			"offsets": [
+				17,
+				0
+			],
+			"indices": [
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31
+			],
+			"fps": 32,
+			"anim": "danceRight-alt",
+			"loop": false,
+			"name": "GFandBFIdle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/JimGFandBF",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "bf",
+	"flip_x": false,
+	"healthbar_colors": [
+		75,
+		222,
+		26
+	],
+	"camera_position": [
+		0,
+		0
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}

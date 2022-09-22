@@ -1,0 +1,77 @@
+{
+	"dialogue_pos": "right",
+	"position": [
+		-60,
+		-160
+	],
+	"no_antialiasing": false,
+	"scale": 1,
+	"animations": [
+		{
+			"loop_name": "DAD DIALOGUE CONFUSED ",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "DAD DIALOGUE CONFUSED ",
+			"anim": "confused",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "DAD DIALOGUE STERN ",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "DAD DIALOGUE STERN ",
+			"anim": "stern",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "DAD DIALOGUE ANGRY ",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "DAD DIALOGUE ANGRY ",
+			"anim": "angry",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "DAD DIALOGUE MAD ",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "DAD DIALOGUE MAD ",
+			"anim": "mad",
+			"loop_offsets": [
+				0,
+				0
+			]
+		},
+		{
+			"loop_name": "DAD DIALOGUE KILL ",
+			"idle_offsets": [
+				0,
+				0
+			],
+			"idle_name": "DAD DIALOGUE KILL ",
+			"anim": "kill",
+			"loop_offsets": [
+				0,
+				0
+			]
+		}
+	],
+	"image": "Dad_Assets"
+}

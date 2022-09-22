@@ -1,0 +1,53 @@
+{
+	"storyName": "n'york",
+	"difficulties": "Easy, Hard",
+	"hideFreeplay": false,
+	"weekBackground": "newyork",
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"songs": [
+		[
+			"New York Slide",
+			"jimmy",
+			[
+				64,
+				149,
+				64
+			]
+		],
+		[
+			"Abstract",
+			"jimmy",
+			[
+				64,
+				149,
+				64
+			]
+		],
+		[
+			"Palette",
+			"jimmy",
+			[
+				64,
+				149,
+				64
+			]
+		],
+		[
+			"Dead End",
+			"daddeadend",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"hideStoryMode": false,
+	"weekName": "Vs Jimmy"
+}

@@ -1,0 +1,11 @@
+UNUSED CUZ IT LAGGED LIKE SHIT
+
+-switches the notes to a random spritesheet (notes-1 - notes-8)
+ value1 offsets the ui/strumline change (in steps)
+ value2 offsets the actual noteskin change for tuning (in steps)
+-the difference between value2 and the notes actually changing
+ is about 22 steps with the new caching system in 0.5.2h.
++either put the event 32 steps (2 sections) prior and do
+  value1 = 32 value2 = 10
++or put the event 22 steps prior and do
+  value1 = 22 value2 = 0

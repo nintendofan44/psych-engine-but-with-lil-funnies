@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="dad-dialogue.png">
+	<!-- Created with Adobe Animate version 21.0.1.37179 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="DAD DIALOGUE CONFUSED 0000" x="0" y="0" width="499" height="799" frameX="0" frameY="0" frameWidth="500" frameHeight="800"/>
+	<SubTexture name="DAD DIALOGUE STERN 0000" x="500" y="0" width="499" height="799" frameX="0" frameY="0" frameWidth="500" frameHeight="800"/>
+	<SubTexture name="DAD DIALOGUE ANGRY 0000" x="1000" y="0" width="499" height="799" frameX="0" frameY="0" frameWidth="500" frameHeight="800"/>
+	<SubTexture name="DAD DIALOGUE MAD 0000" x="1500" y="0" width="499" height="799" frameX="0" frameY="0" frameWidth="500" frameHeight="800"/>
+	<SubTexture name="DAD DIALOGUE KILL 0000" x="2000" y="0" width="499" height="799" frameX="0" frameY="0" frameWidth="500" frameHeight="800"/>
+</TextureAtlas>

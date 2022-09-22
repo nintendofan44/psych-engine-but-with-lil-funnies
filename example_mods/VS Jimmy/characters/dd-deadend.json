@@ -1,0 +1,116 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				4,
+				-2
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "dddifperidle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				121,
+				-40
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "dddifperleft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				60,
+				-95
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "dddifperdown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				4,
+				7
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "dddifperup",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				27,
+				-3
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "dddifperRight",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				6,
+				-4
+			],
+			"anim": "angry",
+			"fps": 24,
+			"name": "dddifperangry",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				2,
+				-2
+			],
+			"anim": "confused",
+			"fps": 24,
+			"name": "dddifperconfused",
+			"indices": []
+		},
+		{
+			"offsets": [
+				6,
+				-4
+			],
+			"indices": [
+				9,
+				10,
+				11,
+				12
+			],
+			"fps": 24,
+			"anim": "angryloop",
+			"loop": true,
+			"name": "dddifperangry"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/DDJimAssets",
+	"position": [
+		0,
+		100
+	],
+	"healthicon": "daddeadend",
+	"flip_x": false,
+	"healthbar_colors": [
+		175,
+		102,
+		206
+	],
+	"camera_position": [
+		80,
+		80
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}
