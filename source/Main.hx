@@ -71,11 +71,10 @@ class Main extends Sprite
 		setupGame();
 	}
 
-	public var testWindow:FlxWindow;
 	private function setupGame():Void
 	{
-		//gameWidth = DesktopUtils.getDesktopWidth();
-		//gameHeight = DesktopUtils.getDesktopHeight();
+		//gameWidth = PlatformUtil.getDesktopWidth();
+		//gameHeight = PlatformUtil.getDesktopHeight();
 
 		var stageWidth:Int = Lib.current.stage.stageWidth;
 		var stageHeight:Int = Lib.current.stage.stageHeight;
@@ -107,9 +106,6 @@ class Main extends Sprite
 			fpsVar.visible = ClientPrefs.showFPS;
 		}
 		#end
-
-		/*testWindow = new FlxWindow(50, 50, 800, 800, "Test", ClientPrefs.framerate, true, false, true);
-		testWindow.window.stage.addChild(testWindow);*/
 
 		widescreenInit();
 

@@ -94,7 +94,8 @@ class ChartingState extends MusicBeatState
 		['Set Property', "Value 1: Variable name\nValue 2: New value"],
 		['Set Cam Zoom', "Value 1: Camera zoom\nValue 2: Tween duration, you can leave this blank for\ninstant zoom setting"],
 		['Cam Zoom Speed', "Value 1: Cam zoom speed, higher is slower\nValue 2: Tween duration, you can leave this blank for\ninsta"],
-		['Note SpinDash', "Does what you expect"]
+		['Note SpinDash', "Does what you expect"],
+		['Notif', "Creates a notification, windows only. Value 1 example -> title:description:seconds:tag:group"]
 	];
 
 	var _file:FileReference;
