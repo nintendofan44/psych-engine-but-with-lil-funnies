@@ -1,5 +1,7 @@
 package;
 
+import sys.io.Process;
+import flixel.graphics.frames.FlxFrame;
 import shaders.CustomShader;
 import helpers.OldBezier;
 import shaders.BH.BHShader;
@@ -70,6 +72,13 @@ import lime.app.Application;
 #if sys
 import sys.FileSystem;
 #end
+
+import lime.app.Application;
+import openfl.Lib;
+import openfl.geom.Matrix;
+import lime.ui.Window;
+import openfl.geom.Rectangle;
+import openfl.display.Sprite;
 
 using StringTools;
 
@@ -400,6 +409,21 @@ class PlayState extends MusicBeatState
 	var origCamY:Float = 0.0;
 
 	var infinity:FlxSprite;
+
+	public static var window:Window;
+	var expungedScroll = new Sprite();
+	var expungedSpr = new Sprite();
+	var windowProperties:Array<Dynamic> = new Array<Dynamic>();
+	var expungedWindowMode:Bool = false;
+	var expungedOffset:FlxPoint = new FlxPoint();
+	var expungedMoving:Bool = true;
+	var lastFrame:FlxFrame;
+
+	public var ExpungedWindowCenterPos:FlxPoint = new FlxPoint(0,0);
+	private var windowSteadyX:Float;
+	var preDadPos:FlxPoint = new FlxPoint();
+
+	public var elapsedexpungedtime:Float = 0;
 	override public function create()
 	{
 		Paths.clearStoredMemory();
@@ -626,13 +650,13 @@ class PlayState extends MusicBeatState
 				bgTransparent.scrollFactor.set();
 				add(bgTransparent);
 			
-				WindowUtils.getWindowsTransparent();
+				PlatformUtil.getWindowsTransparent();
 				FlxTween.tween(_window, {width: 706, height: 399}, 1, {
 					ease: FlxEase.expoInOut,
 					onComplete: function(twn:FlxTween)
 					{
-						var xx = Std.int((DesktopUtils.getDesktopWidth() - _window.width) / 2);
-						var yy = Std.int((DesktopUtils.getDesktopHeight() - _window.height) / 2);
+						var xx = Std.int((PlatformUtil.getDesktopWidth() - _window.width) / 2);
+						var yy = Std.int((PlatformUtil.getDesktopHeight() - _window.height) / 2);
 
 						FlxTween.tween(_window, {x: xx, y: yy}, 1, {
 							ease: FlxEase.expoInOut,
@@ -643,7 +667,7 @@ class PlayState extends MusicBeatState
 						});
 					}
 				});
-				WindowUtils.setWindowResizable(_window, false);
+				PlatformUtil.setWindowResizable(_window, false);
 				transparent_bg = true;
 				immovableWindow = transparent_bg;
 
@@ -1633,10 +1657,6 @@ class PlayState extends MusicBeatState
 				finished_scale = true;
 			}
 		});
-
-		/*spriteasdasdas = new FlxSprite(100, 100).makeGraphic(100, 100, FlxColor.GREEN);
-		add(spriteasdasdas);
-        spriteasdasdas.cameras = [camWin];*/
 	}
 
 	function set_songSpeed(value:Float):Float
@@ -2526,6 +2546,19 @@ class PlayState extends MusicBeatState
 		#end
 		setOnLuas('songLength', songLength);
 		callOnLuas('onSongStart', []);
+
+		windowProperties = [
+			Application.current.window.x,
+			Application.current.window.y,
+			Application.current.window.width,
+			Application.current.window.height
+		];
+
+		#if windows
+		popupWindow();
+		#end
+
+		PlatformUtil.sendWindowsNotification("Friday Night Funkin': Psych Engine", "Started!");
 	}
 
 	var debugNum:Int = 0;
@@ -2934,7 +2967,7 @@ class PlayState extends MusicBeatState
 		if (stageData.hide_time)
 		{
 			if (infinity != null) {
-				infinity.setPosition(timeTxt.x,timeTxt.y);
+				infinity.setPosition(timeTxt.x, timeTxt.y);
 			}
 		}
 
@@ -3141,9 +3174,9 @@ class PlayState extends MusicBeatState
 
 		if (immovableWindow && !tweeningwindow) {
 			if (_window != null) {
-				var xx = Std.int((DesktopUtils.getDesktopWidth() - _window.width) / 2);
-				var yy = Std.int((DesktopUtils.getDesktopHeight() - _window.height) / 2);
-				WindowUtils.setWindowCoords(_window, xx, yy);
+				var xx = Std.int((PlatformUtil.getDesktopWidth() - _window.width) / 2);
+				var yy = Std.int((PlatformUtil.getDesktopHeight() - _window.height) / 2);
+				PlatformUtil.setWindowCoords(_window, xx, yy);
 			}
 		}
 
@@ -3520,6 +3553,65 @@ class PlayState extends MusicBeatState
 		setOnLuas('cameraY', camFollowPos.y);
 		setOnLuas('botPlay', cpuControlled);
 		callOnLuas('onUpdatePost', [elapsed]);
+
+		if (window == null)
+		{
+			if (expungedWindowMode)
+			{
+				#if windows
+				popupWindow();
+				#end
+			}
+			else
+			{
+				return;
+			}
+		}
+		else if (expungedWindowMode)
+		{
+			var display = Application.current.window.display.currentMode;
+
+			@:privateAccess
+			var dadFrame = dad._frame;
+			if (dadFrame == null || dadFrame.frame == null) return; // prevent crashes (i hope)
+	  
+			var rect = new Rectangle(dadFrame.frame.x, dadFrame.frame.y, dadFrame.frame.width, dadFrame.frame.height);
+
+			expungedScroll.scrollRect = rect;
+
+			window.x = Std.int(expungedOffset.x);
+			window.y = Std.int(expungedOffset.y);
+
+			if (!expungedMoving)
+			{
+				elapsedexpungedtime += elapsed * 9;
+
+				var screenwidth = Application.current.window.display.bounds.width;
+				var screenheight = Application.current.window.display.bounds.height;
+
+				var toy = ((-Math.sin((elapsedexpungedtime / 9.5) * 2) * 30 * 5.1) / 1080) * screenheight;
+				var tox = ((-Math.cos((elapsedexpungedtime / 9.5)) * 100) / 1980) * screenwidth;
+
+				expungedOffset.x = ExpungedWindowCenterPos.x + tox;
+				expungedOffset.y = ExpungedWindowCenterPos.y + toy;
+
+				//center
+				Application.current.window.y = Math.round(((screenheight / 2) - (720 / 2)) + (Math.sin((elapsedexpungedtime / 30)) * 80));
+				Application.current.window.x = Std.int(windowSteadyX);
+				Application.current.window.width = 1280;
+				Application.current.window.height = 720;
+			}
+
+			if (lastFrame != null && dadFrame != null && lastFrame.name != dadFrame.name)
+			{
+				expungedSpr.graphics.clear();
+				generateWindowSprite();
+				lastFrame = dadFrame;
+			}
+
+			expungedScroll.x = (((dadFrame.offset.x) - (dad.offset.x)) * expungedScroll.scaleX) + 80;
+			expungedScroll.y = (((dadFrame.offset.y) - (dad.offset.y)) * expungedScroll.scaleY);
+		}
 	}
 
 	function openChartEditor()
@@ -3554,6 +3646,16 @@ class PlayState extends MusicBeatState
 
 				activeShit(true, true);
 
+				#if windows
+				if (window != null)
+				{
+					expungedWindowMode = false;
+					window.close();
+					//x,y, width, height
+					FlxTween.tween(Application.current.window, {x: windowProperties[0], y: windowProperties[1], width: windowProperties[2], height: windowProperties[3]}, 1, {ease: FlxEase.circInOut});
+		
+				}
+				#end
 				openSubState(new GameOverSubstate(boyfriend.getScreenPosition().x - boyfriend.positionArray[0], boyfriend.getScreenPosition().y - boyfriend.positionArray[1], camFollowPos.x, camFollowPos.y));
 
 				// MusicBeatState.switchState(new GameOverState(boyfriend.getScreenPosition().x, boyfriend.getScreenPosition().y));
@@ -3943,6 +4045,13 @@ class PlayState extends MusicBeatState
 				} else {
 					Reflect.setProperty(this, value1, value2);
 				}
+			case "Notif":
+				var splitValue2:Array<String> = value1.split(":");
+
+				var title = splitValue2[0];
+				var desc = splitValue2[1];
+
+				PlatformUtil.sendWindowsNotification(title, desc);
 			/*default: // maybe this will prevent crashes from non-existing events -nintendofan44
 				var evtName:String = eventName;
 				var debugString:String = 'Such event does not exist. (Event Name: ' + evtName + ') | (Value 1:' + value1 + ') | (Value 2:' + value2 + ')';
@@ -4093,7 +4202,6 @@ class PlayState extends MusicBeatState
 		}
 
 		_on = false;
-		//resetcamwin();
 
 		canPause = false;
 		endingSong = true;
@@ -5453,13 +5561,13 @@ class PlayState extends MusicBeatState
 	var curLightEvent:Int = -1;
 
 	public function resetWindow() {
-		WindowUtils.getWindowsBackward();
+		PlatformUtil.getWindowsBackward();
 		FlxTween.tween(_window, {width: gameWidth, height: gameHeight}, 1, {
 			ease: FlxEase.expoInOut,
 			onComplete: function(twn:FlxTween)
 			{
-				var xx = Std.int((DesktopUtils.getDesktopWidth() - _window.width) / 2);
-				var yy = Std.int((DesktopUtils.getDesktopHeight() - _window.height) / 2);
+				var xx = Std.int((PlatformUtil.getDesktopWidth() - _window.width) / 2);
+				var yy = Std.int((PlatformUtil.getDesktopHeight() - _window.height) / 2);
 
 				FlxTween.tween(_window, {x: xx, y: yy}, 1, {
 					ease: FlxEase.expoInOut,
@@ -5470,8 +5578,8 @@ class PlayState extends MusicBeatState
 				});
 			}
 		});
-		WindowUtils.setWindowResizable(_window, true);
-		if (_window.title != _gameName) WindowUtils.setWindowTitle(_window, _gameName);	
+		PlatformUtil.setWindowResizable(_window, true);
+		if (_window.title != _gameName) PlatformUtil.setWindowTitle(_window, _gameName);	
 		if (immovableWindow) immovableWindow = false;
 	}
 
@@ -5956,5 +6064,106 @@ class PlayState extends MusicBeatState
 				FlxTween.tween(timeTxt, {alpha: 1}, 1.15, {ease: FlxEase.circInOut});
 			}
 		});
+	}
+
+	function popupWindow()
+	{
+		var screenwidth = Application.current.window.display.bounds.width;
+		var screenheight = Application.current.window.display.bounds.height;
+
+		// center
+		Application.current.window.x = Std.int((screenwidth / 2) - (1280 / 2));
+		Application.current.window.y = Std.int((screenheight / 2) - (720 / 2));
+		Application.current.window.width = 1280;
+		Application.current.window.height = 720;
+
+		window = Application.current.createWindow({
+			title: "expunged.dat",
+			width: 800,
+			height: 800,
+			borderless: true,
+			alwaysOnTop: true
+		});
+
+		window.stage.color = 0x00010101;
+		@:privateAccess
+		window.stage.addEventListener("keyDown", FlxG.keys.onKeyDown);
+		@:privateAccess
+		window.stage.addEventListener("keyUp", FlxG.keys.onKeyUp);
+		#if linux
+		//testing stuff
+		window.stage.color = 0xff000000;
+		trace('BRAP');
+		#end
+		PlatformUtil.getWindowsTransparent();
+
+		preDadPos = dad.getPosition();
+		dad.x = 0;
+		dad.y = 0;
+
+		FlxG.mouse.useSystemCursor = true;
+
+		generateWindowSprite();
+
+		expungedScroll.scrollRect = new Rectangle();
+		window.stage.addChild(expungedScroll);
+		expungedScroll.addChild(expungedSpr);
+		expungedScroll.scaleX = dad.jsonWindowScaleX;
+		expungedScroll.scaleY = dad.jsonWindowScaleY;
+
+		expungedOffset.x = Application.current.window.x;
+		expungedOffset.y = Application.current.window.y;
+
+		dad.visible = false;
+
+		var windowX = Application.current.window.x + ((Application.current.window.display.bounds.width) * 0.140625);
+
+		windowSteadyX = windowX;
+
+		FlxTween.tween(expungedOffset, {x: -20}, 2, {ease: FlxEase.elasticOut});
+
+		FlxTween.tween(Application.current.window, {x: windowX}, 2.2, {
+			ease: FlxEase.elasticOut,
+			onComplete: function(tween:FlxTween)
+			{
+				ExpungedWindowCenterPos.x = expungedOffset.x;
+				ExpungedWindowCenterPos.y = expungedOffset.y;
+				expungedMoving = false;
+			}
+		});
+
+		Application.current.window.onClose.add(function()
+		{
+			if (window != null)
+			{
+				window.close();
+			}
+		}, false, 100);
+
+		Application.current.window.focus();
+		expungedWindowMode = true;
+
+		@:privateAccess
+		lastFrame = dad._frame;
+	}
+
+	function generateWindowSprite()
+	{
+		var m = new Matrix();
+		m.translate(0, 0);
+		expungedSpr.graphics.beginBitmapFill(dad.pixels, m);
+		expungedSpr.graphics.drawRect(0, 0, dad.pixels.width, dad.pixels.height);
+		expungedSpr.graphics.endFill();
+	}
+
+	public function endSongCloseWindow() {
+		#if windows
+		if (window != null)
+		{
+			window.close();
+			expungedWindowMode = false;
+			window = null;
+		}
+		#end
 	}
 }
