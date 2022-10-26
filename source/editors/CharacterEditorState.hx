@@ -509,6 +509,11 @@ class CharacterEditorState extends MusicBeatState
 	var healthColorStepperG:FlxUINumericStepper;
 	var healthColorStepperB:FlxUINumericStepper;
 
+	var windowOffXStepper:FlxUINumericStepper;
+	var windowOffYStepper:FlxUINumericStepper;
+	var windowSizeXStepper:FlxUINumericStepper;
+	var windowSizeYStepper:FlxUINumericStepper;
+
 	function addCharacterUI() {
 		var tab_group = new FlxUI(null, UI_box);
 		tab_group.name = "Character";
@@ -576,11 +581,20 @@ class CharacterEditorState extends MusicBeatState
 		healthColorStepperG = new FlxUINumericStepper(singDurationStepper.x + 65, saveCharacterButton.y, 20, char.healthColorArray[1], 0, 255, 0);
 		healthColorStepperB = new FlxUINumericStepper(singDurationStepper.x + 130, saveCharacterButton.y, 20, char.healthColorArray[2], 0, 255, 0);
 
+		windowOffXStepper = new FlxUINumericStepper(healthColorStepperR.x, healthColorStepperR.y + healthColorStepperR.frameHeight + 70, 10, char.windowOffset[0], -9000, 9000, 0);
+		windowOffYStepper = new FlxUINumericStepper(windowOffXStepper.x + 60, windowOffXStepper.y, 10, char.windowOffset[1], -9000, 9000, 0);
+		windowSizeXStepper = new FlxUINumericStepper(windowOffXStepper.x, windowOffXStepper.y + healthColorStepperR.frameHeight + 50, 10, char.windowOffset[0], -9000, 9000, 0);
+		windowSizeYStepper = new FlxUINumericStepper(windowSizeXStepper.x + 60, windowSizeXStepper.y, 10, char.windowOffset[1], -9000, 9000, 0);
+
 		tab_group.add(new FlxText(15, imageInputText.y - 18, 0, 'Image file name:'));
 		tab_group.add(new FlxText(15, healthIconInputText.y - 18, 0, 'Health icon name:'));
 		tab_group.add(new FlxText(15, singDurationStepper.y - 18, 0, 'Sing Animation length:'));
 		tab_group.add(new FlxText(15, scaleStepper.y - 18, 0, 'Scale:'));
 		tab_group.add(new FlxText(positionXStepper.x, positionXStepper.y - 18, 0, 'Character X/Y:'));
+
+		tab_group.add(new FlxText(windowOffXStepper.x, windowOffXStepper.y - 18, 0, 'Character X/Y offset in outer window:'));
+		tab_group.add(new FlxText(windowSizeXStepper.x, windowSizeXStepper.y - 18, 0, 'Outer Window X/Y size:'));
+
 		tab_group.add(new FlxText(positionCameraXStepper.x, positionCameraXStepper.y - 18, 0, 'Camera X/Y:'));
 		tab_group.add(new FlxText(healthColorStepperR.x, healthColorStepperR.y - 18, 0, 'Health bar R/G/B:'));
 		tab_group.add(imageInputText);
@@ -593,6 +607,12 @@ class CharacterEditorState extends MusicBeatState
 		tab_group.add(noAntialiasingCheckBox);
 		tab_group.add(positionXStepper);
 		tab_group.add(positionYStepper);
+
+		tab_group.add(windowOffXStepper);
+		tab_group.add(windowOffYStepper);
+		tab_group.add(windowSizeXStepper);
+		tab_group.add(windowSizeYStepper);
+
 		tab_group.add(positionCameraXStepper);
 		tab_group.add(positionCameraYStepper);
 		tab_group.add(healthColorStepperR);
@@ -782,15 +802,15 @@ class CharacterEditorState extends MusicBeatState
 					char.playAnim(char.animation.curAnim.name, true);
 				}
 			}
+			else if(sender == singDurationStepper)
+			{
+				char.singDuration = singDurationStepper.value;//ermm you forgot this??
+			}
 			else if(sender == positionXStepper)
 			{
 				char.positionArray[0] = positionXStepper.value;
 				char.x = char.positionArray[0] + OFFSET_X + 100;
 				updatePointerPos();
-			}
-			else if(sender == singDurationStepper)
-			{
-				char.singDuration = singDurationStepper.value;//ermm you forgot this??
 			}
 			else if(sender == positionYStepper)
 			{
@@ -798,6 +818,24 @@ class CharacterEditorState extends MusicBeatState
 				char.y = char.positionArray[1];
 				updatePointerPos();
 			}
+
+			else if(sender == windowOffXStepper)
+			{
+				char.windowOffset[0] = windowOffXStepper.value;
+			}
+			else if(sender == windowOffYStepper)
+			{
+				char.windowOffset[1] = windowOffYStepper.value;
+			}
+			else if(sender == windowSizeXStepper)
+			{
+				char.windowSize[0] = windowSizeXStepper.value;
+			}
+			else if(sender == windowSizeYStepper)
+			{
+				char.windowSize[1] = windowSizeYStepper.value;
+			}
+
 			else if(sender == positionCameraXStepper)
 			{
 				char.cameraPosition[0] = positionCameraXStepper.value;
@@ -984,6 +1022,12 @@ class CharacterEditorState extends MusicBeatState
 			leHealthIcon.changeIcon(healthIconInputText.text);
 			positionXStepper.value = char.positionArray[0];
 			positionYStepper.value = char.positionArray[1];
+
+			windowOffXStepper.value = char.windowOffset[0];
+			windowOffYStepper.value = char.windowOffset[1];
+			windowSizeXStepper.value = char.windowSize[0];
+			windowSizeYStepper.value = char.windowSize[1];
+
 			positionCameraXStepper.value = char.cameraPosition[0];
 			positionCameraYStepper.value = char.cameraPosition[1];
 			reloadAnimationDropDown();
@@ -1278,6 +1322,8 @@ class CharacterEditorState extends MusicBeatState
 
 			"position":	char.positionArray,
 			"camera_position": char.cameraPosition,
+			"wo": char.windowOffset,
+			"ws": char.windowSize,
 
 			"flip_x": char.originalFlipX,
 			"no_antialiasing": char.noAntialiasing,

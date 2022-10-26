@@ -151,7 +151,7 @@
 	<ndll name="systools" haxelib="systools" />-->
 	<haxelib name="flixel-studio"/>
 
-	<haxelib name="window_mod_flx"/>
+	<!--<haxelib name="window_mod_flx"/>-->
 
 	<!-- <haxelib name="markdown" /> -->
 	<!-- <haxelib name="HtmlParser" /> -->

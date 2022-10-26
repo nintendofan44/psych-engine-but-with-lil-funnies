@@ -3611,13 +3611,14 @@ class PlayState extends MusicBeatState
 				lastFrame = dadFrame;
 			}
 
-			expungedScroll.x = (((dadFrame.offset.x) - (dad.offset.x)) * expungedScroll.scaleX) + 80;
-			expungedScroll.y = (((dadFrame.offset.y) - (dad.offset.y)) * expungedScroll.scaleY);
+			expungedScroll.x = (((dadFrame.offset.x) - (dad.offset.x)) * expungedScroll.scaleX) + dad.windowOffset[0];
+			expungedScroll.y = (((dadFrame.offset.y) - (dad.offset.y)) * expungedScroll.scaleY) + dad.windowOffset[1];
 		}
 	}
 
 	function openChartEditor()
 	{
+		endSongCloseWindow();
 		persistentUpdate = false;
 		paused = true;
 		cancelMusicFadeTween();
@@ -4203,16 +4204,14 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		_on = false;
+		endSongCloseWindow();
 
+		timeTxt.visible = false;
 		canPause = false;
 		endingSong = true;
 		camZooming = false;
 		inCutscene = false;
 		updateTime = false;
-
-		var stageData:StageFile = StageData.getStageFile(curStage);
-		if (stageData.hide_time) unhideTime();
 
 		deathCounter = 0;
 		seenCutscene = false;
@@ -4232,12 +4231,7 @@ class PlayState extends MusicBeatState
 		}
 		#end
 
-		#if LUA_ALLOWED
-		var ret:Dynamic = callOnLuas('onEndSong', []);
-		#else
-		var ret:Dynamic = FunkinLua.Function_Continue;
-		#end
-
+		var ret:Dynamic = callOnLuas('onEndSong', [], false);
 		if(ret != FunkinLua.Function_Stop && !transitioning) {
 			if (SONG.validScore)
 			{
@@ -4263,6 +4257,7 @@ class PlayState extends MusicBeatState
 
 				if (storyPlaylist.length <= 0)
 				{
+					WeekData.loadTheFirstEnabledMod();
 					FlxG.sound.playMusic(Paths.music('freakyMenu'));
 
 					cancelMusicFadeTween();
@@ -4327,6 +4322,7 @@ class PlayState extends MusicBeatState
 			else
 			{
 				trace('WENT BACK TO FREEPLAY??');
+				WeekData.loadTheFirstEnabledMod();
 				cancelMusicFadeTween();
 				if(FlxTransitionableState.skipNextTransIn) {
 					CustomFadeTransition.nextCamera = null;
@@ -6074,10 +6070,10 @@ class PlayState extends MusicBeatState
 		var screenheight = Application.current.window.display.bounds.height;
 
 		// center
-		Application.current.window.x = Std.int((screenwidth / 2) - (1280 / 2));
-		Application.current.window.y = Std.int((screenheight / 2) - (720 / 2));
-		Application.current.window.width = 1280;
-		Application.current.window.height = 720;
+		Application.current.window.x = Std.int((screenwidth / 2) - ((PlatformUtil.getDesktopWidth() - 150) / 2));
+		Application.current.window.y = Std.int((screenheight / 2) - ((PlatformUtil.getDesktopHeight() - 150) / 2));
+		Application.current.window.width = PlatformUtil.getDesktopWidth() - 150;
+		Application.current.window.height = PlatformUtil.getDesktopHeight() - 150;
 
 		window = Application.current.createWindow({
 			title: "expunged.dat",
@@ -6120,6 +6116,13 @@ class PlayState extends MusicBeatState
 		var windowX = Application.current.window.x + ((Application.current.window.display.bounds.width) * 0.140625);
 
 		windowSteadyX = windowX;
+
+		try {
+			window.width = Std.int(dad.windowSize[0]);
+			window.height = Std.int(dad.windowSize[1]);
+		} catch(e:Dynamic) {
+			PlatformUtil.sendWindowsNotification("Friday Night Funkin': Psych Engine", "" + e);
+		}
 
 		FlxTween.tween(expungedOffset, {x: -20}, 2, {ease: FlxEase.elasticOut});
 

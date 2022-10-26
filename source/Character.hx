@@ -28,6 +28,8 @@ typedef CharacterFile = {
 	var healthicon:String;
 
 	var position:Array<Float>;
+	var wo:Null<Array<Float>>;
+	var ws:Null<Array<Float>>;
 	var camera_position:Array<Float>;
 
 	var flip_x:Bool;
@@ -77,6 +79,9 @@ class Character extends FlxSprite
 	public var noAntialiasing:Bool = false;
 	public var originalFlipX:Bool = false;
 	public var healthColorArray:Array<Int> = [255, 0, 0];
+
+	public var windowOffset:Array<Float> = [80, 1];
+	public var windowSize:Array<Float> = [800, 800];
 
 	public static var DEFAULT_CHARACTER:String = 'bf'; //In case a character is missing, it will use BF on its place
 	public function new(x:Float, y:Float, ?character:String = 'bf', ?isPlayer:Bool = false)
@@ -171,6 +176,12 @@ class Character extends FlxSprite
 				}
 
 				positionArray = json.position;
+
+				if (json.wo == null) json.wo = [80,0];
+				if (json.ws == null) json.ws = [800,800];
+				windowOffset = json.wo;
+				windowSize = json.ws;
+
 				cameraPosition = json.camera_position;
 
 				healthIcon = json.healthicon;
