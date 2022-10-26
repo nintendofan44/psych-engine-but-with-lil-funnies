@@ -603,6 +603,8 @@ class PlayState extends MusicBeatState
 				hide_girlfriend: false,
 
 				hide_time: false,
+				jsonWindowScaleX: 0.7,
+				jsonWindowScaleY: 0.7,
 
 				camera_boyfriend: [0, 0],
 				camera_opponent: [0, 0],
@@ -6098,8 +6100,6 @@ class PlayState extends MusicBeatState
 		PlatformUtil.getWindowsTransparent();
 
 		preDadPos = dad.getPosition();
-		dad.x = 0;
-		dad.y = 0;
 
 		FlxG.mouse.useSystemCursor = true;
 
@@ -6108,8 +6108,9 @@ class PlayState extends MusicBeatState
 		expungedScroll.scrollRect = new Rectangle();
 		window.stage.addChild(expungedScroll);
 		expungedScroll.addChild(expungedSpr);
-		expungedScroll.scaleX = dad.jsonWindowScaleX;
-		expungedScroll.scaleY = dad.jsonWindowScaleY;
+
+		expungedScroll.scaleX = 0.45;
+		expungedScroll.scaleY = 0.45;
 
 		expungedOffset.x = Application.current.window.x;
 		expungedOffset.y = Application.current.window.y;

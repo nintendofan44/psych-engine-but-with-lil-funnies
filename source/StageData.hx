@@ -23,6 +23,8 @@ typedef StageFile = {
 	var hide_girlfriend:Bool;
 
 	var hide_time:Bool;
+	var jsonWindowScaleX:Null<Float>;
+	var jsonWindowScaleY:Null<Float>;
 
 	var camera_boyfriend:Array<Float>;
 	var camera_opponent:Array<Float>;

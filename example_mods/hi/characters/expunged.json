@@ -74,7 +74,5 @@
 		-120
 	],
 	"sing_duration": 6.1,
-	"scale": 1.2,
-	"windowScaleX": 0.5,
-	"windowScaleY": 0.5
+	"scale": 1.2
 }

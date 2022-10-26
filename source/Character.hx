@@ -33,9 +33,6 @@ typedef CharacterFile = {
 	var flip_x:Bool;
 	var no_antialiasing:Bool;
 	var healthbar_colors:Array<Int>;
-
-	var windowScaleX:Float;
-	var windowScaleY:Float;
 }
 
 typedef AnimArray = {
@@ -77,8 +74,6 @@ class Character extends FlxSprite
 	//Used on Character Editor
 	public var imageFile:String = '';
 	public var jsonScale:Float = 1;
-	public var jsonWindowScaleX:Float = 0.7;
-	public var jsonWindowScaleY:Float = 0.7;
 	public var noAntialiasing:Bool = false;
 	public var originalFlipX:Bool = false;
 	public var healthColorArray:Array<Int> = [255, 0, 0];
@@ -174,9 +169,6 @@ class Character extends FlxSprite
 					setGraphicSize(Std.int(width * jsonScale));
 					updateHitbox();
 				}
-
-				if (json.windowScaleX != 0.7) jsonWindowScaleX = json.windowScaleX;
-				if (json.windowScaleY != 0.7) jsonWindowScaleY = json.windowScaleY;
 
 				positionArray = json.position;
 				cameraPosition = json.camera_position;
