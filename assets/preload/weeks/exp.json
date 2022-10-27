@@ -1,0 +1,31 @@
+{
+	"songs": [
+		[
+			"Exploitation",
+			"expunged",
+			[
+				255,
+				0,
+				0
+			]
+		]
+	],
+	"weekBackground": "stage",
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"storyName": "Exploitation",
+	"weekName": "Exploitation",
+	"freeplayColor": [
+		255,
+		0,
+		0
+	],
+	"hideStoryMode": true,
+	"hideFreeplay": false,
+	"weekBefore": "week7",
+	"difficulties": "Normal",
+	"startUnlocked": true
+}
