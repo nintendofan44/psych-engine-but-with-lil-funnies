@@ -40,7 +40,7 @@ class Folders extends MusicBeatState {
         GalleryUtils.load();
 
         FlxG.mouse.visible = true;
-        GalleryUtils.createFolders(['screenshots']);
+        GalleryUtils.createFolders(['screenshots','state','cd']);
 
 		camGame = new FlxCamera();
 		camHUD = new FlxCamera();
@@ -248,6 +248,11 @@ class Folders extends MusicBeatState {
                 {
                     case 'screenshots':
                         openSubState(new GallerySubstate());
+                    case 'state':
+                        MusicBeatState.switchState(new Menu());
+                    case 'cd':
+                        var state:MusicPlayer = new MusicPlayer('giga');
+                        MusicBeatState.switchState(state);
                 }
             }
         });

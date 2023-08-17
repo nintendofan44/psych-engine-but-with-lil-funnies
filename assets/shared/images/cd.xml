@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="cd.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="cd0000" x="0" y="0" width="42" height="41"/>
+	<SubTexture name="cd0001" x="42" y="0" width="42" height="41"/>
+</TextureAtlas>

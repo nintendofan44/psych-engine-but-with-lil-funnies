@@ -218,6 +218,11 @@ class Paths
 		return file;
 	}
 
+	inline static public function musicString(key:String, ?library:String) {
+		var cwd = Sys.getCwd();
+		return '$cwd/assets/music/$key.$SOUND_EXT';
+	}
+
 	inline static public function voices(song:String):Any
 	{
 		var songKey:String = '${formatToSongPath(song)}/Voices';

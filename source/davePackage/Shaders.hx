@@ -106,7 +106,7 @@ class DistortBGEffect
 
 class PulseEffect
 {
-    public var shader(default,null):PulseShader = new PulseShader();
+    public var shader:PulseShader = new PulseShader();
 
 
     public var waveSpeed(default, set):Float = 0;

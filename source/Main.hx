@@ -215,7 +215,9 @@ class Main extends Sprite
 		function widescreenPostUpdateCam(cam:FlxCamera) {
 			var canvas = cam.canvas;
 			var flashSprite = cam.flashSprite;
+			@:privateAccess
 			var _flashOffset = cam._flashOffset;
+			@:privateAccess
 			var _scrollRect = cam._scrollRect;
 			
 			_scrollRect.scrollRect.x = 0;
@@ -255,7 +257,9 @@ class Main extends Sprite
 		}
 		
 		function widescreenPostUpdate(?e) {
-			if (FlxG.game._lostFocus && FlxG.autoPause) return;
+			@:privateAccess
+			var focus = FlxG.game._lostFocus;
+			if (focus && FlxG.autoPause) return;
 			
 			windowWidth = Lib.application.window.width;
 			windowHeight = Lib.application.window.height;

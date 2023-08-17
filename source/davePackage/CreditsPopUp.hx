@@ -91,12 +91,12 @@ class CreditsPopUp extends FlxSpriteGroup
 		{
 			if (newHeading.animation == null)
 			{
-				bg.loadGraphic(Paths.image(newHeading.path));
+				bg.loadGraphic(Paths.image(newHeading.path, 'shared'));
 			}
 			else
 			{
 				var info = newHeading.animation;
-				bg.frames = Paths.getSparrowAtlas(newHeading.path);
+				bg.frames = Paths.getSparrowAtlas(newHeading.path, 'shared');
 				bg.animation.addByPrefix(info.name, info.prefixName, info.frames, info.looped, info.flip[0], info.flip[1]);
 				bg.animation.play(info.name);
 			}
